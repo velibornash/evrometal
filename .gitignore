@@ -1,0 +1,33 @@
+# dependencies
+**/node_modules
+**/.pnp
+**/.pnp.*
+
+# build output
+**/.next
+**/out
+**/build
+**/dist
+**/.sanity
+
+# local files
+.DS_Store
+*.pem
+*.tsbuildinfo
+**/next-env.d.ts
+
+# env files
+.env*
+**/.env*
+
+# tooling
+.vercel
+**/.vercel
+.idea
+.refact
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
