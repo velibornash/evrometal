@@ -39,7 +39,7 @@ export function Hero() {
         </div>
 
         <div className="relative">
-          <div className="aspect-[4/3] border border-white/10 bg-[linear-gradient(135deg,rgba(246,211,101,0.2),rgba(255,255,255,0.055)_38%,rgba(255,255,255,0.02)),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px)] bg-[size:auto,42px_42px,42px_42px] p-5 shadow-[0_40px_120px_rgba(0,0,0,0.42)]">
+          <div className="image-fill-frame aspect-[4/3] border border-white/10 bg-[linear-gradient(135deg,rgba(246,211,101,0.2),rgba(255,255,255,0.055)_38%,rgba(255,255,255,0.02)),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px)] bg-[size:auto,42px_42px,42px_42px] p-5 shadow-[0_40px_120px_rgba(0,0,0,0.42)]">
             <Image
               src="/images/hero-factory.jpg"
               alt="Evrometal proizvodni pogon"

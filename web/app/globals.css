@@ -26,3 +26,8 @@ a,
 button {
   -webkit-tap-highlight-color: transparent;
 }
+
+.image-fill-frame {
+  position: relative;
+  display: block;
+}

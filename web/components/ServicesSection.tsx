@@ -50,7 +50,7 @@ export function ServicesSection() {
               key={service.title}
               className="group border border-white/10 bg-[#151b23] p-5 transition duration-300 hover:-translate-y-1 hover:border-amber-200/36 hover:bg-[#18212b] md:p-7"
             >
-              <div className="relative mb-6 aspect-[16/10] overflow-hidden border border-white/10 bg-[#0d131a]">
+              <div className="image-fill-frame mb-6 aspect-[16/10] overflow-hidden border border-white/10 bg-[#0d131a]">
                 <Image
                   src={service.image}
                   alt={service.title}

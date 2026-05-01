@@ -20,7 +20,7 @@ export function ProductCard({ product }: ProductCardProps) {
 
   return (
     <article className="group overflow-hidden border border-white/10 bg-[#151b23] transition duration-300 hover:-translate-y-1 hover:border-amber-200/36 hover:bg-[#18212b] hover:shadow-[0_22px_70px_rgba(0,0,0,0.32)]">
-      <div className="relative aspect-[4/3] overflow-hidden bg-[#0d1117]">
+      <div className="image-fill-frame aspect-[4/3] overflow-hidden bg-[#0d1117]">
         {imageUrl ? (
           <Image
             src={imageUrl}

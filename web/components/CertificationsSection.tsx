@@ -20,7 +20,7 @@ export function CertificationsSection() {
         </div>
 
         <div className="grid gap-4 sm:grid-cols-[0.8fr_1.2fr] md:grid-cols-1 lg:grid-cols-[0.8fr_1.2fr]">
-          <div className="relative min-h-72 overflow-hidden border border-white/10 bg-[#151b23]">
+          <div className="image-fill-frame min-h-72 overflow-hidden border border-white/10 bg-[#151b23]">
             <Image
               src="/images/certificate-iso.jpg"
               alt="ISO sertifikat Evrometal"

@@ -65,7 +65,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             </div>
           </div>
 
-          <div className="relative aspect-[4/3] overflow-hidden border border-white/10 bg-[#151b23]">
+          <div className="image-fill-frame aspect-[4/3] overflow-hidden border border-white/10 bg-[#151b23]">
             {imageUrl ? (
               <Image src={imageUrl} alt={product.name} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" priority />
             ) : (

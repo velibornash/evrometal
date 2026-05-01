@@ -19,7 +19,7 @@ export function ProfileSystemsSection() {
             ukrasnu bravariju, okove, prateći materijal i termopan staklo. Po zahtevu
             se rade i sistemi evropskih proizvođača profila.
           </p>
-          <div className="relative mt-8 aspect-[16/9] overflow-hidden border border-white/10 bg-[#151b23]">
+          <div className="image-fill-frame mt-8 aspect-[16/9] overflow-hidden border border-white/10 bg-[#151b23]">
             <Image
               src="/images/profiles-warehouse.jpg"
               alt="Skladište aluminijumskih i PVC profila"
