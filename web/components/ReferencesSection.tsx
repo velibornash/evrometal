@@ -5,10 +5,15 @@ const references = [
   "Upravna zgrada Kopova u Kostolcu",
   "Poljoprivredna škola Požarevac",
   "MUP Požarevac",
+  "TV DUGA Požarevac",
   "Tržni centar Stig u Petrovcu na Mlavi",
+  "Bolnica u Somboru",
   "Bolnica u Užicu",
+  "TV SAT Požarevac",
   "NELT u Dobanovcima",
+  "Osnovna škola Malo Crniće",
   "Opština Žagubica",
+  "Porodična kuća Dubočka",
 ];
 
 export function ReferencesSection() {
@@ -34,11 +39,11 @@ export function ReferencesSection() {
             </div>
           </div>
 
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {references.map((reference) => (
               <div
                 key={reference}
-                className="border border-white/10 bg-white/[0.035] px-4 py-4 text-sm font-medium text-white/70 transition hover:border-amber-200/34 hover:text-white"
+                className="min-h-24 border border-white/10 bg-white/[0.035] px-4 py-4 text-sm font-medium text-white/70 transition hover:-translate-y-0.5 hover:border-amber-200/34 hover:bg-white/[0.055] hover:text-white"
               >
                 {reference}
               </div>

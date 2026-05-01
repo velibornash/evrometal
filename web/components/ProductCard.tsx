@@ -40,7 +40,12 @@ export function ProductCard({ product }: ProductCardProps) {
       </div>
 
       <div className="p-5 sm:p-6">
-        <div className="mb-3 h-px w-12 bg-amber-300/70 transition group-hover:w-20" />
+        <div className="mb-4 flex items-center justify-between">
+          <div className="h-px w-12 bg-amber-300/70 transition group-hover:w-20" />
+          <span className="text-[11px] font-black uppercase tracking-[0.18em] text-white/32">
+            System
+          </span>
+        </div>
         <h3 className="text-xl font-semibold tracking-tight text-white">{product.name}</h3>
         <p className="mt-3 line-clamp-3 min-h-[4.5rem] text-sm leading-6 text-white/58">
           {product.description || "Tehnički sistem dostupan za projektnu specifikaciju i B2B upite."}

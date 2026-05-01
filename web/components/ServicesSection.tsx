@@ -29,6 +29,20 @@ const services = [
     tags: ["Ograde", "Kapije", "Eksterijer"],
     image: "/images/fence-gate.jpg",
   },
+  {
+    label: "05",
+    title: "Roletne, komarnici i okovi",
+    text: "Prateći sistemi za kompletiranje stolarije: okovi, roletne, komarnici, dekorativna bravarija i potrošni materijal.",
+    tags: ["Okovi", "Roletne", "Magacin"],
+    image: "/images/profiles-warehouse.jpg",
+  },
+  {
+    label: "06",
+    title: "Termopan staklo",
+    text: "Proizvodnja i ugradnja termopan stakla kao deo kompletnog sistema prozora, vrata i fasadnih pozicija.",
+    tags: ["Staklo", "Izolacija", "Montaža"],
+    image: "/images/production-line.jpg",
+  },
 ];
 
 export function ServicesSection() {
@@ -44,11 +58,11 @@ export function ServicesSection() {
           </h2>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service) => (
             <article
               key={service.title}
-              className="group border border-white/10 bg-[#151b23] p-5 transition duration-300 hover:-translate-y-1 hover:border-amber-200/36 hover:bg-[#18212b] md:p-7"
+              className="group border border-white/10 bg-[#151b23] p-4 transition duration-300 hover:-translate-y-1 hover:border-amber-200/36 hover:bg-[#18212b] hover:shadow-[0_24px_90px_rgba(0,0,0,0.36)] md:p-5"
             >
               <div className="image-fill-frame mb-6 aspect-[16/10] overflow-hidden border border-white/10 bg-[#0d131a]">
                 <Image
@@ -59,7 +73,7 @@ export function ServicesSection() {
                   className="object-cover transition duration-500 group-hover:scale-[1.035]"
                 />
               </div>
-              <div className="mb-8 flex items-start justify-between gap-4">
+              <div className="mb-7 flex items-start justify-between gap-4">
                 <span className="text-sm font-semibold text-amber-200">{service.label}</span>
                 <div className="h-12 w-12 border border-white/10 bg-[linear-gradient(135deg,rgba(246,211,101,0.28),rgba(255,255,255,0.04))] transition group-hover:border-amber-200/36" />
               </div>

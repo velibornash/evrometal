@@ -5,6 +5,7 @@ import { ContactSection } from "@/components/ContactSection";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { ProfileSystemsSection } from "@/components/ProfileSystemsSection";
+import { ProjectFlowSection } from "@/components/ProjectFlowSection";
 import { ProductGrid } from "@/components/ProductGrid";
 import { ReferencesSection } from "@/components/ReferencesSection";
 import { ServicesSection } from "@/components/ServicesSection";
@@ -25,6 +26,7 @@ export default async function Home() {
       <Hero />
       <CompanySection />
       <ServicesSection />
+      <ProjectFlowSection />
       <ProfileSystemsSection />
       <CategoryStrip />
       <ProductGrid products={products} />

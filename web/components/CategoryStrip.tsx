@@ -1,30 +1,31 @@
 const categories = [
-  { label: "ALU sistemi", value: "Aluminijumski prozori, vrata i fasadne pozicije" },
-  { label: "PVC sistemi", value: "PVC stolarija, profili i gotovi elementi" },
-  { label: "Staklo", value: "Termopan staklo i prateći materijal" },
-  { label: "Okovi", value: "Okovi, roletne, komarnici i oprema" },
+  { label: "ALU sistemi", value: "prozori, vrata, fasadne pozicije", code: "01" },
+  { label: "PVC sistemi", value: "stolarija, profili i gotovi elementi", code: "02" },
+  { label: "Staklo", value: "termopan staklo i prateći materijal", code: "03" },
+  { label: "Okovi", value: "roletne, komarnici, bravarija i oprema", code: "04" },
 ];
 
 export function CategoryStrip() {
   return (
-    <section id="systems" className="border-b border-white/10 bg-[#10151c]">
-      <div className="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-8 md:px-10 lg:flex-row lg:items-center lg:justify-between">
+    <section id="systems" className="border-b border-white/10 bg-[#10151c] px-6 py-14 md:px-10">
+      <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.58fr_1.42fr] lg:items-end">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-200">
             Kategorije
           </p>
-          <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-4xl">
             Sistemi spremni za specifikaciju
           </h2>
         </div>
 
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-px overflow-hidden border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
           {categories.map((category) => (
             <div
               key={category.label}
-              className="border border-white/10 bg-white/[0.035] p-4 transition hover:border-amber-200/34 hover:bg-white/[0.055]"
+              className="bg-[#151b23] p-5 transition hover:bg-[#1a232e]"
             >
-              <h3 className="text-sm font-semibold text-white">{category.label}</h3>
+              <div className="mb-8 text-sm font-semibold text-amber-200">{category.code}</div>
+              <h3 className="text-lg font-semibold text-white">{category.label}</h3>
               <p className="mt-2 text-sm leading-6 text-white/52">{category.value}</p>
             </div>
           ))}

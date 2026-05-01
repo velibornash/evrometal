@@ -40,14 +40,18 @@ export function ProductGrid({ products }: ProductGridProps) {
   return (
     <section id="products" className="bg-[#10151c] px-6 py-16 md:px-10 md:py-24">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div className="mb-10 grid gap-6 lg:grid-cols-[1fr_auto] lg:items-end">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-200">
-              Proizvodi
+              CMS katalog
             </p>
-            <h2 className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-white md:text-4xl">
-              Pregled sistema za vrata, prozore i fasadne pozicije
+            <h2 className="mt-3 max-w-3xl text-4xl font-semibold tracking-tight text-white md:text-6xl">
+              Proizvodi koje kupac može da specifikuje odmah.
             </h2>
+            <p className="mt-5 max-w-2xl text-base leading-8 text-white/58">
+              Sanity CMS sada drži katalog. Sledeći korak je dodavanje kategorije,
+              tehničkih listova i PDF sertifikata po proizvodu.
+            </p>
           </div>
           <div className="flex flex-col gap-3 sm:items-end">
             <span className="text-sm font-medium text-white/45">

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const aluProfiles = ["Alumil M9650", "Alumil M1100", "Alumil M940", "Alumil M9400", "Alumil M900", "Alumil M9000"];
+const aluProfiles = ["Alumil M9650", "Alumil M1100", "Alumil M940", "Alumil M9400", "Alumil M900", "Alumil M9000", "WEISS sistemi"];
 const pvcProfiles = ["WP 3000", "WP 4000", "WP 5000", "Gealan S 8000 IQ"];
 
 export function ProfileSystemsSection() {
@@ -12,13 +12,20 @@ export function ProfileSystemsSection() {
             Prodaja profila i materijala
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-            Veleprodaja sistema za proizvođače stolarije.
+            Profili, okovi, staklo i materijal za proizvođače stolarije.
           </h2>
           <p className="mt-6 text-base leading-8 text-white/62">
             Evrometal prodaje aluminijumske profile ALUMIL i WEISS, PVC profile,
             ukrasnu bravariju, okove, prateći materijal i termopan staklo. Po zahtevu
             se rade i sistemi evropskih proizvođača profila.
           </p>
+          <div className="mt-6 grid gap-3 sm:grid-cols-3">
+            {["Industrijska zona bb", "07:30 - 15:30", "Veleprodaja + magacin"].map((item) => (
+              <div key={item} className="border border-white/10 bg-white/[0.035] px-4 py-3 text-sm font-semibold text-white/62">
+                {item}
+              </div>
+            ))}
+          </div>
           <div className="image-fill-frame mt-8 aspect-[16/9] overflow-hidden border border-white/10 bg-[#151b23]">
             <Image
               src="/images/profiles-warehouse.jpg"
