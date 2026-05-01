@@ -21,7 +21,7 @@ export default async function Home() {
   const products = await getProducts();
 
   return (
-    <main className="min-h-screen bg-[#10151c] text-white">
+    <main className="min-h-screen bg-[#111820] text-white">
       <Header />
       <Hero />
       <CompanySection />

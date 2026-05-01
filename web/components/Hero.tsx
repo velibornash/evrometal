@@ -2,18 +2,19 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[calc(100svh-73px)] overflow-hidden border-b border-white/10 bg-[#080b0f]">
+    <section className="relative min-h-[calc(100svh-73px)] overflow-hidden border-b border-white/10 bg-[#0f1419]">
       <Image
         src="/images/hero-factory.jpg"
         alt=""
         fill
         priority
         sizes="100vw"
-        className="object-cover opacity-42"
+        className="object-cover opacity-34 saturate-90"
       />
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,#080b0f_0%,rgba(8,11,15,0.92)_32%,rgba(8,11,15,0.56)_64%,rgba(8,11,15,0.86)_100%),linear-gradient(rgba(255,255,255,0.052)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.052)_1px,transparent_1px)] bg-[size:auto,72px_72px,72px_72px]" />
-      <div className="absolute left-0 top-0 h-full w-1/3 border-r border-white/10 bg-white/[0.025]" />
-      <div className="absolute bottom-0 left-0 right-0 h-52 bg-gradient-to-t from-[#10151c] to-transparent" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_18%,rgba(246,211,101,0.18),transparent_28%),radial-gradient(circle_at_20%_82%,rgba(125,158,178,0.2),transparent_34%),linear-gradient(105deg,rgba(15,20,25,0.94)_0%,rgba(15,20,25,0.82)_38%,rgba(15,20,25,0.48)_66%,rgba(15,20,25,0.88)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.045)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:84px_84px] opacity-70" />
+      <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#0f1419] to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-52 bg-gradient-to-t from-[#111820] to-transparent" />
 
       <div className="relative mx-auto grid max-w-7xl gap-10 px-6 py-16 md:px-10 md:py-24 lg:grid-cols-[1.08fr_0.92fr] lg:items-end">
         <div className="max-w-5xl">
@@ -49,7 +50,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="border border-white/12 bg-[#10151c]/72 p-4 shadow-[0_40px_120px_rgba(0,0,0,0.42)] backdrop-blur-md">
+        <div className="border border-white/12 bg-[#121923]/72 p-4 shadow-[0_40px_120px_rgba(0,0,0,0.34)] backdrop-blur-xl">
           <div className="grid gap-3">
             {[
               ["ALUMIL / WEISS", "direktan uvoz profila"],

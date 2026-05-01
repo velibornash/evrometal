@@ -47,7 +47,7 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="bg-[#10151c] px-6 py-16 md:px-10 md:py-24">
+    <section id="services" className="bg-[#111820] px-6 py-16 md:px-10 md:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-200">
@@ -62,7 +62,7 @@ export function ServicesSection() {
           {services.map((service) => (
             <article
               key={service.title}
-              className="group border border-white/10 bg-[#151b23] p-4 transition duration-300 hover:-translate-y-1 hover:border-amber-200/36 hover:bg-[#18212b] hover:shadow-[0_24px_90px_rgba(0,0,0,0.36)] md:p-5"
+              className="group border border-white/10 bg-[#17202a] p-4 transition duration-300 hover:-translate-y-1 hover:border-amber-200/36 hover:bg-[#1b2631] hover:shadow-[0_24px_90px_rgba(0,0,0,0.36)] md:p-5"
             >
               <div className="image-fill-frame mb-6 aspect-[16/10] overflow-hidden border border-white/10 bg-[#0d131a]">
                 <Image

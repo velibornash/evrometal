@@ -7,7 +7,7 @@ const categories = [
 
 export function CategoryStrip() {
   return (
-    <section id="systems" className="border-b border-white/10 bg-[#10151c] px-6 py-14 md:px-10">
+    <section id="systems" className="border-b border-white/10 bg-[#111820] px-6 py-14 md:px-10">
       <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.58fr_1.42fr] lg:items-end">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-200">
@@ -22,7 +22,7 @@ export function CategoryStrip() {
           {categories.map((category) => (
             <div
               key={category.label}
-              className="bg-[#151b23] p-5 transition hover:bg-[#1a232e]"
+              className="bg-[#17202a] p-5 transition hover:bg-[#1d2935]"
             >
               <div className="mb-8 text-sm font-semibold text-amber-200">{category.code}</div>
               <h3 className="text-lg font-semibold text-white">{category.label}</h3>

@@ -17,7 +17,7 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#080b0f]/85 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0d1218]/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10">
         <a href="#" className="flex items-center gap-3" aria-label="Evrometal početna">
           <span className="image-fill-frame h-10 w-10 overflow-hidden rounded-sm border border-white/15 bg-white shadow-[0_0_30px_rgba(255,255,255,0.08)]">
@@ -64,7 +64,7 @@ export function Header() {
       </div>
 
       {isOpen ? (
-        <div className="border-t border-white/10 bg-[#080b0f] px-6 py-4 md:hidden">
+        <div className="border-t border-white/10 bg-[#0d1218] px-6 py-4 md:hidden">
           <nav className="flex flex-col gap-1 text-sm font-medium text-white/72">
             {navItems.map((item) => (
               <a

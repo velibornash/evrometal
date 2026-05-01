@@ -38,7 +38,7 @@ export function ProductGrid({ products }: ProductGridProps) {
   );
 
   return (
-    <section id="products" className="bg-[#10151c] px-6 py-16 md:px-10 md:py-24">
+    <section id="products" className="bg-[#111820] px-6 py-16 md:px-10 md:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 grid gap-6 lg:grid-cols-[1fr_auto] lg:items-end">
           <div>

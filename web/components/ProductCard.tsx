@@ -19,7 +19,7 @@ export function ProductCard({ product }: ProductCardProps) {
     : null;
 
   return (
-    <article className="group overflow-hidden border border-white/10 bg-[#151b23] transition duration-300 hover:-translate-y-1 hover:border-amber-200/36 hover:bg-[#18212b] hover:shadow-[0_22px_70px_rgba(0,0,0,0.32)]">
+    <article className="group overflow-hidden border border-white/10 bg-[#17202a] transition duration-300 hover:-translate-y-1 hover:border-amber-200/36 hover:bg-[#1b2631] hover:shadow-[0_22px_70px_rgba(0,0,0,0.32)]">
       <div className="image-fill-frame aspect-[4/3] overflow-hidden bg-[#0d1117]">
         {imageUrl ? (
           <Image
@@ -36,7 +36,7 @@ export function ProductCard({ product }: ProductCardProps) {
             </span>
           </div>
         )}
-        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#151b23] to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#17202a] to-transparent" />
       </div>
 
       <div className="p-5 sm:p-6">

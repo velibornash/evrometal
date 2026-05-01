@@ -5,7 +5,7 @@ const pvcProfiles = ["WP 3000", "WP 4000", "WP 5000", "Gealan S 8000 IQ"];
 
 export function ProfileSystemsSection() {
   return (
-    <section id="sales" className="border-y border-white/10 bg-[#0c1016] px-6 py-16 md:px-10 md:py-24">
+    <section id="sales" className="border-y border-white/10 bg-[#0f151c] px-6 py-16 md:px-10 md:py-24">
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-200">
@@ -26,7 +26,7 @@ export function ProfileSystemsSection() {
               </div>
             ))}
           </div>
-          <div className="image-fill-frame mt-8 aspect-[16/9] overflow-hidden border border-white/10 bg-[#151b23]">
+          <div className="image-fill-frame mt-8 aspect-[16/9] overflow-hidden border border-white/10 bg-[#17202a]">
             <Image
               src="/images/profiles-warehouse.jpg"
               alt="Skladište aluminijumskih i PVC profila"
@@ -67,7 +67,7 @@ function ProfileColumn({
         {items.map((item) => (
           <div
             key={item}
-            className="flex items-center justify-between border border-white/8 bg-[#10151c] px-4 py-3 text-sm text-white/70"
+            className="flex items-center justify-between border border-white/8 bg-[#111820] px-4 py-3 text-sm text-white/70"
           >
             <span>{item}</span>
             <span className="h-1.5 w-1.5 bg-amber-300" />

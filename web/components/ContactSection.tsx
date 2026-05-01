@@ -1,6 +1,6 @@
 export function ContactSection() {
   return (
-    <section id="contact" className="bg-[#080b0f] px-6 py-16 md:px-10">
+    <section id="contact" className="bg-[#0d1218] px-6 py-16 md:px-10">
       <div className="mx-auto grid max-w-7xl gap-8 border border-white/10 bg-[linear-gradient(135deg,rgba(246,211,101,0.16),rgba(255,255,255,0.045)_36%,rgba(255,255,255,0.02))] p-6 md:p-8 lg:grid-cols-[1fr_0.86fr] lg:items-center">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-200">
@@ -25,7 +25,7 @@ export function ContactSection() {
             <a
               key={label}
               href={href}
-              className="border border-white/10 bg-[#080b0f]/72 p-4 transition hover:border-amber-200/36 hover:bg-[#10151c]"
+              className="border border-white/10 bg-[#0d1218]/72 p-4 transition hover:border-amber-200/36 hover:bg-[#111820]"
             >
               <span className="block text-xs font-semibold uppercase tracking-[0.18em] text-white/42">
                 {label}

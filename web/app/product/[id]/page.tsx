@@ -30,9 +30,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
     : null;
 
   return (
-    <main className="min-h-screen bg-[#10151c] text-white">
+    <main className="min-h-screen bg-[#111820] text-white">
       <Header />
-      <section className="border-b border-white/10 bg-[#080b0f] px-6 py-12 md:px-10 md:py-20">
+      <section className="border-b border-white/10 bg-[#0d1218] px-6 py-12 md:px-10 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div>
             <Link href="/#products" className="text-sm font-semibold text-amber-200 transition hover:text-amber-100">
@@ -65,7 +65,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             </div>
           </div>
 
-          <div className="image-fill-frame aspect-[4/3] overflow-hidden border border-white/10 bg-[#151b23]">
+          <div className="image-fill-frame aspect-[4/3] overflow-hidden border border-white/10 bg-[#17202a]">
             {imageUrl ? (
               <Image src={imageUrl} alt={product.name} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" priority />
             ) : (

@@ -4,7 +4,7 @@ const certificates = ["ISO 9001", "IMS atesti", "EU standardi", "Garancija monta
 
 export function CertificationsSection() {
   return (
-    <section id="certificates" className="border-y border-white/10 bg-[#0c1016] px-6 py-16 md:px-10">
+    <section id="certificates" className="border-y border-white/10 bg-[#0f151c] px-6 py-16 md:px-10">
       <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[1fr_auto] md:items-center">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-200">
@@ -20,7 +20,7 @@ export function CertificationsSection() {
         </div>
 
         <div className="grid gap-4 sm:grid-cols-[0.8fr_1.2fr] md:grid-cols-1 lg:grid-cols-[0.8fr_1.2fr]">
-          <div className="image-fill-frame min-h-72 overflow-hidden border border-white/10 bg-[#151b23]">
+          <div className="image-fill-frame min-h-72 overflow-hidden border border-white/10 bg-[#17202a]">
             <Image
               src="/images/certificate-iso.jpg"
               alt="ISO sertifikat Evrometal"

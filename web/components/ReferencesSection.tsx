@@ -18,7 +18,7 @@ const references = [
 
 export function ReferencesSection() {
   return (
-    <section id="references" className="bg-[#10151c] px-6 py-16 md:px-10 md:py-24">
+    <section id="references" className="bg-[#111820] px-6 py-16 md:px-10 md:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
@@ -28,7 +28,7 @@ export function ReferencesSection() {
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-5xl">
               Projekti u javnim, poslovnim i stambenim objektima.
             </h2>
-            <div className="image-fill-frame mt-8 aspect-[16/10] overflow-hidden border border-white/10 bg-[#151b23]">
+            <div className="image-fill-frame mt-8 aspect-[16/10] overflow-hidden border border-white/10 bg-[#17202a]">
               <Image
                 src="/images/reference-kostolac.jpg"
                 alt="Referentni javni objekat sa Evrometal stolarijom"
