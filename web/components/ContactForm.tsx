@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { dictionary, type Lang } from "@/lib/i18n";
+import type { Lang } from "@/lib/i18n";
 
 type ContactFormProps = {
   lang: Lang;
@@ -42,8 +42,6 @@ export function ContactForm({ lang }: ContactFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [dragActive, setDragActive] = useState(false);
-
-  const t = dictionary[lang];
 
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {};

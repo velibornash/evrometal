@@ -12,7 +12,7 @@ export function Hero({ lang }: HeroProps) {
     <section className="relative min-h-[calc(100svh-73px)] overflow-hidden border-b border-white/10 bg-[#0f1419]">
       <Image
         src="/images/hero-factory.jpg"
-        alt=""
+        alt="Evrometal production facility"
         fill
         priority
         sizes="100vw"

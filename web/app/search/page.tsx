@@ -2,7 +2,7 @@ import { Header } from "@/components/Header";
 import { Product, ProductCard } from "@/components/ProductCard";
 import { SiteFooter } from "@/components/SiteFooter";
 import { dictionary, getLang } from "@/lib/i18n";
-import { client, type QueryParams } from "@/lib/sanity";
+import { client } from "@/lib/sanity";
 import { notFound } from "next/navigation";
 
 type SearchPageProps = {

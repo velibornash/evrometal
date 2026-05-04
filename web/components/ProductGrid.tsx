@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { Product, ProductCard } from "./ProductCard";
-import { ProductGridSkeleton, LoadingSpinner } from "./Skeleton";
+import { ProductGridSkeleton } from "./Skeleton";
 import { dictionary, type Lang } from "@/lib/i18n";
 
 type ProductGridProps = {
