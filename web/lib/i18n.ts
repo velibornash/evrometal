@@ -11,12 +11,12 @@ export function getLang(value?: string): Lang {
 }
 
 export function withLang(href: string, lang: Lang) {
-  if (lang === "sr") {
-    return href;
+  if (href.startsWith("#")) {
+    return lang === "sr" ? `/${href}` : `/?lang=${lang}${href}`;
   }
 
-  if (href.startsWith("#")) {
-    return `?lang=${lang}${href}`;
+  if (lang === "sr") {
+    return href;
   }
 
   const separator = href.includes("?") ? "&" : "?";
