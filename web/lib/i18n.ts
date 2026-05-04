@@ -117,6 +117,28 @@ export const dictionary = {
         ["04", "Okovi", "roletne, komarnici, bravarija i oprema"],
       ],
     },
+    professional: {
+      eyebrow: "Za arhitekte, investitore i izvođače",
+      title: "Brži put do specifikacije, ponude i ugradnje.",
+      text:
+        "Savremeni B2B kupac ne traži samo lepu sliku. Potrebni su mu sistem, tehnički list, jasna kategorija, primeri izvedenih objekata i kontakt koji zna šta se ugrađuje.",
+      items: [
+        ["Tehnička dokumentacija", "PDF tehnički listovi, karakteristike sistema i dokumentacija po proizvodu kroz CMS."],
+        ["Projektna podrška", "Pomoć pri izboru profila, stakla, okova, boje i načina ugradnje za konkretan objekat."],
+        ["Veleprodaja i logistika", "Magacin, transport i isporuka profila, okova, stakla i gotovih elemenata."],
+        ["Reference i garancije", "Pregled izvedenih objekata, IMS atesti, ISO standard i garancija na proizvod i montažu."],
+      ],
+    },
+    faq: {
+      eyebrow: "Česta pitanja",
+      title: "Informacije koje kupci traže pre prvog poziva.",
+      items: [
+        ["Da li Evrometal radi samo montažu ili i prodaju materijala?", "Evrometal radi proizvodnju, montažu i veleprodaju profila, okova, stakla i pratećeg materijala za druge proizvođače."],
+        ["Da li proizvodi imaju garanciju?", "Garancija se daje na proizvod, ugradnju i montažu u skladu sa tipom sistema i projektom."],
+        ["Da li radite aluminijumske i PVC sisteme?", "Da. Program obuhvata ALU i PVC stolariju, vrata, prozore, ograde, kapije, roletne, komarnike, okove i termopan staklo."],
+        ["Da li postoje tehnički listovi i PDF dokumentacija?", "CMS sada podržava PDF dokument po proizvodu, tehničke karakteristike i galeriju. Dokumentacija se dodaje kroz Sanity Studio."],
+      ],
+    },
     products: {
       eyebrow: "CMS katalog",
       title: "Proizvodi koje kupac može da specifikuje odmah.",
@@ -232,6 +254,17 @@ export const dictionary = {
       pvcProfiles: ["WP 3000", "WP 4000", "WP 5000", "Gealan S 8000 IQ"],
     },
     categories: { eyebrow: "Categories", title: "Systems ready for specification", items: [["01", "ALU systems", "windows, doors, facade positions"], ["02", "PVC systems", "joinery, profiles and finished elements"], ["03", "Glass", "insulated glass and accessories"], ["04", "Hardware", "shutters, screens, metalwork and equipment"]] },
+    professional: {
+      eyebrow: "For architects, investors and contractors",
+      title: "A faster route to specification, quotation and installation.",
+      text: "A modern B2B buyer needs more than a good image. They need a system, technical sheet, clear category, reference projects and a contact who understands what is being installed.",
+      items: [["Technical documentation", "PDF technical sheets, system features and product documentation managed through CMS."], ["Project support", "Support in selecting profiles, glass, hardware, colour and installation method for a specific building."], ["Wholesale and logistics", "Warehouse, transport and delivery of profiles, hardware, glass and finished elements."], ["References and warranties", "Completed projects, IMS testing, ISO standard and warranty for product and installation."]],
+    },
+    faq: {
+      eyebrow: "FAQ",
+      title: "Information buyers need before the first call.",
+      items: [["Does Evrometal only install or also sell materials?", "Evrometal handles production, installation and wholesale of profiles, hardware, glass and accessories for other manufacturers."], ["Do products include a warranty?", "Warranty is provided for the product, installation and assembly according to system and project type."], ["Do you work with aluminium and PVC systems?", "Yes. The programme includes ALU and PVC joinery, doors, windows, fences, gates, shutters, insect screens, hardware and insulated glass."], ["Are technical sheets and PDF documents available?", "The CMS now supports a PDF document per product, technical specifications and gallery. Documentation is added through Sanity Studio."]],
+    },
     products: { eyebrow: "CMS catalogue", title: "Products buyers can specify immediately.", text: "The catalogue displays products from Sanity CMS. Each product can include images, descriptions, technical specifications and supporting documents.", count: "items from Sanity CMS", filters: ["All", "ALU", "PVC"], empty: "There are currently no published products.", fallback: "Technical system available for project specification and B2B enquiries.", details: "View details", badge: "System" },
     references: { eyebrow: "References", title: "Projects in public, commercial and residential buildings.", imageAlt: "Reference public building with Evrometal joinery", items: ["Hospital in Smederevo", "Kostolac Mine Administration Building", "Agricultural School Požarevac", "Police Department Požarevac", "TV DUGA Požarevac", "Stig Shopping Centre in Petrovac na Mlavi", "Hospital in Sombor", "Hospital in Užice", "TV SAT Požarevac", "NELT in Dobanovci", "Primary School Malo Crniće", "Municipality of Žagubica", "Family house Dubočka"] },
     certs: { eyebrow: "Certificates and warranties", title: "Standardised quality, tested products and multi-year warranties.", text: "Evrometal holds certificates confirming compliance with ISO 9001 quality standards. Products are tested by the Serbian Institute of Measures - IMS Belgrade and meet domestic and international standard requirements.", imageAlt: "Evrometal ISO certificate", items: ["ISO 9001", "IMS tests", "EU standards", "Installation warranty"] },
@@ -291,6 +324,17 @@ export const dictionary = {
       pvcProfiles: ["WP 3000", "WP 4000", "WP 5000", "Gealan S 8000 IQ"],
     },
     categories: { eyebrow: "Kategorien", title: "Systeme bereit für Spezifikation", items: [["01", "ALU-Systeme", "Fenster, Türen, Fassadenpositionen"], ["02", "PVC-Systeme", "Bauelemente, Profile und fertige Elemente"], ["03", "Glas", "Isolierglas und Zubehör"], ["04", "Beschläge", "Rollläden, Insektenschutz, Metallteile und Ausrüstung"]] },
+    professional: {
+      eyebrow: "Für Architekten, Investoren und Ausführer",
+      title: "Schneller zur Spezifikation, zum Angebot und zur Montage.",
+      text: "Ein moderner B2B-Käufer braucht mehr als ein gutes Bild. Er braucht ein System, ein technisches Datenblatt, klare Kategorien, Referenzprojekte und einen Ansprechpartner, der die Montage versteht.",
+      items: [["Technische Dokumentation", "PDF-Datenblätter, Systemeigenschaften und Produktdokumentation über das CMS."], ["Projektunterstützung", "Unterstützung bei Profil, Glas, Beschlag, Farbe und Montageart für ein konkretes Objekt."], ["Großhandel und Logistik", "Lager, Transport und Lieferung von Profilen, Beschlägen, Glas und fertigen Elementen."], ["Referenzen und Garantien", "Ausgeführte Projekte, IMS-Prüfungen, ISO-Standard und Garantie für Produkt und Montage."]],
+    },
+    faq: {
+      eyebrow: "FAQ",
+      title: "Informationen, die Käufer vor dem ersten Anruf benötigen.",
+      items: [["Montiert Evrometal nur oder verkauft es auch Material?", "Evrometal übernimmt Produktion, Montage und Großhandel mit Profilen, Beschlägen, Glas und Zubehör für andere Hersteller."], ["Gibt es Garantie auf Produkte?", "Garantie wird für Produkt, Einbau und Montage je nach System- und Projekttyp gewährt."], ["Arbeiten Sie mit Aluminium- und PVC-Systemen?", "Ja. Das Programm umfasst ALU- und PVC-Bauelemente, Türen, Fenster, Zäune, Tore, Rollläden, Insektenschutz, Beschläge und Isolierglas."], ["Gibt es technische Datenblätter und PDF-Dokumente?", "Das CMS unterstützt nun PDF-Dokumente pro Produkt, technische Eigenschaften und Galerien. Dokumentation wird im Sanity Studio gepflegt."]],
+    },
     products: { eyebrow: "CMS-Katalog", title: "Produkte, die sofort spezifiziert werden können.", text: "Der Katalog zeigt Produkte aus dem Sanity CMS. Jedes Produkt kann Bilder, Beschreibungen, technische Daten und Dokumente enthalten.", count: "Artikel aus Sanity CMS", filters: ["Alle", "ALU", "PVC"], empty: "Derzeit sind keine Produkte veröffentlicht.", fallback: "Technisches System verfügbar für Projektspezifikation und B2B-Anfragen.", details: "Details ansehen", badge: "System" },
     references: { eyebrow: "Referenzen", title: "Projekte in öffentlichen, gewerblichen und Wohngebäuden.", imageAlt: "Referenzobjekt mit Evrometal-Bauelementen", items: ["Krankenhaus Smederevo", "Verwaltungsgebäude der Gruben in Kostolac", "Landwirtschaftsschule Požarevac", "Polizeiverwaltung Požarevac", "TV DUGA Požarevac", "Einkaufszentrum Stig in Petrovac na Mlavi", "Krankenhaus Sombor", "Krankenhaus Užice", "TV SAT Požarevac", "NELT in Dobanovci", "Grundschule Malo Crniće", "Gemeinde Žagubica", "Familienhaus Dubočka"] },
     certs: { eyebrow: "Zertifikate und Garantien", title: "Standardisierte Qualität, geprüfte Produkte und mehrjährige Garantien.", text: "Evrometal besitzt Zertifikate zur Erfüllung des Qualitätsstandards ISO 9001. Produkte werden vom Institut für Maße Serbiens - IMS Belgrad geprüft und erfüllen inländische und internationale Standards.", imageAlt: "Evrometal ISO-Zertifikat", items: ["ISO 9001", "IMS Prüfungen", "EU-Standards", "Montagegarantie"] },
