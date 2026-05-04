@@ -24,6 +24,7 @@ type FormErrors = {
   subject?: string;
   message?: string;
   file?: string;
+  submit?: string;
 };
 
 export function ContactForm({ lang }: ContactFormProps) {
@@ -105,8 +106,17 @@ export function ContactForm({ lang }: ContactFormProps) {
         formDataToSend.append("file", formData.file);
       }
 
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      // Call API endpoint
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        body: formDataToSend,
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || "Greška pri slanju poruke");
+      }
       
       setIsSubmitted(true);
       setFormData({
@@ -120,6 +130,9 @@ export function ContactForm({ lang }: ContactFormProps) {
       });
     } catch (error) {
       console.error("Error submitting form:", error);
+      // Prikaži grešku korisniku
+      const errorMessage = error instanceof Error ? error.message : "Došlo je do greške";
+      setErrors({ ...errors, submit: errorMessage });
     } finally {
       setIsSubmitting(false);
     }
@@ -189,6 +202,11 @@ export function ContactForm({ lang }: ContactFormProps) {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+      {errors.submit && (
+        <div className="rounded-sm border border-red-500/20 bg-red-500/5 p-4">
+          <p className="text-sm text-red-400">{errors.submit}</p>
+        </div>
+      )}
       <div className="grid gap-6 sm:grid-cols-2">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-white/80">
