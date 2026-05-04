@@ -22,6 +22,10 @@ function matchesFilter(product: Product, filter: FilterValue) {
     return true;
   }
 
+  if (product.category === filter) {
+    return true;
+  }
+
   const content = `${product.name} ${product.description ?? ""}`.toLowerCase();
 
   if (filter === "alu") {

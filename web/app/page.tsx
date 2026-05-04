@@ -15,7 +15,21 @@ import { getLang } from "@/lib/i18n";
 import { client } from "@/lib/sanity";
 
 async function getProducts(): Promise<Product[]> {
-  return client.fetch(`*[_type == "product"] | order(_createdAt desc)`);
+  return client.fetch(`*[_type == "product"] | order(featured desc, _createdAt desc) {
+    _id,
+    name,
+    nameEn,
+    nameDe,
+    description,
+    descriptionEn,
+    descriptionDe,
+    image,
+    slug,
+    category,
+    featured,
+    "documentUrl": document.asset->url,
+    specs
+  }`);
 }
 
 type HomeProps = {

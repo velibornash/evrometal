@@ -6,8 +6,27 @@ import { dictionary, type Lang, withLang } from "@/lib/i18n";
 export type Product = {
   _id: string;
   name: string;
+  nameEn?: string;
+  nameDe?: string;
   description?: string;
+  descriptionEn?: string;
+  descriptionDe?: string;
   image?: SanityImageSource;
+  slug?: {
+    current?: string;
+  };
+  category?: string;
+  specs?: ProductSpec[];
+  documentUrl?: string;
+};
+
+export type ProductSpec = {
+  label?: string;
+  labelEn?: string;
+  labelDe?: string;
+  value?: string;
+  valueEn?: string;
+  valueDe?: string;
 };
 
 type ProductCardProps = {
@@ -17,6 +36,14 @@ type ProductCardProps = {
 
 export function ProductCard({ product, lang }: ProductCardProps) {
   const t = dictionary[lang].products;
+  const title = lang === "en" ? product.nameEn || product.name : lang === "de" ? product.nameDe || product.name : product.name;
+  const description =
+    lang === "en"
+      ? product.descriptionEn || product.description
+      : lang === "de"
+        ? product.descriptionDe || product.description
+        : product.description;
+  const productHref = `/product/${product.slug?.current || product._id}`;
   const imageUrl = product.image
     ? urlFor(product.image).width(900).height(620).fit("crop").url()
     : null;
@@ -27,7 +54,7 @@ export function ProductCard({ product, lang }: ProductCardProps) {
         {imageUrl ? (
           <Image
             src={imageUrl}
-            alt={product.name}
+            alt={title}
             fill
             sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
             className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.035]"
@@ -49,12 +76,12 @@ export function ProductCard({ product, lang }: ProductCardProps) {
             {t.badge}
           </span>
         </div>
-        <h3 className="text-xl font-semibold tracking-tight text-white">{product.name}</h3>
+        <h3 className="text-xl font-semibold tracking-tight text-white">{title}</h3>
         <p className="mt-3 line-clamp-3 min-h-[4.5rem] text-sm leading-6 text-white/58">
-          {product.description || t.fallback}
+          {description || t.fallback}
         </p>
         <a
-          href={withLang(`/product/${product._id}`, lang)}
+          href={withLang(productHref, lang)}
           className="mt-5 inline-flex text-sm font-semibold text-amber-200 transition hover:text-amber-100"
         >
           {t.details}
