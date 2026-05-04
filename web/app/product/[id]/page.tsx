@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Header } from "@/components/Header";
 import type { Product } from "@/components/ProductCard";
 import { SiteFooter } from "@/components/SiteFooter";
+import { dictionary, getLang, withLang } from "@/lib/i18n";
 import { client } from "@/lib/sanity";
 import { urlFor } from "@/lib/image";
 
@@ -11,14 +12,19 @@ type ProductPageProps = {
   params: Promise<{
     id: string;
   }>;
+  searchParams?: Promise<{
+    lang?: string;
+  }>;
 };
 
 async function getProduct(id: string): Promise<Product | null> {
   return client.fetch(`*[_type == "product" && _id == $id][0]`, { id });
 }
 
-export default async function ProductPage({ params }: ProductPageProps) {
+export default async function ProductPage({ params, searchParams }: ProductPageProps) {
   const { id } = await params;
+  const lang = getLang((await searchParams)?.lang);
+  const t = dictionary[lang].productPage;
   const product = await getProduct(id);
 
   if (!product) {
@@ -31,22 +37,22 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
   return (
     <main className="min-h-screen bg-[#111820] text-white">
-      <Header />
+      <Header lang={lang} />
       <section className="border-b border-white/10 bg-[#0d1218] px-6 py-12 md:px-10 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div>
-            <Link href="/#products" className="text-sm font-semibold text-amber-200 transition hover:text-amber-100">
-              Nazad na proizvode
+            <Link href={withLang("/#products", lang)} className="text-sm font-semibold text-amber-200 transition hover:text-amber-100">
+              {t.back}
             </Link>
             <p className="mt-8 text-xs font-semibold uppercase tracking-[0.22em] text-white/45">
-              Evrometal proizvod
+              {t.eyebrow}
             </p>
             <h1 className="mt-3 text-4xl font-semibold tracking-tight text-white md:text-6xl">
               {product.name}
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-8 text-white/62 md:text-lg">
               {product.description ||
-                "Tehnički sistem dostupan za projektnu specifikaciju, proizvodnju, isporuku i B2B upite."}
+                t.fallback}
             </p>
 
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
@@ -54,13 +60,13 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 href="mailto:office@evrometal.rs"
                 className="inline-flex justify-center rounded-sm bg-amber-300 px-6 py-3 text-sm font-bold text-[#11100b] transition hover:bg-amber-200"
               >
-                Zatraži ponudu
+                {t.quote}
               </a>
               <a
                 href="tel:+38112327682"
                 className="inline-flex justify-center rounded-sm border border-white/18 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/34 hover:bg-white/6"
               >
-                Pozovi prodaju
+                {t.call}
               </a>
             </div>
           </div>
@@ -81,11 +87,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
       <section className="px-6 py-14 md:px-10 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-4 md:grid-cols-3">
-          {[
-            ["Primena", "prozori, vrata, fasadne i projektne pozicije"],
-            ["Podrška", "specifikacija, isporuka i konsultacije za ugradnju"],
-            ["Kvalitet", "atestirani sistemi, standardizovana proizvodnja i garancije"],
-          ].map(([title, text]) => (
+          {t.cards.map(([title, text]) => (
             <article key={title} className="border border-white/10 bg-white/[0.035] p-5">
               <h2 className="text-lg font-semibold text-white">{title}</h2>
               <p className="mt-3 text-sm leading-6 text-white/56">{text}</p>
@@ -94,7 +96,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
         </div>
       </section>
 
-      <SiteFooter />
+      <SiteFooter lang={lang} />
     </main>
   );
 }

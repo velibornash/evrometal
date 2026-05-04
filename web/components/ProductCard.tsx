@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { SanityImageSource } from "@sanity/image-url";
 import { urlFor } from "@/lib/image";
+import { dictionary, type Lang, withLang } from "@/lib/i18n";
 
 export type Product = {
   _id: string;
@@ -11,9 +12,11 @@ export type Product = {
 
 type ProductCardProps = {
   product: Product;
+  lang: Lang;
 };
 
-export function ProductCard({ product }: ProductCardProps) {
+export function ProductCard({ product, lang }: ProductCardProps) {
+  const t = dictionary[lang].products;
   const imageUrl = product.image
     ? urlFor(product.image).width(900).height(620).fit("crop").url()
     : null;
@@ -43,18 +46,18 @@ export function ProductCard({ product }: ProductCardProps) {
         <div className="mb-4 flex items-center justify-between">
           <div className="h-px w-12 bg-amber-300/70 transition group-hover:w-20" />
           <span className="text-[11px] font-black uppercase tracking-[0.18em] text-white/32">
-            System
+            {t.badge}
           </span>
         </div>
         <h3 className="text-xl font-semibold tracking-tight text-white">{product.name}</h3>
         <p className="mt-3 line-clamp-3 min-h-[4.5rem] text-sm leading-6 text-white/58">
-          {product.description || "Tehnički sistem dostupan za projektnu specifikaciju i B2B upite."}
+          {product.description || t.fallback}
         </p>
         <a
-          href={`/product/${product._id}`}
+          href={withLang(`/product/${product._id}`, lang)}
           className="mt-5 inline-flex text-sm font-semibold text-amber-200 transition hover:text-amber-100"
         >
-          Pogledaj detalje
+          {t.details}
         </a>
       </div>
     </article>

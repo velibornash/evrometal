@@ -2,19 +2,24 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { dictionary, languages, type Lang, withLang } from "@/lib/i18n";
 
-const navItems = [
-  { label: "Početna", href: "#" },
-  { label: "O nama", href: "#about" },
-  { label: "Usluge", href: "#services" },
-  { label: "Prodaja", href: "#sales" },
-  { label: "Proizvodi", href: "#products" },
-  { label: "Reference", href: "#references" },
-  { label: "Kontakt", href: "#contact" },
-];
+type HeaderProps = {
+  lang: Lang;
+};
 
-export function Header() {
+export function Header({ lang }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const t = dictionary[lang];
+  const navItems = [
+    { label: t.nav.home, href: "#" },
+    { label: t.nav.about, href: "#about" },
+    { label: t.nav.services, href: "#services" },
+    { label: t.nav.sales, href: "#sales" },
+    { label: t.nav.products, href: "#products" },
+    { label: t.nav.references, href: "#references" },
+    { label: t.nav.contact, href: "#contact" },
+  ];
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0d1218]/85 backdrop-blur-xl">
@@ -28,7 +33,7 @@ export function Header() {
               EVROMETAL
             </span>
             <span className="mt-1 block text-[11px] font-medium uppercase tracking-[0.18em] text-white/45">
-              ALU / PVC sistemi
+              {t.nav.subtitle}
             </span>
           </span>
         </a>
@@ -45,8 +50,25 @@ export function Header() {
           href="#contact"
           className="hidden rounded-sm border border-amber-300/40 bg-amber-300 px-4 py-2 text-sm font-semibold text-[#11100b] transition hover:bg-amber-200 lg:inline-flex"
         >
-          Zatraži ponudu
+          {t.nav.quote}
         </a>
+
+        <div className="hidden items-center gap-1 md:flex">
+          {languages.map((language) => (
+            <a
+              key={language.code}
+              href={withLang("#", language.code)}
+              aria-label={language.label}
+              className={
+                language.code === lang
+                  ? "grid h-9 w-9 place-items-center rounded-sm border border-amber-300/50 bg-white/10 text-lg"
+                  : "grid h-9 w-9 place-items-center rounded-sm border border-white/10 text-lg opacity-62 transition hover:opacity-100"
+              }
+            >
+              {language.flag}
+            </a>
+          ))}
+        </div>
 
         <button
           type="button"
@@ -66,6 +88,22 @@ export function Header() {
       {isOpen ? (
         <div className="border-t border-white/10 bg-[#0d1218] px-6 py-4 md:hidden">
           <nav className="flex flex-col gap-1 text-sm font-medium text-white/72">
+            <div className="mb-3 flex gap-2 px-2">
+              {languages.map((language) => (
+                <a
+                  key={language.code}
+                  href={withLang("#", language.code)}
+                  aria-label={language.label}
+                  className={
+                    language.code === lang
+                      ? "grid h-10 w-10 place-items-center rounded-sm border border-amber-300/50 bg-white/10 text-lg"
+                      : "grid h-10 w-10 place-items-center rounded-sm border border-white/10 text-lg opacity-62"
+                  }
+                >
+                  {language.flag}
+                </a>
+              ))}
+            </div>
             {navItems.map((item) => (
               <a
                 key={item.href}

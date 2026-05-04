@@ -2,9 +2,11 @@
 
 import { useMemo, useState } from "react";
 import { Product, ProductCard } from "./ProductCard";
+import { dictionary, type Lang } from "@/lib/i18n";
 
 type ProductGridProps = {
   products: Product[];
+  lang: Lang;
 };
 
 const filters = [
@@ -29,8 +31,9 @@ function matchesFilter(product: Product, filter: FilterValue) {
   return content.includes("pvc");
 }
 
-export function ProductGrid({ products }: ProductGridProps) {
+export function ProductGrid({ products, lang }: ProductGridProps) {
   const [activeFilter, setActiveFilter] = useState<FilterValue>("all");
+  const t = dictionary[lang].products;
 
   const filteredProducts = useMemo(
     () => products.filter((product) => matchesFilter(product, activeFilter)),
@@ -43,19 +46,18 @@ export function ProductGrid({ products }: ProductGridProps) {
         <div className="mb-10 grid gap-6 lg:grid-cols-[1fr_auto] lg:items-end">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-200">
-              CMS katalog
+              {t.eyebrow}
             </p>
             <h2 className="mt-3 max-w-3xl text-4xl font-semibold tracking-tight text-white md:text-6xl">
-              Proizvodi koje kupac može da specifikuje odmah.
+              {t.title}
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-8 text-white/58">
-              Sanity CMS sada drži katalog. Sledeći korak je dodavanje kategorije,
-              tehničkih listova i PDF sertifikata po proizvodu.
+              {t.text}
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:items-end">
             <span className="text-sm font-medium text-white/45">
-              {filteredProducts.length} / {products.length} artikala iz Sanity CMS-a
+              {filteredProducts.length} / {products.length} {t.count}
             </span>
             <div className="flex rounded-sm border border-white/10 bg-white/[0.035] p-1">
               {filters.map((filter) => (
@@ -69,7 +71,7 @@ export function ProductGrid({ products }: ProductGridProps) {
                       : "min-w-16 rounded-sm px-4 py-2 text-sm font-semibold text-white/58 transition hover:bg-white/6 hover:text-white"
                   }
                 >
-                  {filter.label}
+                  {filter.value === "all" ? t.filters[0] : filter.value === "alu" ? t.filters[1] : t.filters[2]}
                 </button>
               ))}
             </div>
@@ -79,12 +81,12 @@ export function ProductGrid({ products }: ProductGridProps) {
         {filteredProducts.length > 0 ? (
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {filteredProducts.map((product) => (
-              <ProductCard key={product._id} product={product} />
+              <ProductCard key={product._id} product={product} lang={lang} />
             ))}
           </div>
         ) : (
           <div className="border border-white/10 bg-white/[0.04] p-8 text-white/58">
-            Trenutno nema objavljenih proizvoda.
+            {t.empty}
           </div>
         )}
       </div>
