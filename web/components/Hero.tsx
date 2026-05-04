@@ -29,7 +29,7 @@ export function Hero({ lang }: HeroProps) {
             {t.eyebrow}
           </div>
 
-          <h1 className="text-5xl font-semibold leading-[0.98] tracking-tight text-white sm:text-6xl lg:text-8xl">
+          <h1 className="text-4xl font-semibold leading-[0.98] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-8xl">
             {t.title1}
             <span className="block text-white/72">{t.title2}</span>
             <span className="block text-amber-200">{t.title3}</span>

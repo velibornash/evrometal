@@ -48,7 +48,7 @@ export default async function Home({ searchParams }: HomeProps) {
   return (
     <main className="min-h-screen bg-[#111820] text-white">
       <StructuredData lang={lang} />
-      <Header lang={lang} />
+      <Header lang={lang} products={products} />
       <Hero lang={lang} />
       <CompanySection lang={lang} />
       <ServicesSection lang={lang} />

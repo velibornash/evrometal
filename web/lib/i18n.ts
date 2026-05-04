@@ -37,6 +37,12 @@ export const dictionary = {
       quote: "Zatraži ponudu",
       subtitle: "ALU / PVC sistemi",
     },
+    search: {
+      placeholder: "Pretraži proizvode...",
+      seeAll: "Pogledaj sve rezultate",
+      noResults: "Nema pronađenih proizvoda",
+      results: "rezultati",
+    },
     hero: {
       eyebrow: "Petrovac na Mlavi / proizvodnja, prodaja i montaža",
       title1: "Aluminijum.",
@@ -205,6 +211,12 @@ export const dictionary = {
   },
   en: {
     nav: { home: "Home", about: "About", services: "Services", sales: "Sales", products: "Products", references: "References", faq: "FAQ", contact: "Contact", quote: "Request quote", subtitle: "ALU / PVC systems" },
+    search: {
+      placeholder: "Search products...",
+      seeAll: "See all results",
+      noResults: "No products found",
+      results: "results",
+    },
     hero: {
       eyebrow: "Petrovac na Mlavi / manufacturing, sales and installation",
       title1: "Aluminium.",
@@ -275,6 +287,12 @@ export const dictionary = {
   },
   de: {
     nav: { home: "Start", about: "Über uns", services: "Leistungen", sales: "Vertrieb", products: "Produkte", references: "Referenzen", faq: "FAQ", contact: "Kontakt", quote: "Angebot anfragen", subtitle: "ALU / PVC Systeme" },
+    search: {
+      placeholder: "Produkte suchen...",
+      seeAll: "Alle Ergebnisse anzeigen",
+      noResults: "Keine Produkte gefunden",
+      results: "Ergebnisse",
+    },
     hero: {
       eyebrow: "Petrovac na Mlavi / Produktion, Vertrieb und Montage",
       title1: "Aluminium.",

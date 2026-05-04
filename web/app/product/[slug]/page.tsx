@@ -122,28 +122,42 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
       </section>
 
       <section className="px-6 py-14 md:px-10 md:py-20">
-        <div className="mx-auto grid max-w-7xl gap-4 md:grid-cols-3">
-          {t.cards.map(([title, text]) => (
-            <article key={title} className="border border-white/10 bg-white/[0.035] p-5">
-              <h2 className="text-lg font-semibold text-white">{title}</h2>
-              <p className="mt-3 text-sm leading-6 text-white/56">{text}</p>
-            </article>
-          ))}
-        </div>
-        {specs && specs.length > 0 ? (
-          <div className="mx-auto mt-8 max-w-7xl border border-white/10 bg-white/[0.035] p-5">
-            <div className="grid gap-px overflow-hidden bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
-              {specs.map((spec) => (
-                <div key={`${spec.label}-${spec.value}`} className="bg-[#111820] p-4">
-                  <div className="text-xs font-semibold uppercase tracking-[0.18em] text-white/38">
-                    {spec.label}
+        <div className="mx-auto max-w-7xl">
+          {specs && specs.length > 0 && (
+            <div className="mb-12">
+              <h2 className="mb-6 text-2xl font-semibold tracking-tight text-white">
+                {lang === "sr" ? "Specifikacije" : lang === "en" ? "Specifications" : "Spezifikationen"}
+              </h2>
+              <div className="grid gap-4 overflow-hidden rounded-sm border border-white/10 bg-white/[0.035] sm:grid-cols-2 lg:grid-cols-3">
+                {specs.map((spec, index) => (
+                  <div key={`${spec.label}-${spec.value}-${index}`} className="border-b border-white/5 bg-[#111820]/50 p-6 transition last:border-b-0 hover:bg-[#111820]">
+                    <div className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-200/60">
+                      {spec.label}
+                    </div>
+                    <div className="mt-2 text-lg font-semibold text-white">{spec.value}</div>
                   </div>
-                  <div className="mt-2 text-base font-semibold text-white">{spec.value}</div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
+          )}
+          
+          <div className="grid gap-8 md:grid-cols-3">
+            {t.cards.map(([title, text]) => (
+              <article key={title} className="group overflow-hidden rounded-sm border border-white/10 bg-white/[0.035] transition-all duration-300 hover:border-amber-200/30 hover:bg-white/[0.06] hover:shadow-[0_8px_30px_rgba(0,0,0,0.2)]">
+                <div className="h-1 w-full bg-gradient-to-r from-amber-200/0 via-amber-200/50 to-amber-200/0" />
+                <div className="p-6">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-amber-300/10">
+                    <svg className="h-6 w-6 text-amber-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <h3 className="mt-4 text-lg font-semibold text-white">{title}</h3>
+                  <p className="mt-3 text-sm leading-6 text-white/56">{text}</p>
+                </div>
+              </article>
+            ))}
           </div>
-        ) : null}
+        </div>
       </section>
 
       <SiteFooter lang={lang} />

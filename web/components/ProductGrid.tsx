@@ -2,11 +2,13 @@
 
 import { useMemo, useState } from "react";
 import { Product, ProductCard } from "./ProductCard";
+import { ProductGridSkeleton, LoadingSpinner } from "./Skeleton";
 import { dictionary, type Lang } from "@/lib/i18n";
 
 type ProductGridProps = {
   products: Product[];
   lang: Lang;
+  isLoading?: boolean;
 };
 
 const filters = [
@@ -35,7 +37,7 @@ function matchesFilter(product: Product, filter: FilterValue) {
   return content.includes("pvc");
 }
 
-export function ProductGrid({ products, lang }: ProductGridProps) {
+export function ProductGrid({ products, lang, isLoading = false }: ProductGridProps) {
   const [activeFilter, setActiveFilter] = useState<FilterValue>("all");
   const t = dictionary[lang].products;
 
@@ -43,6 +45,34 @@ export function ProductGrid({ products, lang }: ProductGridProps) {
     () => products.filter((product) => matchesFilter(product, activeFilter)),
     [activeFilter, products],
   );
+
+  if (isLoading) {
+    return (
+      <section id="products" className="bg-[#111820] px-6 py-16 md:px-10 md:py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-10 grid gap-6 lg:grid-cols-[1fr_auto] lg:items-end">
+            <div>
+              <div className="h-4 w-32 bg-amber-200/20 rounded animate-pulse mb-3" />
+              <div className="h-12 w-3/4 bg-white/10 rounded animate-pulse mb-5" />
+              <div className="space-y-2">
+                <div className="h-4 w-full bg-white/5 rounded animate-pulse" />
+                <div className="h-4 w-4/5 bg-white/5 rounded animate-pulse" />
+              </div>
+            </div>
+            <div className="flex flex-col gap-3 sm:items-end">
+              <div className="h-4 w-20 bg-white/10 rounded animate-pulse" />
+              <div className="flex rounded-sm border border-white/10 bg-white/[0.035] p-1">
+                {filters.map((filter) => (
+                  <div key={filter.value} className="min-w-16 h-10 bg-white/10 rounded animate-pulse" />
+                ))}
+              </div>
+            </div>
+          </div>
+          <ProductGridSkeleton />
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="products" className="bg-[#111820] px-6 py-16 md:px-10 md:py-24">
