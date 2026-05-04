@@ -32,6 +32,7 @@ export const dictionary = {
       sales: "Prodaja",
       products: "Proizvodi",
       references: "Reference",
+      faq: "FAQ",
       contact: "Kontakt",
       quote: "Zatraži ponudu",
       subtitle: "ALU / PVC sistemi",
@@ -203,7 +204,7 @@ export const dictionary = {
     },
   },
   en: {
-    nav: { home: "Home", about: "About", services: "Services", sales: "Sales", products: "Products", references: "References", contact: "Contact", quote: "Request quote", subtitle: "ALU / PVC systems" },
+    nav: { home: "Home", about: "About", services: "Services", sales: "Sales", products: "Products", references: "References", faq: "FAQ", contact: "Contact", quote: "Request quote", subtitle: "ALU / PVC systems" },
     hero: {
       eyebrow: "Petrovac na Mlavi / manufacturing, sales and installation",
       title1: "Aluminium.",
@@ -273,7 +274,7 @@ export const dictionary = {
     productPage: { back: "Back to products", eyebrow: "Evrometal product", fallback: "Technical system available for project specification, production, delivery and B2B enquiries.", quote: "Request quote", call: "Call sales", cards: [["Application", "windows, doors, facade and project positions"], ["Support", "specification, delivery and installation consultations"], ["Quality", "tested systems, standardised production and warranties"]] },
   },
   de: {
-    nav: { home: "Start", about: "Über uns", services: "Leistungen", sales: "Vertrieb", products: "Produkte", references: "Referenzen", contact: "Kontakt", quote: "Angebot anfragen", subtitle: "ALU / PVC Systeme" },
+    nav: { home: "Start", about: "Über uns", services: "Leistungen", sales: "Vertrieb", products: "Produkte", references: "Referenzen", faq: "FAQ", contact: "Kontakt", quote: "Angebot anfragen", subtitle: "ALU / PVC Systeme" },
     hero: {
       eyebrow: "Petrovac na Mlavi / Produktion, Vertrieb und Montage",
       title1: "Aluminium.",

@@ -18,6 +18,7 @@ export function Header({ lang }: HeaderProps) {
     { label: t.nav.sales, href: "#sales" },
     { label: t.nav.products, href: "#products" },
     { label: t.nav.references, href: "#references" },
+    { label: t.nav.faq, href: "#faq" },
     { label: t.nav.contact, href: "#contact" },
   ];
 
@@ -38,7 +39,7 @@ export function Header({ lang }: HeaderProps) {
           </span>
         </a>
 
-        <nav className="hidden items-center gap-4 text-sm font-medium text-white/62 md:flex lg:gap-6">
+        <nav className="hidden items-center gap-4 text-sm font-medium text-white/62 lg:flex xl:gap-6">
           {navItems.map((item) => (
             <a key={item.href} href={item.href} className="transition hover:text-white">
               {item.label}
@@ -53,7 +54,7 @@ export function Header({ lang }: HeaderProps) {
           {t.nav.quote}
         </a>
 
-        <div className="hidden items-center gap-1 md:flex">
+        <div className="hidden items-center gap-1 lg:flex">
           {languages.map((language) => (
             <a
               key={language.code}
