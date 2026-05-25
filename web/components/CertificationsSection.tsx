@@ -21,6 +21,14 @@ export function CertificationsSection({ lang }: CertificationsSectionProps) {
           <p className="mt-5 max-w-3xl text-sm leading-7 text-white/58 md:text-base">
             {t.text}
           </p>
+          <a
+            href="/oldwebsite/evrocert.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-7 inline-flex rounded-sm bg-amber-300 px-5 py-3 text-sm font-bold text-[#11100b] transition hover:bg-amber-200"
+          >
+            {t.pdfLabel}
+          </a>
         </div>
 
         <div className="grid gap-4 sm:grid-cols-[0.8fr_1.2fr] md:grid-cols-1 lg:grid-cols-[0.8fr_1.2fr]">

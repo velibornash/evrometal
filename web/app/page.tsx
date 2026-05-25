@@ -16,9 +16,10 @@ import { StructuredData } from "@/components/StructuredData";
 import type { Product } from "@/components/ProductCard";
 import { getLang } from "@/lib/i18n";
 import { client } from "@/lib/sanity";
+import { staticProducts } from "@/lib/static-products";
 
 async function getProducts(): Promise<Product[]> {
-  return client.fetch(`*[_type == "product"] | order(featured desc, _createdAt desc) {
+  const sanityProducts = await client.fetch<Product[]>(`*[_type == "product"] | order(featured desc, _createdAt desc) {
     _id,
     name,
     nameEn,
@@ -33,6 +34,8 @@ async function getProducts(): Promise<Product[]> {
     "documentUrl": document.asset->url,
     specs
   }`);
+
+  return [...sanityProducts, ...staticProducts];
 }
 
 type HomeProps = {

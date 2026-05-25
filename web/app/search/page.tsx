@@ -3,6 +3,7 @@ import { Product, ProductCard } from "@/components/ProductCard";
 import { SiteFooter } from "@/components/SiteFooter";
 import { dictionary, getLang } from "@/lib/i18n";
 import { client } from "@/lib/sanity";
+import { staticProducts } from "@/lib/static-products";
 import { notFound } from "next/navigation";
 
 type SearchPageProps = {
@@ -15,7 +16,7 @@ type SearchPageProps = {
 
 async function searchProducts(query: string): Promise<Product[]> {
   const searchQuery = `*${query}*`;
-  return client.fetch<Product[]>(
+  const sanityProducts = await client.fetch<Product[]>(
     `*[_type == "product" && (
       name match $query || 
       nameEn match $query || 
@@ -41,6 +42,23 @@ async function searchProducts(query: string): Promise<Product[]> {
     }`,
     { query: searchQuery } as any // eslint-disable-line @typescript-eslint/no-explicit-any
   );
+
+  const normalizedQuery = query.toLowerCase();
+  const localProducts = staticProducts.filter((product) => {
+    const fields = [
+      product.name,
+      product.nameEn,
+      product.nameDe,
+      product.description,
+      product.descriptionEn,
+      product.descriptionDe,
+      product.category,
+    ].filter(Boolean);
+
+    return fields.some((field) => field?.toLowerCase().includes(normalizedQuery));
+  });
+
+  return [...sanityProducts, ...localProducts];
 }
 
 export default async function SearchPage({ searchParams }: SearchPageProps) {

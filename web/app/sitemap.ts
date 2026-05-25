@@ -1,4 +1,5 @@
 import { client } from "@/lib/sanity";
+import { staticProducts } from "@/lib/static-products";
 import { MetadataRoute } from "next";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -15,6 +16,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
+
+  const staticProductUrls = staticProducts
+    .filter((product) => product.slug?.current)
+    .map((product) => ({
+      url: `${baseUrl}/product/${product.slug?.current}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    }));
 
   return [
     {
@@ -42,5 +52,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     },
     ...productUrls,
+    ...staticProductUrls,
   ];
 }

@@ -1,0 +1,94 @@
+@charset "utf-8";
+body { margin:0; padding:0; width:100%; background:#1f3d63 url(images/main_bg.jpg) top center repeat-x  ;}
+html { padding:0; margin:0;}
+
+a { text-decoration:none;}
+a:hover { text-decoration:underline;}
+/* main */
+.main { padding:0; margin:0 auto;}
+/********** header **********/
+.blok_header { margin:0; padding:0; background:#005A95;}
+.header { width:980px; margin:0 auto; padding:0;}
+/* logo */
+.logo { padding:0; margin:0; width:262px; float:left;}
+/* menu_resize*/
+.menu_resize { background:#f1f1f1; padding:5px 0; margin:0;}
+.menu_resize_wid { font:bold 13px Arial, Helvetica, sans-serif; color:#161616; width:980px; margin:0 auto; padding:20px 0;}
+.menu_resize_wid a { font:bold 13px Arial, Helvetica, sans-serif; color:#161616; text-decoration:none; padding:0 10px; margin:0; text-decoration:none;}
+.menu_resize_wid a:hover { color:#0063a2; text-decoration:underline;}
+.menu_resize_wid a.active { color:#0063a2;}
+/* menu */	
+.menu { width:510px; margin:30px 0 0 0; padding:0; float:left;}
+.menu ul { margin:0; padding:0; list-style:none; float:left;}
+.menu li { margin:0; margin-right: 5px; padding:0;  font:bold 12px Arial, Helvetica, sans-serif; color:#a6a6a6; float:left; list-style:none;}
+.menu a { float:left; font:bold 12px Arial, Helvetica, sans-serif; color:#a6a6a6; padding:10px 15px; margin:0; text-decoration:none; }
+.menu a:hover {color:#fff; background:#003151; padding:10px 15px; margin:0;}
+.menu a.active {color:#fff; background:#003151; padding:10px 15px;}
+.menu #current a{color:#fff; background:#003151; padding:10px 15px;}
+
+/* search */
+.search { padding:50px 20px 0 0; margin:0; width:200px; float:right;}
+.search form { display:block; float:right; padding:0;}
+.search span { display:block; float:left; background: url(images/search_bg.gif) left top no-repeat; width:150px; padding:0 5px; height:33px;}
+.search form .keywords { width:150px; line-height:14px; height:17px; float:left; background:none; border:0; padding:8px 2px; margin:0; font:normal 12px Arial, Helvetica, sans-serif; color:#9c9c9c;}
+.search form .button { float:left; margin:0; padding:0;}
+/*header_text_bg*/
+.header_text_bg { margin:0; padding:0; background:url(images/slider_bg.gif) top repeat-x;}
+/*header_text*/
+.header_text { height:317px; margin:0 auto; padding:0; width:990px; background:url(images/header_text_bg.jpg) top center no-repeat;}
+.header_text .div .left1 { float:left; width:540px; padding:15px 0 0 15px; margin:0; }
+.header_text .div .left1 img { margin:0 5px; padding:0;}
+.header_text .div .left1 h2 {font:normal 36px Arial, Helvetica, sans-serif; color:#ffcc00; padding:10px 0 0 0; margin:0; border:0;}
+.header_text p { font:normal 12px Arial, Helvetica, sans-serif; color:#898989; padding:20px 0 0 0; margin:0; line-height:1.8em;}
+.header_text p.uli { background:url(images/simple_ul_li.gif) left no-repeat; padding:3px 0 3px 15px;}
+/* header_text2 */
+.header_text2 { margin:0 auto; padding:0; width:980px; background: url(images/simple_bg2.gif) top no-repeat;}
+.header_text2 h2 { font: normal 36px Arial, Helvetica, sans-serif; color:#fff; margin:0; padding:30px 0 30px 0px;}
+/********** body **********/
+.body_resize { margin:0; padding:20px 0 0 0; background: #f6f6f6 url(images/body_bg.gif) top repeat-x;}
+.body { width:980px;  margin:0 auto; padding:3px 0; }
+.body h2 {font: bold 24px Arial, Helvetica, sans-serif; color:#2e2e2e; margin:0; padding:5px 5px;}
+.body h2 span { font:italic 11px Arial, Helvetica, sans-serif; color:#b5b5b5;}
+.body img { padding:0; margin:10px;}
+.body img.floated { padding:0; margin:0;}
+.body p { font:normal 12px Arial, Helvetica, sans-serif; color:#707070; line-height:1.8em; padding:5px 5px; margin:0;}
+.body p span { color:#006aaf;}
+.body p.data { font: bold 14px Arial, Helvetica, sans-serif; color:#4580b9; padding:0 5px 10px 5px; margin:0;}
+.body a { text-decoration:none; color:#2e2e2e; line-height:1.8em; font: bold 11px Arial, Helvetica, sans-serif;}
+.body_small { width:260px; float:right; margin:0; padding:0; padding-right:20px;}
+.body_small img {padding:0; margin:0px;}
+.body_big { width:670px; float:left; margin:0; padding:0;}
+.body_big ul { list-style:none; margin:0; padding:20px 0 0 0;}
+.body_big li { background:url(images/big_ul_li.gif) left no-repeat; padding:5px 20px; margin:0;  font: italic 12px Arial, Helvetica, sans-serif; color:#707070; line-height:1.8em;}
+/*FBG_resize*/
+.FBG { width:980px; margin:0 auto; padding:0;}
+.FBG h3 {font: normal 18px Arial, Helvetica, sans-serif; color:#2e2e2e; margin:0; padding:5px 5px;}
+.FBG h3 span { font: italic 11px Arial, Helvetica, sans-serif; color:#b5b5b5;}
+.FBG p { font:normal 12px Arial, Helvetica, sans-serif; color:#5e5e5e; padding:10px 5px; margin:0; line-height:1.8em;}
+.FBG img { float:left; margin:5px; padding:0;}
+.FBG img.toop { margin:10px auto; padding:0;}
+.FBG a { color:#006aaf; text-decoration:none; font:bold italic 12px Arial, Helvetica, sans-serif;}
+.left_bg  { width:283px; float:left; margin:5px; padding:10px 10px;} 
+/*************footer**********/
+.footer {padding:0;  margin:0 auto; background:#005A95; border-top:1px solid #2b2b2b; }
+.footer_resize { margin:0 auto; padding:0; width:960px;}
+.footer p { font:normal 11px  Arial, Helvetica, sans-serif; color:#fff;}
+.footer a { font: normal 11px Arial, Helvetica, sans-serif; color:#003151; text-decoration:none; padding:5px; margin:0;}
+.footer img { margin:0; padding:0; float:left;}
+.leftt { text-align:left; width:480px; color:fff; margin:0; padding:35px 0 0 0; float:right;} 
+/********** contact form **********/
+#contactform { margin:0; padding:5px 10px;}
+#contactform * { color:#F00;}
+#contactform ol { margin:0; padding:0; list-style:none;}
+#contactform li { margin:0; padding:0; background:none; border:none; display:block;}
+#contactform li.buttons { margin:5px 0 5px 0;}
+#contactform label { float:left; margin:0; width:100px; padding:5px 0; font:bold 12px Arial, Helvetica, sans-serif; color:#676767; text-transform:capitalize;}
+#contactform label span { font:normal 10px Arial, Helvetica, sans-serif;}
+#contactform input.text { width:390px; border:1px solid #e2e1e1; margin:5px 0; padding:5px 2px; height:15px; background:#f8f8f8;}
+#contactform textarea { width:390px; border:1px solid #e2e1e1; margin:10px 0; padding:2px; background:#f8f8f8; height:100px;}
+#contactform li.buttons input { padding:3px 0; margin:0 0 0 98px; border:0; color:#FFF;}
+p.response { text-align:center; color:#2c2c2c; font:bold 11px Arial, Helvetica, sans-serif; line-height:1.8em; width:auto;}
+
+p.clr, .clr { clear:both; padding:0; margin:0;}
+li.bg, .bg { clear:both; border-bottom:1px solid #e2e2e2; padding:10px 0 0 0; margin:0 0 10px 0; background:none; list-style:none;}
+li.line, .line { border-top:1px solid #d9d9d9; padding:0; margin:10px 0; background:none; list-style:none;}

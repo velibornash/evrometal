@@ -18,6 +18,7 @@ export type Product = {
   category?: string;
   specs?: ProductSpec[];
   documentUrl?: string;
+  localImage?: string;
 };
 
 export type ProductSpec = {
@@ -46,7 +47,7 @@ export function ProductCard({ product, lang }: ProductCardProps) {
   const productHref = `/product/${product.slug?.current || product._id}`;
   const imageUrl = product.image
     ? urlFor(product.image).width(900).height(620).fit("crop").url()
-    : null;
+    : product.localImage || null;
 
   return (
     <article className="group overflow-hidden border border-white/10 bg-[#17202a] transition duration-300 hover:-translate-y-1 hover:border-amber-200/36 hover:bg-[#1b2631] hover:shadow-[0_22px_70px_rgba(0,0,0,0.32)]">

@@ -7,6 +7,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { dictionary, getLang, withLang } from "@/lib/i18n";
 import { client } from "@/lib/sanity";
 import { urlFor } from "@/lib/image";
+import { findStaticProduct, staticProducts } from "@/lib/static-products";
 
 type ProductPageProps = {
   params: Promise<{
@@ -18,7 +19,7 @@ type ProductPageProps = {
 };
 
 async function getProduct(slug: string): Promise<Product | null> {
-  return client.fetch(
+  const sanityProduct = await client.fetch<Product | null>(
     `*[_type == "product" && (slug.current == $slug || _id == $slug)][0] {
       _id,
       name,
@@ -35,6 +36,8 @@ async function getProduct(slug: string): Promise<Product | null> {
     }`,
     { slug },
   );
+
+  return sanityProduct || findStaticProduct(slug);
 }
 
 export default async function ProductPage({ params, searchParams }: ProductPageProps) {
@@ -49,7 +52,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
   const imageUrl = product.image
     ? urlFor(product.image).width(1400).height(900).fit("crop").url()
-    : null;
+    : product.localImage || null;
   const title = lang === "en" ? product.nameEn || product.name : lang === "de" ? product.nameDe || product.name : product.name;
   const description =
     lang === "en"
@@ -64,7 +67,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
   return (
     <main className="min-h-screen bg-[#111820] text-white">
-      <Header lang={lang} />
+      <Header lang={lang} products={staticProducts} />
       <section className="border-b border-white/10 bg-[#0d1218] px-6 py-12 md:px-10 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div>
