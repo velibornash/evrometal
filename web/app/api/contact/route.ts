@@ -56,12 +56,24 @@ export async function POST(request: NextRequest) {
       </div>
     `;
 
+    const attachments = [];
+    if (file && file.size > 0) {
+      const bytes = await file.arrayBuffer();
+      const buffer = Buffer.from(bytes);
+      attachments.push({
+        filename: file.name,
+        content: buffer.toString('base64'),
+        content_type: file.type,
+      });
+    }
+
     const { data, error } = await resend.emails.send({
       from: 'Evrometal Kontakt <onboarding@resend.dev>',
       to: [contactEmail],
       subject: `Kontakt: ${subject} - ${name}`,
       html: emailContent,
       reply_to: email,
+      attachments: attachments.length > 0 ? attachments : undefined,
     });
 
     if (error) {
