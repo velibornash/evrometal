@@ -83,10 +83,7 @@ export const dictionary = {
       items: [
         ["01", "Aluminijumski i PVC prozori", "Toplotna izolacija, sigurnost, dug vek trajanja i minimalno održavanje za stambene, poslovne i javne objekte.", ["ALU", "PVC", "Termoizolacija"], "/images/alu-window-system.jpg"],
         ["02", "Ulazna i aluminijumska vrata", "Vrata na mehaničko i daljinsko otvaranje, sa dobrom zvučnom izolacijom i profilima za intenzivnu upotrebu.", ["Vrata", "Sigurnost", "ALUMIL"], "/images/pvc-window-system.jpg"],
-        ["03", "Garažna segmentna vrata", "Automatska, termoizolovana garažna vrata po meri, sa pouzdanom montažom i pripremom za svakodnevnu upotrebu.", ["Automatika", "Po meri", "Panel"], "/images/garage-door.jpg"],
-        ["04", "Ograde, kapije i gelenderi", "Aluminijumske dvorišne i balkonske ograde, kapije i gelenderi otporni na vremenske uslove.", ["Ograde", "Kapije", "Eksterijer"], "/images/fence-gate.jpg"],
-        ["05", "Roletne, komarnici i okovi", "Prateći sistemi za kompletiranje stolarije: okovi, roletne, komarnici, dekorativna bravarija i potrošni materijal.", ["Okovi", "Roletne", "Magacin"], "/images/profiles-warehouse.jpg"],
-        ["06", "Termopan staklo", "Proizvodnja i ugradnja termopan stakla kao deo kompletnog sistema prozora, vrata i fasadnih pozicija.", ["Staklo", "Izolacija", "Montaža"], "/images/production-line.jpg"],
+        ["03", "Ograde, kapije i gelenderi", "Aluminijumske dvorišne i balkonske ograde, kapije i gelenderi otporni na vremenske uslove.", ["Ograde", "Kapije", "Eksterijer"], "/images/fence-gate.jpg"],
       ],
     },
     flow: {
@@ -120,8 +117,6 @@ export const dictionary = {
       items: [
         ["01", "ALU sistemi", "prozori, vrata, fasadne pozicije"],
         ["02", "PVC sistemi", "stolarija, profili i gotovi elementi"],
-        ["03", "Staklo", "termopan staklo i prateći materijal"],
-        ["04", "Okovi", "roletne, komarnici, bravarija i oprema"],
       ],
     },
     professional: {
@@ -244,10 +239,7 @@ export const dictionary = {
       items: [
         ["01", "Aluminium and PVC windows", "Thermal insulation, security, long service life and low maintenance for residential, commercial and public buildings.", ["ALU", "PVC", "Thermal"], "/images/alu-window-system.jpg"],
         ["02", "Entrance and aluminium doors", "Mechanically or remotely operated doors with sound insulation and profiles for intensive use.", ["Doors", "Security", "ALUMIL"], "/images/pvc-window-system.jpg"],
-        ["03", "Sectional garage doors", "Custom insulated automatic garage doors with reliable installation and everyday-use preparation.", ["Automation", "Custom", "Panel"], "/images/garage-door.jpg"],
-        ["04", "Fences, gates and railings", "Aluminium yard and balcony fences, gates and railings resistant to weather conditions.", ["Fences", "Gates", "Exterior"], "/images/fence-gate.jpg"],
-        ["05", "Shutters, screens and hardware", "Supporting systems for complete joinery: hardware, roller shutters, insect screens, decorative metalwork and consumables.", ["Hardware", "Shutters", "Warehouse"], "/images/profiles-warehouse.jpg"],
-        ["06", "Insulated glass", "Production and installation of insulated glass as part of complete window, door and facade systems.", ["Glass", "Insulation", "Installation"], "/images/production-line.jpg"],
+        ["03", "Fences, gates and railings", "Aluminium yard and balcony fences, gates and railings resistant to weather conditions.", ["Fences", "Gates", "Exterior"], "/images/fence-gate.jpg"],
       ],
     },
     flow: {
@@ -267,7 +259,7 @@ export const dictionary = {
       aluProfiles: ["Alumil M9650", "Alumil M1100", "Alumil M940", "Alumil M9400", "Alumil M900", "Alumil M9000", "WEISS systems"],
       pvcProfiles: ["WP 3000", "WP 4000", "WP 5000", "Gealan S 8000 IQ"],
     },
-    categories: { eyebrow: "Categories", title: "Systems ready for specification", items: [["01", "ALU systems", "windows, doors, facade positions"], ["02", "PVC systems", "joinery, profiles and finished elements"], ["03", "Glass", "insulated glass and accessories"], ["04", "Hardware", "shutters, screens, metalwork and equipment"]] },
+    categories: { eyebrow: "Categories", title: "Systems ready for specification", items: [["01", "ALU systems", "windows, doors, facade positions"], ["02", "PVC systems", "joinery, profiles and finished elements"]] },
     professional: {
       eyebrow: "For architects, investors and contractors",
       title: "A faster route to specification, quotation and installation.",
@@ -320,10 +312,7 @@ export const dictionary = {
       items: [
         ["01", "Aluminium- und PVC-Fenster", "Wärmedämmung, Sicherheit, lange Lebensdauer und geringer Wartungsaufwand für Wohn-, Gewerbe- und öffentliche Gebäude.", ["ALU", "PVC", "Wärme"], "/images/alu-window-system.jpg"],
         ["02", "Eingangs- und Aluminiumtüren", "Mechanisch oder ferngesteuerte Türen mit Schalldämmung und Profilen für intensive Nutzung.", ["Türen", "Sicherheit", "ALUMIL"], "/images/pvc-window-system.jpg"],
-        ["03", "Sektional-Garagentore", "Maßgefertigte, isolierte automatische Garagentore mit zuverlässiger Montage.", ["Automatik", "Nach Maß", "Paneel"], "/images/garage-door.jpg"],
-        ["04", "Zäune, Tore und Geländer", "Aluminium-Zäune, Tore und Geländer für Hof und Balkon, widerstandsfähig gegen Witterung.", ["Zäune", "Tore", "Außen"], "/images/fence-gate.jpg"],
-        ["05", "Rollläden, Insektenschutz und Beschläge", "Ergänzende Systeme für komplette Bauelemente: Beschläge, Rollläden, Insektenschutz, dekorative Metallteile und Verbrauchsmaterial.", ["Beschläge", "Rollläden", "Lager"], "/images/profiles-warehouse.jpg"],
-        ["06", "Isolierglas", "Produktion und Einbau von Isolierglas als Teil kompletter Fenster-, Tür- und Fassadensysteme.", ["Glas", "Dämmung", "Montage"], "/images/production-line.jpg"],
+        ["03", "Zäune, Tore und Geländer", "Aluminium-Zäune, Tore und Geländer für Hof und Balkon, widerstandsfähig gegen Witterung.", ["Zäune", "Tore", "Außen"], "/images/fence-gate.jpg"],
       ],
     },
     flow: {
@@ -343,7 +332,7 @@ export const dictionary = {
       aluProfiles: ["Alumil M9650", "Alumil M1100", "Alumil M940", "Alumil M9400", "Alumil M900", "Alumil M9000", "WEISS Systeme"],
       pvcProfiles: ["WP 3000", "WP 4000", "WP 5000", "Gealan S 8000 IQ"],
     },
-    categories: { eyebrow: "Kategorien", title: "Systeme bereit für Spezifikation", items: [["01", "ALU-Systeme", "Fenster, Türen, Fassadenpositionen"], ["02", "PVC-Systeme", "Bauelemente, Profile und fertige Elemente"], ["03", "Glas", "Isolierglas und Zubehör"], ["04", "Beschläge", "Rollläden, Insektenschutz, Metallteile und Ausrüstung"]] },
+    categories: { eyebrow: "Kategorien", title: "Systeme bereit für Spezifikation", items: [["01", "ALU-Systeme", "Fenster, Türen, Fassadenpositionen"], ["02", "PVC-Systeme", "Bauelemente, Profile und fertige Elemente"]] },
     professional: {
       eyebrow: "Für Architekten, Investoren und Ausführer",
       title: "Schneller zur Spezifikation, zum Angebot und zur Montage.",

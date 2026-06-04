@@ -59,25 +59,6 @@ export const staticProducts: Product[] = [
     ],
   },
   {
-    _id: "static-garazna-vrata",
-    name: "Segmentna garažna vrata",
-    nameEn: "Sectional garage doors",
-    nameDe: "Sektional-Garagentore",
-    description:
-      "Automatska, segmentna i termoizolovana garažna vrata po meri. Izrađuju se od kompozitnih panela debljine 40 mm sa poliuretanskom izolacijom.",
-    descriptionEn:
-      "Automatic, sectional and insulated garage doors made to measure, using 40 mm composite panels with polyurethane insulation.",
-    descriptionDe:
-      "Automatische, sektionale und wärmegedämmte Garagentore nach Maß aus 40 mm Verbundpaneelen mit Polyurethan-Dämmung.",
-    category: "alu",
-    slug: { current: "segmentna-garazna-vrata" },
-    localImage: "/oldwebsite/Proizvodi_files/garazna-vrata.jpg",
-    specs: [
-      { label: "Panel", labelEn: "Panel", labelDe: "Paneel", value: "40 mm" },
-      { label: "Otvaranje", labelEn: "Opening", labelDe: "Öffnung", value: "Automatsko" },
-    ],
-  },
-  {
     _id: "static-ograde-kapije",
     name: "Ograde, kapije i gelenderi",
     nameEn: "Fences, gates and railings",
@@ -94,25 +75,6 @@ export const staticProducts: Product[] = [
     specs: [
       { label: "Primena", labelEn: "Use", labelDe: "Anwendung", value: "Dvorišta, balkoni, stepeništa" },
       { label: "Materijal", labelEn: "Material", labelDe: "Material", value: "Aluminijum" },
-    ],
-  },
-  {
-    _id: "static-profili-materijal",
-    name: "Profili, okovi i prateći materijal",
-    nameEn: "Profiles, hardware and accessories",
-    nameDe: "Profile, Beschläge und Zubehör",
-    description:
-      "Veleprodaja ALUMIL i WEISS aluminijumskih profila, PVC profila, ukrasne bravarije, okova, pratećeg materijala i termopan stakla za proizvođače stolarije.",
-    descriptionEn:
-      "Wholesale of ALUMIL and WEISS aluminium profiles, PVC profiles, decorative metalwork, hardware, accessories and insulated glass for joinery manufacturers.",
-    descriptionDe:
-      "Großhandel mit ALUMIL- und WEISS-Aluminiumprofilen, PVC-Profilen, Metallteilen, Beschlägen, Zubehör und Isolierglas für Bauelement-Hersteller.",
-    category: "alu",
-    slug: { current: "profili-okovi-materijal" },
-    localImage: "/images/profiles-warehouse.jpg",
-    specs: [
-      { label: "Brendovi", labelEn: "Brands", labelDe: "Marken", value: "ALUMIL / WEISS" },
-      { label: "Kupci", labelEn: "Customers", labelDe: "Kunden", value: "Proizvođači stolarije" },
     ],
   },
 ];
