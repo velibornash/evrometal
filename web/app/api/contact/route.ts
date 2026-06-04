@@ -57,7 +57,7 @@ export async function POST(request: NextRequest) {
     `;
 
     const { data, error } = await resend.emails.send({
-      from: 'Evrometal Kontakt <noreply@evrometal.rs>',
+      from: 'Evrometal Kontakt <onboarding@resend.dev>',
       to: [contactEmail],
       subject: `Kontakt: ${subject} - ${name}`,
       html: emailContent,
