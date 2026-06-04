@@ -99,6 +99,7 @@ export function ContactForm({ lang }: ContactFormProps) {
       formDataToSend.append("company", formData.company);
       formDataToSend.append("subject", formData.subject);
       formDataToSend.append("message", formData.message);
+      formDataToSend.append("lang", lang);
       
       if (formData.file) {
         formDataToSend.append("file", formData.file);

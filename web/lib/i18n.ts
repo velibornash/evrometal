@@ -195,6 +195,36 @@ export const dictionary = {
         ["Kvalitet", "atestirani sistemi, standardizovana proizvodnja i garancije"],
       ],
     },
+    error: {
+      title: "Došlo je do greške",
+      message:
+        "Izvinjavamo se, došlo je do neočekivane greške. Molimo osvežite stranicu.",
+      retry: "Osveži stranicu",
+    },
+    meta: {
+      title: "Evrometal | ALU, PVC i stakleni sistemi",
+      description:
+        "Evrometal proizvodi, isporučuje i montira aluminijumske i PVC sisteme, termopan staklo, okove, profile i prateći materijal za B2B projekte.",
+      keywords: [
+        "Evrometal",
+        "aluminijumska stolarija",
+        "PVC stolarija",
+        "ALU profili",
+        "termopan staklo",
+        "Petrovac na Mlavi",
+      ],
+    },
+    aria: {
+      home: "Evrometal početna",
+      menu: "Otvori navigaciju",
+    },
+    contactApi: {
+      notConfigured:
+        "Email servis nije konfigurisan. Molimo kontaktirajte administratora.",
+      sendError: "Greška pri slanju mejla. Molimo pokušajte ponovo.",
+      success: "Poruka je uspešno poslata!",
+      genericError: "Došlo je do greške. Molimo pokušajte ponovo.",
+    },
   },
   en: {
     nav: { home: "Home", about: "About", sales: "Sales", products: "Products", references: "References", faq: "FAQ", contact: "Contact", quote: "Request quote", subtitle: "ALU / PVC systems" },
@@ -260,6 +290,36 @@ export const dictionary = {
     contact: { eyebrow: "Contact and quotes", title: "Send a request for a quote, specification or B2B cooperation.", text: "Evrometal d.o.o, Industrial zone bb, 12300 Petrovac na Mlavi. Sales, production, warehouse and installation operate as one workflow, giving buyers clear technical and logistical support.", phoneLabels: ["Main office", "Sales", "Production", "Warehouse"] },
     footer: { rights: "All rights reserved." },
     productPage: { back: "Back to products", eyebrow: "Evrometal product", fallback: "Technical system available for project specification, production, delivery and B2B enquiries.", quote: "Request quote", call: "Call sales", cards: [["Application", "windows, doors, facade and project positions"], ["Support", "specification, delivery and installation consultations"], ["Quality", "tested systems, standardised production and warranties"]] },
+    error: {
+      title: "An error occurred",
+      message:
+        "We apologize, an unexpected error occurred. Please refresh the page.",
+      retry: "Refresh page",
+    },
+    meta: {
+      title: "Evrometal | ALU, PVC and glass systems",
+      description:
+        "Evrometal produces, supplies and installs aluminium and PVC systems, insulated glass, hardware, profiles and accessories for B2B projects.",
+      keywords: [
+        "Evrometal",
+        "aluminium joinery",
+        "PVC joinery",
+        "ALU profiles",
+        "insulated glass",
+        "Petrovac na Mlavi",
+      ],
+    },
+    aria: {
+      home: "Evrometal homepage",
+      menu: "Open navigation",
+    },
+    contactApi: {
+      notConfigured:
+        "Email service is not configured. Please contact the administrator.",
+      sendError: "Error sending email. Please try again.",
+      success: "Message sent successfully!",
+      genericError: "An error occurred. Please try again.",
+    },
   },
   de: {
     nav: { home: "Start", about: "Über uns", sales: "Vertrieb", products: "Produkte", references: "Referenzen", faq: "FAQ", contact: "Kontakt", quote: "Angebot anfragen", subtitle: "ALU / PVC Systeme" },
@@ -325,5 +385,38 @@ export const dictionary = {
     contact: { eyebrow: "Kontakt und Angebote", title: "Senden Sie eine Anfrage für Angebot, Spezifikation oder B2B-Zusammenarbeit.", text: "Evrometal d.o.o, Industriezone bb, 12300 Petrovac na Mlavi. Vertrieb, Produktion, Lager und Montage arbeiten als ein Prozess und geben Käufern klare technische und logistische Unterstützung.", phoneLabels: ["Zentrale", "Vertrieb", "Produktion", "Lager"] },
     footer: { rights: "Alle Rechte vorbehalten." },
     productPage: { back: "Zurück zu Produkten", eyebrow: "Evrometal Produkt", fallback: "Technisches System verfügbar für Projektspezifikation, Produktion, Lieferung und B2B-Anfragen.", quote: "Angebot anfragen", call: "Vertrieb anrufen", cards: [["Anwendung", "Fenster, Türen, Fassaden- und Projektpositionen"], ["Support", "Spezifikation, Lieferung und Beratung zur Montage"], ["Qualität", "geprüfte Systeme, standardisierte Produktion und Garantien"]] },
+    error: {
+      title: "Ein Fehler ist aufgetreten",
+      message:
+        "Es tut uns leid, es ist ein unerwarteter Fehler aufgetreten. Bitte aktualisieren Sie die Seite.",
+      retry: "Seite aktualisieren",
+    },
+    meta: {
+      title: "Evrometal | ALU-, PVC- und Glassysteme",
+      description:
+        "Evrometal produziert, liefert und montiert Aluminium- und PVC-Systeme, Isolierglas, Beschläge, Profile und Zubehör für B2B-Projekte.",
+      keywords: [
+        "Evrometal",
+        "Aluminium-Bauelemente",
+        "PVC-Bauelemente",
+        "ALU-Profile",
+        "Isolierglas",
+        "Petrovac na Mlavi",
+      ],
+    },
+    aria: {
+      home: "Evrometal Startseite",
+      menu: "Navigation öffnen",
+    },
+    contactApi: {
+      notConfigured:
+        "E-Mail-Dienst nicht konfiguriert. Bitte kontaktieren Sie den Administrator.",
+      sendError:
+        "Fehler beim Senden der E-Mail. Bitte versuchen Sie es erneut.",
+      success: "Nachricht erfolgreich gesendet!",
+      genericError:
+        "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+    },
   },
-} as const;
+};
+

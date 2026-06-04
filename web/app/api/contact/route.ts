@@ -1,6 +1,31 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
+const messages: Record<string, Record<string, string>> = {
+  sr: {
+    notConfigured: 'Email servis nije konfigurisan. Molimo kontaktirajte administratora.',
+    sendError: 'Greška pri slanju mejla. Molimo pokušajte ponovo.',
+    success: 'Poruka je uspešno poslata!',
+    genericError: 'Došlo je do greške. Molimo pokušajte ponovo.',
+  },
+  en: {
+    notConfigured: 'Email service is not configured. Please contact the administrator.',
+    sendError: 'Error sending email. Please try again.',
+    success: 'Message sent successfully!',
+    genericError: 'An error occurred. Please try again.',
+  },
+  de: {
+    notConfigured: 'E-Mail-Dienst nicht konfiguriert. Bitte kontaktieren Sie den Administrator.',
+    sendError: 'Fehler beim Senden der E-Mail. Bitte versuchen Sie es erneut.',
+    success: 'Nachricht erfolgreich gesendet!',
+    genericError: 'Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.',
+  },
+};
+
+function t(lang: string, key: 'notConfigured' | 'sendError' | 'success' | 'genericError') {
+  return messages[lang]?.[key] || messages.sr[key];
+}
+
 export async function POST(request: NextRequest) {
   try {
     const formData = await request.formData();
@@ -12,11 +37,12 @@ export async function POST(request: NextRequest) {
     const subject = formData.get('subject') as string;
     const message = formData.get('message') as string;
     const file = formData.get('file') as File;
+    const lang = (formData.get('lang') as string) || 'sr';
 
     const resendApiKey = process.env.RESEND_API_KEY;
     if (!resendApiKey) {
       return NextResponse.json(
-        { error: 'Email servis nije konfigurisan. Molimo kontaktirajte administratora.' },
+        { error: t(lang, 'notConfigured') },
         { status: 500 }
       );
     }
@@ -79,20 +105,20 @@ export async function POST(request: NextRequest) {
     if (error) {
       console.error('Resend error:', error);
       return NextResponse.json(
-        { error: 'Greška pri slanju mejla. Molimo pokušajte ponovo.' },
+        { error: t(lang, 'sendError') },
         { status: 500 }
       );
     }
 
     return NextResponse.json(
-      { success: true, message: 'Poruka je uspešno poslata!' },
+      { success: true, message: t(lang, 'success') },
       { status: 200 }
     );
 
   } catch (error) {
     console.error('Contact form error:', error);
     return NextResponse.json(
-      { error: 'Došlo je do greške. Molimo pokušajte ponovo.' },
+      { error: t('sr', 'genericError') },
       { status: 500 }
     );
   }

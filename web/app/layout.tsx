@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Suspense } from "react";
 import "./globals.css";
-import { ErrorBoundary } from "@/components/ErrorBoundary";
+import { ErrorBoundaryWrapper } from "@/components/ErrorBoundary";
+import { LangProvider } from "@/components/LangProvider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -58,7 +60,11 @@ export default function RootLayout({
       className={`${inter.variable} h-full scroll-smooth antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <ErrorBoundary>{children}</ErrorBoundary>
+        <Suspense fallback={null}>
+          <LangProvider>
+            <ErrorBoundaryWrapper>{children}</ErrorBoundaryWrapper>
+          </LangProvider>
+        </Suspense>
       </body>
     </html>
   );
