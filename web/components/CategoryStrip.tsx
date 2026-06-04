@@ -19,7 +19,7 @@ export function CategoryStrip({ lang }: CategoryStripProps) {
           </h2>
         </div>
 
-        <div className="grid gap-px overflow-hidden border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-px overflow-hidden border border-white/10 bg-white/10 sm:grid-cols-2">
           {t.items.map(([code, label, value]) => (
             <div
               key={label}

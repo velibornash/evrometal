@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { Resend } from 'resend';
 
 export async function POST(request: NextRequest) {
   try {
@@ -12,27 +13,6 @@ export async function POST(request: NextRequest) {
     const message = formData.get('message') as string;
     const file = formData.get('file') as File;
 
-    // FAKE RESPONSE - privremeno dok se ne konfiguriše Resend
-    console.log('=== Kontakt forma podaci ===');
-    console.log('Ime:', name);
-    console.log('Email:', email);
-    console.log('Telefon:', phone);
-    console.log('Kompanija:', company);
-    console.log('Predmet:', subject);
-    console.log('Poruka:', message);
-    console.log('Fajl:', file?.name || 'Nema fajla');
-    console.log('========================');
-
-    // Simulacija slanja mejla (privremeno)
-    await new Promise(resolve => setTimeout(resolve, 1000));
-
-    return NextResponse.json(
-      { success: true, message: 'Poruka je uspešno poslata!' },
-      { status: 200 }
-    );
-
-    /*
-    // RESEND IMPLEMENTACIJA - aktivirati kada bude spremno za produkciju
     const resendApiKey = process.env.RESEND_API_KEY;
     if (!resendApiKey) {
       return NextResponse.json(
@@ -44,7 +24,6 @@ export async function POST(request: NextRequest) {
     const resend = new Resend(resendApiKey);
     const contactEmail = process.env.CONTACT_EMAIL || 'velja.jagodina@gmail.com';
 
-    // Priprema mejla
     const emailContent = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <h2 style="color: #333; border-bottom: 2px solid #f59e0b; padding-bottom: 10px;">
@@ -77,7 +56,6 @@ export async function POST(request: NextRequest) {
       </div>
     `;
 
-    // Slanje mejla
     const { data, error } = await resend.emails.send({
       from: 'Evrometal Kontakt <noreply@evrometal.rs>',
       to: [contactEmail],
@@ -98,7 +76,6 @@ export async function POST(request: NextRequest) {
       { success: true, message: 'Poruka je uspešno poslata!' },
       { status: 200 }
     );
-    */
 
   } catch (error) {
     console.error('Contact form error:', error);
