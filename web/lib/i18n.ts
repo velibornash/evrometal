@@ -28,7 +28,6 @@ export const dictionary = {
     nav: {
       home: "Početna",
       about: "O nama",
-      services: "Usluge",
       sales: "Prodaja",
       products: "Proizvodi",
       references: "Reference",
@@ -77,15 +76,7 @@ export const dictionary = {
         ["Sertifikovan kvalitet", "Proizvodi su atestirani na Institutu za mere Srbije, uz garancije na proizvod, ugradnju i montažu."],
       ],
     },
-    services: {
-      eyebrow: "Proizvodi i usluge",
-      title: "Kompletan program za objekte, proizvodnju i veleprodaju.",
-      items: [
-        ["01", "Aluminijumski i PVC prozori", "Toplotna izolacija, sigurnost, dug vek trajanja i minimalno održavanje za stambene, poslovne i javne objekte.", ["ALU", "PVC", "Termoizolacija"], "/images/alu-window-system.jpg"],
-        ["02", "Ulazna i aluminijumska vrata", "Vrata na mehaničko i daljinsko otvaranje, sa dobrom zvučnom izolacijom i profilima za intenzivnu upotrebu.", ["Vrata", "Sigurnost", "ALUMIL"], "/images/pvc-window-system.jpg"],
-        ["03", "Ograde, kapije i gelenderi", "Aluminijumske dvorišne i balkonske ograde, kapije i gelenderi otporni na vremenske uslove.", ["Ograde", "Kapije", "Eksterijer"], "/images/fence-gate.jpg"],
-      ],
-    },
+
     flow: {
       eyebrow: "Od zahteva do objekta",
       title: "Sistem rada koji investitoru smanjuje operativni rizik.",
@@ -206,7 +197,7 @@ export const dictionary = {
     },
   },
   en: {
-    nav: { home: "Home", about: "About", services: "Services", sales: "Sales", products: "Products", references: "References", faq: "FAQ", contact: "Contact", quote: "Request quote", subtitle: "ALU / PVC systems" },
+    nav: { home: "Home", about: "About", sales: "Sales", products: "Products", references: "References", faq: "FAQ", contact: "Contact", quote: "Request quote", subtitle: "ALU / PVC systems" },
     search: {
       placeholder: "Search products...",
       seeAll: "See all results",
@@ -233,15 +224,7 @@ export const dictionary = {
       imageAlt: "Aluminium and PVC joinery production",
       proof: [["Production and installation", "Windows, doors, roller shutters, insect screens, fences and facade positions with organised delivery and installation."], ["Profiles and hardware sales", "Distribution of ALU and PVC profiles, hardware, accessories, insulated glass and equipment for manufacturers."], ["Certified quality", "Products are tested by the Serbian Institute of Measures, with warranties for product, installation and assembly."]],
     },
-    services: {
-      eyebrow: "Products and services",
-      title: "A complete programme for buildings, manufacturing and wholesale.",
-      items: [
-        ["01", "Aluminium and PVC windows", "Thermal insulation, security, long service life and low maintenance for residential, commercial and public buildings.", ["ALU", "PVC", "Thermal"], "/images/alu-window-system.jpg"],
-        ["02", "Entrance and aluminium doors", "Mechanically or remotely operated doors with sound insulation and profiles for intensive use.", ["Doors", "Security", "ALUMIL"], "/images/pvc-window-system.jpg"],
-        ["03", "Fences, gates and railings", "Aluminium yard and balcony fences, gates and railings resistant to weather conditions.", ["Fences", "Gates", "Exterior"], "/images/fence-gate.jpg"],
-      ],
-    },
+
     flow: {
       eyebrow: "From request to site",
       title: "A workflow that reduces operational risk for investors.",
@@ -279,7 +262,7 @@ export const dictionary = {
     productPage: { back: "Back to products", eyebrow: "Evrometal product", fallback: "Technical system available for project specification, production, delivery and B2B enquiries.", quote: "Request quote", call: "Call sales", cards: [["Application", "windows, doors, facade and project positions"], ["Support", "specification, delivery and installation consultations"], ["Quality", "tested systems, standardised production and warranties"]] },
   },
   de: {
-    nav: { home: "Start", about: "Über uns", services: "Leistungen", sales: "Vertrieb", products: "Produkte", references: "Referenzen", faq: "FAQ", contact: "Kontakt", quote: "Angebot anfragen", subtitle: "ALU / PVC Systeme" },
+    nav: { home: "Start", about: "Über uns", sales: "Vertrieb", products: "Produkte", references: "Referenzen", faq: "FAQ", contact: "Kontakt", quote: "Angebot anfragen", subtitle: "ALU / PVC Systeme" },
     search: {
       placeholder: "Produkte suchen...",
       seeAll: "Alle Ergebnisse anzeigen",
@@ -306,15 +289,7 @@ export const dictionary = {
       imageAlt: "Produktion von Aluminium- und PVC-Bauelementen",
       proof: [["Produktion und Montage", "Fenster, Türen, Rollläden, Insektenschutz, Zäune und Fassadenpositionen mit organisierter Lieferung und Montage."], ["Profile und Beschläge", "Vertrieb von ALU- und PVC-Profilen, Beschlägen, Zubehör, Isolierglas und Ausrüstung für Hersteller."], ["Zertifizierte Qualität", "Produkte werden vom serbischen Institut für Maße geprüft, mit Garantien für Produkt, Einbau und Montage."]],
     },
-    services: {
-      eyebrow: "Produkte und Leistungen",
-      title: "Ein komplettes Programm für Objekte, Produktion und Großhandel.",
-      items: [
-        ["01", "Aluminium- und PVC-Fenster", "Wärmedämmung, Sicherheit, lange Lebensdauer und geringer Wartungsaufwand für Wohn-, Gewerbe- und öffentliche Gebäude.", ["ALU", "PVC", "Wärme"], "/images/alu-window-system.jpg"],
-        ["02", "Eingangs- und Aluminiumtüren", "Mechanisch oder ferngesteuerte Türen mit Schalldämmung und Profilen für intensive Nutzung.", ["Türen", "Sicherheit", "ALUMIL"], "/images/pvc-window-system.jpg"],
-        ["03", "Zäune, Tore und Geländer", "Aluminium-Zäune, Tore und Geländer für Hof und Balkon, widerstandsfähig gegen Witterung.", ["Zäune", "Tore", "Außen"], "/images/fence-gate.jpg"],
-      ],
-    },
+
     flow: {
       eyebrow: "Von Anfrage bis Objekt",
       title: "Ein Arbeitsablauf, der operatives Risiko reduziert.",

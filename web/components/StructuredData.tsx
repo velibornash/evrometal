@@ -1,3 +1,4 @@
+import { staticProducts } from "@/lib/static-products";
 import { dictionary, type Lang } from "@/lib/i18n";
 
 type StructuredDataProps = {
@@ -22,12 +23,12 @@ export function StructuredData({ lang }: StructuredDataProps) {
       addressCountry: "RS",
     },
     description: t.hero.text,
-    makesOffer: t.services.items.map((item) => ({
+    makesOffer: staticProducts.map((product) => ({
       "@type": "Offer",
       itemOffered: {
         "@type": "Service",
-        name: item[1],
-        description: item[2],
+        name: product.name,
+        description: product.description || "",
       },
     })),
   };

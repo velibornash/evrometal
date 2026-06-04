@@ -10,7 +10,6 @@ import { ProfessionalSection } from "@/components/ProfessionalSection";
 import { ProjectFlowSection } from "@/components/ProjectFlowSection";
 import { ProductGrid } from "@/components/ProductGrid";
 import { ReferencesSection } from "@/components/ReferencesSection";
-import { ServicesSection } from "@/components/ServicesSection";
 import { SiteFooter } from "@/components/SiteFooter";
 import { StructuredData } from "@/components/StructuredData";
 import type { Product } from "@/components/ProductCard";
@@ -54,7 +53,6 @@ export default async function Home({ searchParams }: HomeProps) {
       <Header lang={lang} products={products} />
       <Hero lang={lang} />
       <CompanySection lang={lang} />
-      <ServicesSection lang={lang} />
       <ProjectFlowSection lang={lang} />
       <ProfessionalSection lang={lang} />
       <ProfileSystemsSection lang={lang} />
