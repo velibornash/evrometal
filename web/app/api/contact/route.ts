@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
     }
 
     const resend = new Resend(resendApiKey);
-    const contactEmail = process.env.CONTACT_EMAIL || 'velja.jagodina@gmail.com';
+    const contactEmail = process.env.CONTACT_EMAIL || 'office@evrometal.rs';
 
     const emailContent = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
