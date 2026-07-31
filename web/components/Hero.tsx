@@ -41,7 +41,7 @@ export function Hero({ lang }: HeroProps) {
 
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
             <a
-              href="#products"
+              href="#gealan"
               className="inline-flex justify-center rounded-sm bg-amber-300 px-6 py-3 text-sm font-bold text-[#11100b] transition hover:bg-amber-200"
             >
               {t.productsCta}

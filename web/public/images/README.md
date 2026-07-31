@@ -8,7 +8,6 @@ Dodaj fotografije u ovaj folder sa sledecim imenima:
 - `pvc-window-system.jpg` - PVC prozor/vrata u realnom objektu, 1600x1200 ili vece.
 - `garage-door.jpg` - segmentna garazna vrata, 1600x1200 ili vece.
 - `fence-gate.jpg` - ograde, kapije ili gelenderi, 1600x1200 ili vece.
-- `profiles-warehouse.jpg` - skladiste profila, okova ili veleprodaje, 1800x1200 ili vece.
 - `reference-kostolac.jpg` - referentni poslovni/javni objekat, 1800x1200 ili vece.
 - `certificate-iso.jpg` - sken ili fotografija ISO sertifikata, 1200x1600 ili vece.
 

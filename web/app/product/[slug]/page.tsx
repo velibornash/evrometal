@@ -71,7 +71,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
       <section className="border-b border-white/10 bg-[#0d1218] px-6 py-12 md:px-10 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div>
-            <Link href={withLang("/#products", lang)} className="text-sm font-semibold text-amber-200 transition hover:text-amber-100">
+            <Link href={withLang("/#gealan", lang)} className="text-sm font-semibold text-amber-200 transition hover:text-amber-100">
               {t.back}
             </Link>
             <p className="mt-8 text-xs font-semibold uppercase tracking-[0.22em] text-white/45">

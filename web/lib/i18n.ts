@@ -28,13 +28,15 @@ export const dictionary = {
     nav: {
       home: "Početna",
       about: "O nama",
-      sales: "Prodaja",
       products: "Proizvodi",
       references: "Reference",
       faq: "FAQ",
       contact: "Kontakt",
       quote: "Zatraži ponudu",
       subtitle: "ALU / PVC sistemi",
+      pvcSystems: "PVC sistemi",
+      aluSystems: "ALU sistemi",
+      comingSoon: "Dolazi uskoro",
     },
     search: {
       placeholder: "Pretraži proizvode...",
@@ -65,15 +67,60 @@ export const dictionary = {
       ],
     },
     company: {
-      eyebrow: "Evrometal doo Petrovac na Mlavi",
-      title: "Skoro pet decenija iskustva u stolariji, aluminijumu, PVC-u i staklu.",
-      text:
-        "Delatnost firme usmerena je na proizvodnju aluminijumske i PVC stolarije, termopan stakla, uvoz i distribuciju repro-materijala, profila, okova i mašina za druge proizvođače stolarije.",
+      eyebrow: "O nama",
+      title: "EVROMETAL – Tradicija kvaliteta i inovacija u svetu stolarije.",
       imageAlt: "Proizvodnja aluminijumske i PVC stolarije",
-      proof: [
-        ["Proizvodnja i montaža", "Prozori, vrata, roletne, komarnici, ograde i fasadne pozicije sa organizovanom isporukom i ugradnjom."],
-        ["Prodaja profila i okova", "Distribucija ALU i PVC profila, okova, pratećeg materijala, termopan stakla i opreme za proizvođače."],
-        ["Sertifikovan kvalitet", "Proizvodi su atestirani na Institutu za mere Srbije, uz garancije na proizvod, ugradnju i montažu."],
+      intro:
+        "Sa preko 40 godina uspešnog poslovanja, EVROMETAL predstavlja sinonim za pouzdanost, vrhunski kvalitet i dugovečnost. Od zanatske radionice do lidera na tržištu, naš cilj je ostao isti: pružiti vrhunsku PVC i aluminijumsku stolariju koja transformiše vaš dom ili poslovni prostor. Spajamo decenijsko iskustvo sa najsavremenijim tehnologijama kako bismo vam obezbedili maksimalnu energetsku efikasnost, sigurnost i estetski savršen dizajn.",
+      sections: [
+        {
+          title: "Nova era: EVROMETAL i LJUBENKOVIĆ",
+          paragraphs: [
+            "Godina 2025. donela je veliku i stratešku prekretnicu za našu kompaniju. EVROMETAL je postao ponosni deo kompanije LJUBENKOVIĆ, renomiranog lidera u proizvodnji vrhunskih roletni i sistema zaštite od sunca.",
+            "Ova akvizicija spojila je dve vodeće snage u industriji. Spajanjem tradicije brenda EVROMETAL i inovativnih rešenja kompanije LJUBENKOVIĆ, našim klijentima nudimo jedinstven koncept „sve na jednom mestu“ – od najkvalitetnijih prozora i vrata do vrhunskih roletni i prateće opreme.",
+          ],
+          list: [],
+        },
+        {
+          title: "Naš proizvodni program",
+          paragraphs: [],
+          list: [
+            "PVC stolarija: Izrađena od najkvalitetnijih višekomornih profila koji garantuju vrhunsku termo i zvučnu izolaciju.",
+            "Aluminijumska stolarija: Elegantna, moderna i izuzetno otporna rešenja, idealna za velike staklene površine i savremenu arhitekturu.",
+            "Sistemi roletni LJUBENKOVIĆ: Vrhunska zaštita od svetlosti, spoljnih uticaja i neželjenih pogleda, savršeno integrisana sa našom stolarijom.",
+            "Sopstveni staklopaket centar (Novo od 2026.): Kompletna proizvodnja stakla unutar naše fabrike za maksimalnu energetsku efikasnost.",
+          ],
+        },
+        {
+          title: "Specijalnost: 100% sopstveni staklopaketi i profesionalna RAL montaža",
+          paragraphs: [
+            "Budući da staklo čini preko 70% površine svakog prozora, njegova uloga u izolaciji je ključna. Od 2026. godine, kompanija EVROMETAL je pokrenula sopstvenu, najsavremeniju liniju za proizvodnju staklopaketa. Kod nas dobijate proizvod koji je u potpunosti projektovan, proizveden i kontrolisan unutar naše kompanije.",
+            "U ponudi imamo visokoefikasna troslojna stakla, kao i niskoemisiona (Low-E) stakla punjena argonom. Ova tehnologija zadržava toplotu zimi, a sprečava pregrevanje prostora leti.",
+            "Vrhunski prozor gubi svoju funkciju ako nije pravilno ugrađen. Zato EVROMETAL sa ponosom ističe svoju drugu veliku specijalnost – RAL montažu. Za razliku od klasične ugradnje penom, RAL ugradnja se izvodi po strogim evropskim standardima koristeći specijalne paropropusne i vodonepropusne trake.",
+          ],
+          list: [],
+        },
+        {
+          title: "Prednosti naše proizvodnje i RAL montaže",
+          paragraphs: [],
+          list: [
+            "Maksimalna energetska efikasnost: Kombinacija naših Low-E troslojnih staklopaketa sa argonom i RAL ugradnje drastično smanjuje troškove grejanja i hlađenja.",
+            "Stop vlazi i buđi: RAL montaža i savršeno zaptiveni staklopaketi potpuno sprečavaju pojavu vlage, buđi i kondenzacije oko prozora.",
+            "Savršena zvučna izolacija: Izolujemo vaš prostor od spoljne buke i kreiramo miran ambijent unutar doma.",
+          ],
+        },
+        {
+          title: "Zašto izabrati EVROMETAL?",
+          paragraphs: [],
+          list: [
+            "Preko 40 godina tradicije: Decenije zadovoljnih klijenata su naša najbolja preporuka.",
+            "Sinergija sa brendom LJUBENKOVIĆ: Kompletna rešenja za stolariju i roletne na jednom mestu.",
+            "Zaokružen proces proizvodnje: Sve proizvode i staklopakete izrađujemo unutar kompanije, što garantuje brži rok isporuke i strogu kontrolu.",
+            "Najbolji svetski i domaći brendovi: Stolarija izrađena od sistema vodećih proizvođača (GEALAN, Kömmerling, ALUMIL, AKPA, ALURIS).",
+            "Evropski sertifikati: Proizvodi spremni za izvoz u EU koji zadovoljavaju najviše standarde građevinske industrije.",
+            "Stručan tim: Naši monteri su licencirani za najzahtevnije projekte i energetski efikasnu ugradnju.",
+          ],
+        },
       ],
     },
 
@@ -90,24 +137,107 @@ export const dictionary = {
         ["Garancija", "Garancija pokriva proizvod, ugradnju i montažu u skladu sa tipom sistema i projektom."],
       ],
     },
-    sales: {
-      eyebrow: "Prodaja profila i materijala",
-      title: "Profili, okovi, staklo i materijal za proizvođače stolarije.",
-      text:
-        "U veleprodajnim objektima u Petrovcu na Mlavi vršimo prodaju aluminijumskih profila firmi ALUMIL i WEISS, PVC profila, ukrasne bravarije, okova, pratećeg materijala i termopan stakla. Po želji kupaca uvozimo i radimo stolariju od evropskih proizvođača profila.",
-      facts: ["Industrijska zona bb", "07:30 - 15:30", "Veleprodaja + magacin"],
-      imageAlt: "Skladište aluminijumskih i PVC profila",
-      alu: "Aluminijumski sistemi",
-      pvc: "PVC sistemi",
-      aluProfiles: ["Alumil M9650", "Alumil M1100", "Alumil M940", "Alumil M9400", "Alumil M900", "Alumil M9000", "WEISS sistemi"],
-      pvcProfiles: ["WP 3000", "WP 4000", "WP 5000", "Gealan S 8000 IQ"],
-    },
     categories: {
       eyebrow: "Kategorije",
       title: "Sistemi spremni za porudžbinu",
       items: [
         ["01", "ALU sistemi", "prozori, vrata, fasadne pozicije"],
         ["02", "PVC sistemi", "stolarija, profili i gotovi elementi"],
+      ],
+    },
+    gealan: {
+      eyebrow: "GEALAN PVC sistemi",
+      title: "Nemački GEALAN profili – vrhunska termoizolacija i moderna geometrija.",
+      intro:
+        "Kompanija EVROMETAL u svom proizvodnom asortimanu nudi visokokvalitetne prozorske sisteme izrađene od vodećih nemačkih PVC profila: GEALAN S 9000, GEALAN S 8000 i GEALAN Linear. U nastavku je detaljan prikaz tehničkih karakteristika, opisa i proračuna termoizolacije za gotove prozore, uzimajući u obzir standardnu ugradnju trostrukog izolacionog stakla (4+16+4+16+4 sa dva niskoemisiona sloja i argonom, Ug = 0.6 W/m²K).",
+      comparisonTitle: "Uporedni pregled tehničkih karakteristika profila",
+      comparisonNote:
+        "Za gotove prozore sa trostrukim staklom, prenos toplote kroz ceo prozor (Uw) izračunava se kombinacijom izolacije profila (Uf) i stakla (Ug):",
+      comparisonHeaders: ["Karakteristika", "GEALAN S 9000 (Premium)", "GEALAN Linear (Modern)", "GEALAN S 8000 (Klasik)"],
+      comparisonRows: [
+        ["Ugradna dubina", "82.5 mm", "74 mm", "74 mm"],
+        ["Broj komora", "6 komora", "6 komora", "5 ili 6 komora"],
+        ["Broj zaptivnih guma", "3 (srednji dihtung)", "3 (srednji dihtung)", "2 (prislone gume)"],
+        ["Izolacija profila (Uf)", "~ 0.92 W/m²K", "~ 1.0 W/m²K", "~ 1.2 W/m²K"],
+        ["Izolacija prozora (Uw) uz trostruko staklo (Ug = 0.6)", "~ 0.78 – 0.80 W/m²K", "~ 0.85 – 0.89 W/m²K", "~ 0.95 – 1.05 W/m²K"],
+        ["Zvučna izolacija", "do 47 – 49 dB", "do 47 dB", "do 40 – 44 dB"],
+        ["Maksimalna debljina stakla", "do 52 mm", "do 48 mm", "do 48 mm"],
+      ],
+      descriptionTitle: "Opis",
+      glassTitle: "Prozor sa trostrukim staklom",
+      geometryTitle: "Vizuelni prikaz i geometrija",
+      geometryNote: "Konstruktivni crtež",
+      techTitle: "Tehničke karakteristike",
+      products: [
+        {
+          name: "GEALAN S 9000",
+          tagline: "Sistem za pasivne kuće i maksimalnu uštedu",
+          description:
+            "Vrhunski kombi-sistem koji spaja prednosti srednjeg i prislonog zaptivanja. Velika ugradna dubina i tri nivoa zaptivanja čine ga idealnim izborom za niskoenergetske i pasivne objekte. Fleksibilna srednja zaptivna guma štiti okove od vlage.",
+          tripleGlass:
+            "Zahvaljujući masivnom profilu, prozor sa trostrukim staklom dostiže impresivnih Uw ≈ 0.80 W/m²K, što sprečava bilo kakav gubitak toplote.",
+          image: "/images/gealan/s-9000-technik.avif",
+          specs: [
+            ["Sistem profila", "S 9000"],
+            ["Ugradna dubina", "82,5 mm"],
+            ["Izvedbe", "bela, GEALAN-acrylcolor®, dekor folije, aluminijumske prednje obloge, BALANCE"],
+            ["Visina preklopa", "Okvir: 26 mm · Krilo: 18 mm + 26 mm"],
+            ["Maksimalna debljina stakla", "do 56 mm (sa zaptivnom gumom), do 58 mm (STV®)"],
+            ["Uf vrednost", "do 0,89 W/(m²K)"],
+            ["Vrste izvedbi", "rešenja za prozore, rešenja za ulazna vrata, podizno-klizna vrata"],
+            ["Nepropusnost na kišu (DIN EN 12208)", "do klase 9A"],
+            ["Propusnost vazduha (DIN EN 12207)", "do klase 4"],
+            ["Otpor na vetar (DIN EN 12210)", "do klase C5/B5"],
+            ["Udarna čvrstoća (DIN EN 13049)", "do klase 2"],
+            ["Zvučna izolacija", "34 do 45 dB"],
+          ],
+        },
+        {
+          name: "GEALAN Linear",
+          tagline: "Minimalistički dizajn i savremena arhitektura",
+          description:
+            "Najnovija evolucija u segmentu profila od 74 mm. Karakterišu ga ravne, oštre linije i minimalistički izgled koji propušta maksimalnu količinu svetlosti u prostor. Iako uži, poseduje 6 komora i 3 zaptivne gume (centralni dihtung), što je jedinstveno za ovu klasu dubine.",
+          tripleGlass:
+            "Sa ugrađenim trostrukim paketom, EVROMETAL Linear prozor ostvaruje odličnu vrednost od Uw ≈ 0.89 W/m²K, kombinujući modernu estetiku sa visokom energetskom efikasnošću.",
+          image: "/images/gealan/gealan-linear-technik.avif",
+          specs: [
+            ["Sistem profila", "GEALAN-LINEAR®"],
+            ["Dubina sistema", "74 mm"],
+            ["Izvedbe", "bela, GEALAN-acrylcolor®, dekor folije, aluminijumska obloga"],
+            ["Visina preklopa", "Okvir: 26 mm · Krilo: 18 mm"],
+            ["Maksimalna debljina stakla", "do 48 mm (sa zaptivnom gumom), do 50 mm (STV®)"],
+            ["Uf vrednost", "do 1,0 W/(m²K)"],
+            ["Vrste izvedbi", "rešenja za prozore, rešenja za ulazna vrata, klizna rešenja"],
+            ["Nepropusnost na jaku kišu (DIN EN 12208)", "do klase 9A"],
+            ["Propusnost vazduha (DIN EN 12207)", "do klase 4"],
+            ["Opterećenje vetrom (DIN EN 12210)", "do klase C5/B5"],
+            ["Otpornost na udarce", "do klase 3"],
+            ["Zvučna izolacija", "34 do 47 dB"],
+          ],
+        },
+        {
+          name: "GEALAN S 8000",
+          tagline: "Pouzdana klasika i najbolji odnos cene i kvaliteta",
+          description:
+            "Ekonomičan sistem sa dubinom ugradnje od 74 mm i prislonim zaptivanjem (2 dihtunga). Konstruisan je sa velikom glavnom komorom namenjenom za postavljanje robusnih čeličnih ojačanja, što mu daje izuzetnu statičku stabilnost kod izrade velikih prozorskih elemenata.",
+          tripleGlass:
+            "Kod ugradnje trostrukog stakla debljine do 48 mm, gotov prozor postiže stabilnih Uw ≈ 1.0 W/m²K. Predstavlja idealan balans za standardnu stanogradnju i renoviranja gde se traži dokazan nemački kvalitet uz optimalan budžet.",
+          image: "/images/gealan/s-8000-technik.avif",
+          specs: [
+            ["Sistem profila", "S 8000"],
+            ["Dubina sistema", "74 mm"],
+            ["Varijante", "bela, dekorativna folija, BALANCE"],
+            ["Visina preklopa", "Okvir: 18/20 mm · Krilo: 18/20 mm"],
+            ["Maksimalna debljina stakla", "do 48 mm (sa zaptivnom gumom), do 50 mm (STV®)"],
+            ["Uf vrednost", "do 1,2 W/(m²K)"],
+            ["Tipovi", "rešenja za prozore, rešenja za ulazna vrata"],
+            ["Nepropusnost na kišu (DIN EN 12208)", "do klase 9A"],
+            ["Propusnost vazduha (DIN EN 12207)", "do klase 4"],
+            ["Opterećenje vetrom (DIN EN 12210)", "do klase C5/B5"],
+            ["Otpornost na udarce", "do klase 4"],
+            ["Zvučna izolacija", "34 do 47 dB"],
+          ],
+        },
       ],
     },
     professional: {
@@ -227,7 +357,7 @@ export const dictionary = {
     },
   },
   en: {
-    nav: { home: "Home", about: "About", sales: "Sales", products: "Products", references: "References", faq: "FAQ", contact: "Contact", quote: "Request quote", subtitle: "ALU / PVC systems" },
+    nav: { home: "Home", about: "About", products: "Products", references: "References", faq: "FAQ", contact: "Contact", quote: "Request quote", subtitle: "ALU / PVC systems", pvcSystems: "PVC systems", aluSystems: "ALU systems", comingSoon: "Coming soon" },
     search: {
       placeholder: "Search products...",
       seeAll: "See all results",
@@ -248,11 +378,61 @@ export const dictionary = {
       stats: [["45+", "years of experience"], ["ALU / PVC", "systems and profiles"], ["IMS / ISO", "testing and standards"]],
     },
     company: {
-      eyebrow: "Evrometal doo Petrovac na Mlavi",
-      title: "Almost five decades of experience in joinery, aluminium, PVC and glass.",
-      text: "The company focuses on aluminium and PVC joinery, insulated glass production, import and distribution of production materials, profiles, hardware and machinery for other joinery manufacturers.",
+      eyebrow: "About us",
+      title: "EVROMETAL – Tradition of quality and innovation in joinery.",
       imageAlt: "Aluminium and PVC joinery production",
-      proof: [["Production and installation", "Windows, doors, roller shutters, insect screens, fences and facade positions with organised delivery and installation."], ["Profiles and hardware sales", "Distribution of ALU and PVC profiles, hardware, accessories, insulated glass and equipment for manufacturers."], ["Certified quality", "Products are tested by the Serbian Institute of Measures, with warranties for product, installation and assembly."]],
+      intro:
+        "With over 40 years of successful operations, EVROMETAL is synonymous with reliability, top quality and longevity. From a craft workshop to a market leader, our goal has remained the same: to deliver premium PVC and aluminium joinery that transforms your home or business space. We combine decades of experience with the latest technologies to provide maximum energy efficiency, safety and aesthetically perfect design.",
+      sections: [
+        {
+          title: "A new era: EVROMETAL and LJUBENKOVIĆ",
+          paragraphs: [
+            "The year 2025 brought a major strategic turning point for our company. EVROMETAL became a proud part of LJUBENKOVIĆ, a renowned leader in the production of premium roller shutters and sun protection systems.",
+            "This acquisition brought together two leading forces in the industry. By combining the EVROMETAL brand tradition with LJUBENKOVIĆ's innovative solutions, we offer our clients a unique \"everything in one place\" concept – from the highest quality windows and doors to premium roller shutters and related equipment.",
+          ],
+          list: [],
+        },
+        {
+          title: "Our production programme",
+          paragraphs: [],
+          list: [
+            "PVC joinery: Made from the highest quality multi-chamber profiles guaranteeing superior thermal and acoustic insulation.",
+            "Aluminium joinery: Elegant, modern and extremely durable solutions, ideal for large glass surfaces and contemporary architecture.",
+            "LJUBENKOVIĆ roller shutter systems: Premium protection from light, external influences and unwanted views, perfectly integrated with our joinery.",
+            "Own glass unit centre (New from 2026): Complete in-house glass production for maximum energy efficiency.",
+          ],
+        },
+        {
+          title: "Speciality: 100% own glass units and professional RAL installation",
+          paragraphs: [
+            "Since glass makes up over 70% of every window's surface, its role in insulation is crucial. From 2026, EVROMETAL has launched its own state-of-the-art line for glass unit production. With us you get a product that is fully designed, manufactured and controlled within our company.",
+            "We offer highly efficient triple-glazed glass as well as argon-filled low-emission (Low-E) glass. This technology retains heat in winter and prevents overheating in summer.",
+            "A top-quality window loses its function if not installed properly. That is why EVROMETAL proudly highlights its second major speciality – RAL installation. Unlike classic foam installation, RAL installation is performed according to strict European standards using special vapour-permeable and water-resistant tapes.",
+          ],
+          list: [],
+        },
+        {
+          title: "Benefits of our production and RAL installation",
+          paragraphs: [],
+          list: [
+            "Maximum energy efficiency: The combination of our argon-filled Low-E triple-glazed units with RAL installation drastically reduces heating and cooling costs.",
+            "Stop to moisture and mould: RAL installation and perfectly sealed glass units completely prevent moisture, mould and condensation around windows.",
+            "Perfect acoustic insulation: We insulate your space from outside noise and create a peaceful ambience inside your home.",
+          ],
+        },
+        {
+          title: "Why choose EVROMETAL?",
+          paragraphs: [],
+          list: [
+            "Over 40 years of tradition: Decades of satisfied clients are our best recommendation.",
+            "Synergy with the LJUBENKOVIĆ brand: Complete joinery and roller shutter solutions in one place.",
+            "Complete production process: We manufacture all products and glass units in-house, guaranteeing faster delivery times and strict control.",
+            "Best global and domestic brands: Joinery made from systems of leading manufacturers (GEALAN, Kömmerling, ALUMIL, AKPA, ALURIS).",
+            "European certificates: Products ready for EU export meeting the highest construction industry standards.",
+            "Expert team: Our installers are licensed for the most demanding projects and energy-efficient installation.",
+          ],
+        },
+      ],
     },
 
     flow: {
@@ -261,18 +441,102 @@ export const dictionary = {
       text: "Customers can order materials, finished products or complete delivery with installation. Products are transported with company vehicles and installed on site.",
       steps: [["Specification", "Profile, glass, hardware, colour and installation method are defined according to the building and expected load."], ["Production", "ALU/PVC elements, insulated glass, shutters, screens, doors, gates and fences are produced in a controlled process."], ["Transport", "Finished products are transported with company vehicles and prepared for on-site installation."], ["Installation", "The team performs installation, mechanical or remote opening setup and final position control."], ["Warranty", "The warranty covers the product, installation and assembly according to the system and project type."]],
     },
-    sales: {
-      eyebrow: "Profiles and materials sales",
-      title: "Profiles, hardware, glass and materials for joinery manufacturers.",
-      text: "In wholesale facilities in Petrovac na Mlavi, Evrometal sells ALUMIL and WEISS aluminium profiles, PVC profiles, decorative metalwork, hardware, accessories and insulated glass. On request, we import and manufacture joinery from European profile systems.",
-      facts: ["Industrial zone bb", "07:30 - 15:30", "Wholesale + warehouse"],
-      imageAlt: "Aluminium and PVC profile warehouse",
-      alu: "Aluminium systems",
-      pvc: "PVC systems",
-      aluProfiles: ["Alumil M9650", "Alumil M1100", "Alumil M940", "Alumil M9400", "Alumil M900", "Alumil M9000", "WEISS systems"],
-      pvcProfiles: ["WP 3000", "WP 4000", "WP 5000", "Gealan S 8000 IQ"],
-    },
     categories: { eyebrow: "Categories", title: "Systems ready for specification", items: [["01", "ALU systems", "windows, doors, facade positions"], ["02", "PVC systems", "joinery, profiles and finished elements"]] },
+    gealan: {
+      eyebrow: "GEALAN PVC systems",
+      title: "German GEALAN profiles – superior thermal insulation and modern geometry.",
+      intro:
+        "EVROMETAL's production range includes high-quality window systems made from leading German PVC profiles: GEALAN S 9000, GEALAN S 8000 and GEALAN Linear. Below is a detailed overview of technical characteristics, descriptions and thermal insulation calculations for finished windows, assuming standard installation of triple-glazed insulating glass (4+16+4+16+4 with two low-emissivity coatings and argon, Ug = 0.6 W/m²K).",
+      comparisonTitle: "Comparative overview of profile technical characteristics",
+      comparisonNote:
+        "For finished windows with triple glazing, heat transfer through the entire window (Uw) is calculated by combining profile insulation (Uf) and glass insulation (Ug):",
+      comparisonHeaders: ["Characteristic", "GEALAN S 9000 (Premium)", "GEALAN Linear (Modern)", "GEALAN S 8000 (Classic)"],
+      comparisonRows: [
+        ["Installation depth", "82.5 mm", "74 mm", "74 mm"],
+        ["Number of chambers", "6 chambers", "6 chambers", "5 or 6 chambers"],
+        ["Number of gaskets", "3 (central gasket)", "3 (central gasket)", "2 (compression gaskets)"],
+        ["Profile insulation (Uf)", "~ 0.92 W/m²K", "~ 1.0 W/m²K", "~ 1.2 W/m²K"],
+        ["Window insulation (Uw) with triple glazing (Ug = 0.6)", "~ 0.78 – 0.80 W/m²K", "~ 0.85 – 0.89 W/m²K", "~ 0.95 – 1.05 W/m²K"],
+        ["Sound insulation", "up to 47 – 49 dB", "up to 47 dB", "up to 40 – 44 dB"],
+        ["Maximum glass thickness", "up to 52 mm", "up to 48 mm", "up to 48 mm"],
+      ],
+      descriptionTitle: "Description",
+      glassTitle: "Window with triple glazing",
+      geometryTitle: "Visual representation and geometry",
+      geometryNote: "Construction drawing",
+      techTitle: "Technical characteristics",
+      products: [
+        {
+          name: "GEALAN S 9000",
+          tagline: "System for passive houses and maximum savings",
+          description:
+            "A premium combination system that combines the advantages of central and compression sealing. Its large installation depth and three sealing levels make it ideal for low-energy and passive buildings. The flexible central gasket protects hardware from moisture.",
+          tripleGlass:
+            "Thanks to its massive profile, a window with triple glazing achieves an impressive Uw ≈ 0.80 W/m²K, preventing any heat loss.",
+          image: "/images/gealan/s-9000-technik.avif",
+          specs: [
+            ["Profile system", "S 9000"],
+            ["System depth", "82.5 mm"],
+            ["Versions", "white, GEALAN-acrylcolor®, decorative foils, aluminium cladding, BALANCE"],
+            ["Rebate height", "Frame: 26 mm · Sash: 18 mm + 26 mm"],
+            ["Maximum glass thickness", "up to 56 mm (with gasket), up to 58 mm (STV®)"],
+            ["Uf value", "up to 0.89 W/(m²K)"],
+            ["Types", "window solutions, entrance door solutions, lift-and-slide doors"],
+            ["Rain-tightness (DIN EN 12208)", "up to class 9A"],
+            ["Air permeability (DIN EN 12207)", "up to class 4"],
+            ["Wind load (DIN EN 12210)", "up to class C5/B5"],
+            ["Impact resistance (DIN EN 13049)", "up to class 2"],
+            ["Sound insulation", "34 to 45 dB"],
+          ],
+        },
+        {
+          name: "GEALAN Linear",
+          tagline: "Minimalist design and contemporary architecture",
+          description:
+            "The latest evolution in the 74 mm profile segment. It is characterised by straight, sharp lines and a minimalist look that lets the maximum amount of light into the space. Although slimmer, it features 6 chambers and 3 gaskets (central gasket), which is unique for this depth class.",
+          tripleGlass:
+            "With the installed triple-glazing package, the EVROMETAL Linear window achieves an excellent value of Uw ≈ 0.89 W/m²K, combining modern aesthetics with high energy efficiency.",
+          image: "/images/gealan/gealan-linear-technik.avif",
+          specs: [
+            ["Profile system", "GEALAN-LINEAR®"],
+            ["System construction depth", "74 mm"],
+            ["Versions", "white, GEALAN-acrylcolor®, decorative foils, aluminium cladding"],
+            ["Rebate height", "Frame: 26 mm · Sash: 18 mm"],
+            ["Maximum glass thickness", "up to 48 mm (with gasket), up to 50 mm (STV®)"],
+            ["Uf value", "up to 1.0 W/(m²K)"],
+            ["Types", "window solutions, entrance door solutions, sliding solutions"],
+            ["Heavy rain-tightness (DIN EN 12208)", "up to class 9A"],
+            ["Air permeability (DIN EN 12207)", "up to class 4"],
+            ["Wind load (DIN EN 12210)", "up to class C5/B5"],
+            ["Impact resistance", "up to class 3"],
+            ["Sound insulation", "34 to 47 dB"],
+          ],
+        },
+        {
+          name: "GEALAN S 8000",
+          tagline: "Reliable classic and best value for money",
+          description:
+            "An economical system with an installation depth of 74 mm and compression sealing (2 gaskets). It is built with a large main chamber designed for robust steel reinforcements, giving it exceptional static stability in the production of large window elements.",
+          tripleGlass:
+            "When installing triple glazing up to 48 mm thick, the finished window achieves a stable Uw ≈ 1.0 W/m²K. It represents the ideal balance for standard residential construction and renovations where proven German quality at an optimal budget is required.",
+          image: "/images/gealan/s-8000-technik.avif",
+          specs: [
+            ["Profile system", "S 8000"],
+            ["System construction depth", "74 mm"],
+            ["Variants", "white, decorative foil, BALANCE"],
+            ["Rebate height", "Frame: 18/20 mm · Sash: 18/20 mm"],
+            ["Maximum glass thickness", "up to 48 mm (with gasket), up to 50 mm (STV®)"],
+            ["Uf value", "up to 1.2 W/(m²K)"],
+            ["Types", "window solutions, entrance door solutions"],
+            ["Rain-tightness (DIN EN 12208)", "up to class 9A"],
+            ["Air permeability (DIN EN 12207)", "up to class 4"],
+            ["Wind load (DIN EN 12210)", "up to class C5/B5"],
+            ["Impact resistance", "up to class 4"],
+            ["Sound insulation", "34 to 47 dB"],
+          ],
+        },
+      ],
+    },
     professional: {
       eyebrow: "For architects, investors and contractors",
       title: "A faster route to specification, quotation and installation.",
@@ -322,7 +586,7 @@ export const dictionary = {
     },
   },
   de: {
-    nav: { home: "Start", about: "Über uns", sales: "Vertrieb", products: "Produkte", references: "Referenzen", faq: "FAQ", contact: "Kontakt", quote: "Angebot anfragen", subtitle: "ALU / PVC Systeme" },
+    nav: { home: "Start", about: "Über uns", products: "Produkte", references: "Referenzen", faq: "FAQ", contact: "Kontakt", quote: "Angebot anfragen", subtitle: "ALU / PVC Systeme", pvcSystems: "PVC-Systeme", aluSystems: "ALU-Systeme", comingSoon: "Demnächst" },
     search: {
       placeholder: "Produkte suchen...",
       seeAll: "Alle Ergebnisse anzeigen",
@@ -343,11 +607,61 @@ export const dictionary = {
       stats: [["45+", "Jahre Erfahrung"], ["ALU / PVC", "Systeme und Profile"], ["IMS / ISO", "Prüfung und Standards"]],
     },
     company: {
-      eyebrow: "Evrometal doo Petrovac na Mlavi",
-      title: "Fast fünf Jahrzehnte Erfahrung mit Bauelementen, Aluminium, PVC und Glas.",
-      text: "Das Unternehmen konzentriert sich auf Aluminium- und PVC-Bauelemente, Isolierglasproduktion sowie Import und Vertrieb von Produktionsmaterial, Profilen, Beschlägen und Maschinen für andere Hersteller.",
+      eyebrow: "Über uns",
+      title: "EVROMETAL – Tradition von Qualität und Innovation in der Welt der Bauelemente.",
       imageAlt: "Produktion von Aluminium- und PVC-Bauelementen",
-      proof: [["Produktion und Montage", "Fenster, Türen, Rollläden, Insektenschutz, Zäune und Fassadenpositionen mit organisierter Lieferung und Montage."], ["Profile und Beschläge", "Vertrieb von ALU- und PVC-Profilen, Beschlägen, Zubehör, Isolierglas und Ausrüstung für Hersteller."], ["Zertifizierte Qualität", "Produkte werden vom serbischen Institut für Maße geprüft, mit Garantien für Produkt, Einbau und Montage."]],
+      intro:
+        "Mit über 40 Jahren erfolgreicher Geschäftstätigkeit steht EVROMETAL für Zuverlässigkeit, höchste Qualität und Langlebigkeit. Von der Handwerkswerkstatt zum Marktführer – unser Ziel ist dasselbe geblieben: erstklassige PVC- und Aluminium-Bauelemente zu liefern, die Ihr Zuhause oder Geschäft verwandeln. Wir verbinden jahrzehntelange Erfahrung mit modernsten Technologien, um maximale Energieeffizienz, Sicherheit und ästhetisch perfektes Design zu bieten.",
+      sections: [
+        {
+          title: "Eine neue Ära: EVROMETAL und LJUBENKOVIĆ",
+          paragraphs: [
+            "Das Jahr 2025 brachte einen großen strategischen Wendepunkt für unser Unternehmen. EVROMETAL wurde stolzer Teil der Firma LJUBENKOVIĆ, einem renommierten Marktführer in der Produktion hochwertiger Rollläden und Sonnenschutzsysteme.",
+            "Diese Akquisition vereinte zwei führende Kräfte der Branche. Durch die Verbindung der Tradition der Marke EVROMETAL mit den innovativen Lösungen von LJUBENKOVIĆ bieten wir unseren Kunden ein einzigartiges „Alles an einem Ort“-Konzept – von Fenstern und Türen höchster Qualität bis zu erstklassigen Rollläden und Zubehör.",
+          ],
+          list: [],
+        },
+        {
+          title: "Unser Produktionsprogramm",
+          paragraphs: [],
+          list: [
+            "PVC-Bauelemente: Hergestellt aus hochwertigsten Mehrkammerprofilen, die hervorragende Wärme- und Schalldämmung garantieren.",
+            "Aluminium-Bauelemente: Elegante, moderne und äußerst widerstandsfähige Lösungen, ideal für große Glasflächen und moderne Architektur.",
+            "Rollladensysteme LJUBENKOVIĆ: Erstklassiger Schutz vor Licht, äußeren Einflüssen und unerwünschten Blicken, perfekt integriert mit unseren Bauelementen.",
+            "Eigenes Isolierglaszentrum (Neu ab 2026): Komplette Glasproduktion in unserem Werk für maximale Energieeffizienz.",
+          ],
+        },
+        {
+          title: "Spezialität: 100% eigene Isoliergläser und professionelle RAL-Montage",
+          paragraphs: [
+            "Da Glas über 70% der Fläche jedes Fensters ausmacht, ist seine Rolle bei der Isolierung entscheidend. Ab 2026 hat EVROMETAL eine eigene, modernste Linie zur Herstellung von Isoliergläsern in Betrieb genommen. Bei uns erhalten Sie ein Produkt, das vollständig innerhalb unseres Unternehmens entworfen, hergestellt und kontrolliert wird.",
+            "Wir bieten hocheffiziente Dreifachverglasungen sowie argonbefüllte Niedrigenergie- (Low-E-) Gläser. Diese Technologie hält im Winter die Wärme zurück und verhindert im Sommer eine Überhitzung der Räume.",
+            "Ein hochwertiges Fenster verliert seine Funktion, wenn es nicht fachgerecht eingebaut wird. Deshalb hebt EVROMETAL stolz seine zweite große Spezialität hervor – die RAL-Montage. Im Gegensatz zum klassischen Einbau mit Schaum erfolgt die RAL-Montage nach strengen europäischen Standards mit speziellen dampfdurchlässigen und wasserdichten Bändern.",
+          ],
+          list: [],
+        },
+        {
+          title: "Vorteile unserer Produktion und RAL-Montage",
+          paragraphs: [],
+          list: [
+            "Maximale Energieeffizienz: Die Kombination unserer argonbefüllten Low-E-Dreifachverglasung mit RAL-Montage senkt Heiz- und Kühlkosten drastisch.",
+            "Schluss mit Feuchtigkeit und Schimmel: RAL-Montage und perfekt abgedichtete Isoliergläser verhindern Feuchtigkeit, Schimmel und Kondensation rund um das Fenster vollständig.",
+            "Perfekte Schalldämmung: Wir isolieren Ihren Raum vor Außenlärm und schaffen eine ruhige Atmosphäre im Haus.",
+          ],
+        },
+        {
+          title: "Warum EVROMETAL?",
+          paragraphs: [],
+          list: [
+            "Über 40 Jahre Tradition: Jahrzehnte zufriedener Kunden sind unsere beste Empfehlung.",
+            "Synergie mit der Marke LJUBENKOVIĆ: Komplette Lösungen für Bauelemente und Rollläden an einem Ort.",
+            "Geschlossener Produktionsprozess: Alle Produkte und Isoliergläser fertigen wir im eigenen Haus – für schnellere Lieferzeiten und strenge Kontrolle.",
+            "Beste internationale und heimische Marken: Bauelemente aus Systemen führender Hersteller (GEALAN, Kömmerling, ALUMIL, AKPA, ALURIS).",
+            "Europäische Zertifikate: Produkte bereit für den EU-Export, die höchste Standards der Baubranche erfüllen.",
+            "Fachkundiges Team: Unsere Monteure sind lizenziert für anspruchsvollste Projekte und energieeffizienten Einbau.",
+          ],
+        },
+      ],
     },
 
     flow: {
@@ -356,18 +670,102 @@ export const dictionary = {
       text: "Kunden können Material, fertige Produkte oder komplette Lieferung mit Montage bestellen. Produkte werden mit eigenen Fahrzeugen transportiert und vor Ort montiert.",
       steps: [["Spezifikation", "Profil, Glas, Beschlag, Farbe und Montageart werden nach Objekt und erwarteter Belastung definiert."], ["Produktion", "ALU/PVC-Elemente, Isolierglas, Rollläden, Insektenschutz, Türen, Tore und Zäune entstehen in einem kontrollierten Prozess."], ["Transport", "Fertige Produkte werden mit eigenem Transport geliefert und für die Montage vorbereitet."], ["Montage", "Das Team montiert, richtet mechanische oder ferngesteuerte Öffnungen ein und prüft die Positionen."], ["Garantie", "Die Garantie umfasst Produkt, Einbau und Montage je nach System- und Projekttyp."]],
     },
-    sales: {
-      eyebrow: "Profile und Materialvertrieb",
-      title: "Profile, Beschläge, Glas und Material für Bauelement-Hersteller.",
-      text: "In den Großhandelsobjekten in Petrovac na Mlavi verkauft Evrometal Aluminiumprofile von ALUMIL und WEISS, PVC-Profile, dekorative Metallteile, Beschläge, Zubehör und Isolierglas. Auf Wunsch importieren und fertigen wir Bauelemente aus europäischen Profilsystemen.",
-      facts: ["Industriezone bb", "07:30 - 15:30", "Großhandel + Lager"],
-      imageAlt: "Lager für Aluminium- und PVC-Profile",
-      alu: "Aluminium-Systeme",
-      pvc: "PVC-Systeme",
-      aluProfiles: ["Alumil M9650", "Alumil M1100", "Alumil M940", "Alumil M9400", "Alumil M900", "Alumil M9000", "WEISS Systeme"],
-      pvcProfiles: ["WP 3000", "WP 4000", "WP 5000", "Gealan S 8000 IQ"],
-    },
     categories: { eyebrow: "Kategorien", title: "Systeme bereit für Spezifikation", items: [["01", "ALU-Systeme", "Fenster, Türen, Fassadenpositionen"], ["02", "PVC-Systeme", "Bauelemente, Profile und fertige Elemente"]] },
+    gealan: {
+      eyebrow: "GEALAN PVC-Systeme",
+      title: "Deutsche GEALAN-Profile – erstklassige Wärmedämmung und moderne Geometrie.",
+      intro:
+        "Das Produktionsprogramm von EVROMETAL umfasst hochwertige Fenstersysteme aus führenden deutschen PVC-Profilen: GEALAN S 9000, GEALAN S 8000 und GEALAN Linear. Nachfolgend finden Sie eine detaillierte Übersicht der technischen Eigenschaften, Beschreibungen und Wärmedämmberechnungen für fertige Fenster bei standardmäßigem Einbau von Dreifach-Isolierglas (4+16+4+16+4 mit zwei niedrig emittierenden Schichten und Argon, Ug = 0,6 W/m²K).",
+      comparisonTitle: "Vergleichende Übersicht der technischen Profileigenschaften",
+      comparisonNote:
+        "Bei fertigen Fenstern mit Dreifachverglasung wird der Wärmedurchgang durch das gesamte Fenster (Uw) aus der Dämmung des Profils (Uf) und des Glases (Ug) berechnet:",
+      comparisonHeaders: ["Eigenschaft", "GEALAN S 9000 (Premium)", "GEALAN Linear (Modern)", "GEALAN S 8000 (Klassik)"],
+      comparisonRows: [
+        ["Einbautiefe", "82,5 mm", "74 mm", "74 mm"],
+        ["Anzahl Kammern", "6 Kammern", "6 Kammern", "5 oder 6 Kammern"],
+        ["Anzahl Dichtungen", "3 (Mitteldichtung)", "3 (Mitteldichtung)", "2 (Anschlagdichtungen)"],
+        ["Profildämmung (Uf)", "~ 0,92 W/m²K", "~ 1,0 W/m²K", "~ 1,2 W/m²K"],
+        ["Fensterdämmung (Uw) mit Dreifachglas (Ug = 0,6)", "~ 0,78 – 0,80 W/m²K", "~ 0,85 – 0,89 W/m²K", "~ 0,95 – 1,05 W/m²K"],
+        ["Schalldämmung", "bis 47 – 49 dB", "bis 47 dB", "bis 40 – 44 dB"],
+        ["Maximale Glasstärke", "bis 52 mm", "bis 48 mm", "bis 48 mm"],
+      ],
+      descriptionTitle: "Beschreibung",
+      glassTitle: "Fenster mit Dreifachverglasung",
+      geometryTitle: "Visuelle Darstellung und Geometrie",
+      geometryNote: "Konstruktionszeichnung",
+      techTitle: "Technische Eigenschaften",
+      products: [
+        {
+          name: "GEALAN S 9000",
+          tagline: "System für Passivhäuser und maximale Ersparnis",
+          description:
+            "Ein erstklassiges Kombisystem, das die Vorteile von Mittel- und Anschlagdichtung vereint. Die große Einbautiefe und drei Dichtungsebenen machen es zur idealen Wahl für Niedrigenergie- und Passivhäuser. Die flexible Mitteldichtung schützt die Beschläge vor Feuchtigkeit.",
+          tripleGlass:
+            "Dank des massiven Profils erreicht ein Fenster mit Dreifachverglasung beeindruckende Uw ≈ 0,80 W/m²K und verhindert so jeglichen Wärmeverlust.",
+          image: "/images/gealan/s-9000-technik.avif",
+          specs: [
+            ["Profilsystem", "S 9000"],
+            ["Einbautiefe", "82,5 mm"],
+            ["Ausführungen", "Weiß, GEALAN-acrylcolor®, Dekorfolien, Aluminium-Vorsatzschalen, BALANCE"],
+            ["Falzhöhe", "Rahmen: 26 mm · Flügel: 18 mm + 26 mm"],
+            ["Maximale Glasstärke", "bis 56 mm (Dichtung), bis 58 mm (STV®)"],
+            ["Uf-Wert", "bis 0,89 W/(m²K)"],
+            ["Ausführungstypen", "Fensterlösungen, Haustürlösungen, Hebe-Schiebetüren"],
+            ["Schlagregendichtheit (DIN EN 12208)", "bis Klasse 9A"],
+            ["Luftdurchlässigkeit (DIN EN 12207)", "bis Klasse 4"],
+            ["Windwiderstand (DIN EN 12210)", "bis Klasse C5/B5"],
+            ["Stoßfestigkeit (DIN EN 13049)", "bis Klasse 2"],
+            ["Schalldämmung", "34 bis 45 dB"],
+          ],
+        },
+        {
+          name: "GEALAN Linear",
+          tagline: "Minimalistisches Design und moderne Architektur",
+          description:
+            "Die neueste Entwicklung im 74-mm-Profilsegment. Gekennzeichnet durch gerade, scharfe Linien und ein minimalistisches Erscheinungsbild, das maximales Licht in den Raum lässt. Trotz der schlankeren Bauweise bietet es 6 Kammern und 3 Dichtungen (Mitteldichtung) – einzigartig in dieser Tiefenklasse.",
+          tripleGlass:
+            "Mit dem eingebauten Dreifachglas-Paket erreicht das EVROMETAL Linear Fenster einen hervorragenden Wert von Uw ≈ 0,89 W/m²K und verbindet moderne Ästhetik mit hoher Energieeffizienz.",
+          image: "/images/gealan/gealan-linear-technik.avif",
+          specs: [
+            ["Profilsystem", "GEALAN-LINEAR®"],
+            ["Konstruktionstiefe des Systems", "74 mm"],
+            ["Ausführungen", "Weiß, GEALAN-acrylcolor®, Dekorfolien, Aluminium-Vorsatzschalen"],
+            ["Falzhöhe", "Rahmen: 26 mm · Flügel: 18 mm"],
+            ["Maximale Glasstärke", "bis 48 mm (Dichtung), bis 50 mm (STV®)"],
+            ["Uf-Wert", "bis 1,0 W/(m²K)"],
+            ["Typen", "Fensterlösungen, Haustürlösungen, Schiebelösungen"],
+            ["Schlagregendichtheit (DIN EN 12208)", "bis Klasse 9A"],
+            ["Luftdurchlässigkeit (DIN EN 12207)", "bis Klasse 4"],
+            ["Windlast (DIN EN 12210)", "bis Klasse C5/B5"],
+            ["Stoßfestigkeit", "bis Klasse 3"],
+            ["Schalldämmung", "34 bis 47 dB"],
+          ],
+        },
+        {
+          name: "GEALAN S 8000",
+          tagline: "Zuverlässiger Klassiker und bestes Preis-Leistungs-Verhältnis",
+          description:
+            "Ein wirtschaftliches System mit einer Einbautiefe von 74 mm und Anschlagdichtung (2 Dichtungen). Konstruiert mit einer großen Hauptkammer für robuste Stahlverstärkungen, bietet es außergewöhnliche statische Stabilität bei der Herstellung großer Fensterelemente.",
+          tripleGlass:
+            "Mit Dreifachverglasung bis 48 mm Glasstärke erreicht das fertige Fenster stabile Uw ≈ 1,0 W/m²K. Es ist der ideale Kompromiss für den standardmäßigen Wohnungsbau und Renovierungen, wo bewährte deutsche Qualität zu einem optimalen Budget gefragt ist.",
+          image: "/images/gealan/s-8000-technik.avif",
+          specs: [
+            ["Profilsystem", "S 8000"],
+            ["Konstruktionstiefe des Systems", "74 mm"],
+            ["Varianten", "Weiß, Dekorfolie, BALANCE"],
+            ["Falzhöhe", "Rahmen: 18/20 mm · Flügel: 18/20 mm"],
+            ["Maximale Glasstärke", "bis 48 mm (Dichtung), bis 50 mm (STV®)"],
+            ["Uf-Wert", "bis 1,2 W/(m²K)"],
+            ["Typen", "Fensterlösungen, Haustürlösungen"],
+            ["Schlagregendichtheit (DIN EN 12208)", "bis Klasse 9A"],
+            ["Luftdurchlässigkeit (DIN EN 12207)", "bis Klasse 4"],
+            ["Windlast (DIN EN 12210)", "bis Klasse C5/B5"],
+            ["Stoßfestigkeit", "bis Klasse 4"],
+            ["Schalldämmung", "34 bis 47 dB"],
+          ],
+        },
+      ],
+    },
     professional: {
       eyebrow: "Für Architekten, Investoren und Ausführer",
       title: "Schneller zur Spezifikation, zum Angebot und zur Montage.",

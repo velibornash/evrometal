@@ -48,7 +48,7 @@ export function SiteFooter({ lang }: SiteFooterProps) {
               {lang === "sr" ? "Brzi linkovi" : lang === "en" ? "Quick links" : "Schnelllinks"}
             </h3>
             <div className="space-y-2 text-sm">
-              <a href="#products" className="block text-white/60 transition hover:text-white">
+              <a href="#gealan" className="block text-white/60 transition hover:text-white">
                 {lang === "sr" ? "Proizvodi" : lang === "en" ? "Products" : "Produkte"}
               </a>
               <a href="#contact" className="block text-white/60 transition hover:text-white">

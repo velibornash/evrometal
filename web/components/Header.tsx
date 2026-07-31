@@ -12,17 +12,40 @@ type HeaderProps = {
   products?: Product[];
 };
 
+type MenuItem = {
+  label: string;
+  href?: string;
+  comingSoon?: boolean;
+};
+
 export function Header({ lang, products = [] }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
   const t = dictionary[lang];
+
   const navItems = [
     { label: t.nav.home, href: "/" },
     { label: t.nav.about, href: "/#about" },
-    { label: t.nav.sales, href: "/#sales" },
-    { label: t.nav.products, href: "/#products" },
     { label: t.nav.references, href: "/#references" },
     { label: t.nav.faq, href: "/#faq" },
     { label: t.nav.contact, href: "/#contact" },
+  ];
+
+  const productGroups: { title: string; items: MenuItem[] }[] = [
+    {
+      title: t.nav.pvcSystems,
+      items: [
+        { label: "GEALAN", href: "/#gealan" },
+        { label: "Kömmerling", comingSoon: true },
+      ],
+    },
+    {
+      title: t.nav.aluSystems,
+      items: [
+        { label: "ALUMIL", comingSoon: true },
+        { label: "AKPA", comingSoon: true },
+      ],
+    },
   ];
 
   return (
@@ -43,7 +66,70 @@ export function Header({ lang, products = [] }: HeaderProps) {
         </Link>
 
         <nav className="hidden items-center gap-4 text-sm font-medium text-white/62 lg:flex xl:gap-6 whitespace-nowrap">
-          {navItems.map((item) => (
+          {navItems.slice(0, 2).map((item) => (
+            <a key={item.href} href={item.href} className="transition hover:text-white">
+              {item.label}
+            </a>
+          ))}
+
+          <div className="group relative">
+            <button
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              className="flex items-center gap-1.5 transition hover:text-white"
+            >
+              {t.nav.products}
+              <svg
+                className="h-3 w-3 transition duration-200 group-hover:rotate-180"
+                viewBox="0 0 12 12"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.6}
+                aria-hidden="true"
+              >
+                <path d="M2 4.5L6 8.5L10 4.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+
+            <div className="invisible absolute left-1/2 top-full z-50 w-[560px] -translate-x-1/2 pt-3 opacity-0 transition duration-150 group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
+              <div className="grid grid-cols-2 gap-px overflow-hidden rounded-sm border border-white/10 bg-white/10 shadow-[0_40px_90px_rgba(0,0,0,0.55)]">
+                {productGroups.map((group) => (
+                  <div key={group.title} className="bg-[#0f151c] p-6">
+                    <h3 className="mb-4 text-xs font-black uppercase tracking-[0.2em] text-amber-200">
+                      {group.title}
+                    </h3>
+                    <div className="space-y-2">
+                      {group.items.map((item) =>
+                        item.comingSoon ? (
+                          <div
+                            key={item.label}
+                            className="flex items-center justify-between gap-3 rounded-sm border border-white/8 bg-white/[0.03] px-4 py-3"
+                          >
+                            <span className="text-sm font-medium text-white/45">{item.label}</span>
+                            <span className="rounded-sm border border-amber-200/30 bg-amber-200/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-[0.14em] text-amber-200">
+                              {t.nav.comingSoon}
+                            </span>
+                          </div>
+                        ) : (
+                          <a
+                            key={item.label}
+                            href={item.href}
+                            className="flex items-center justify-between gap-3 rounded-sm border border-white/8 bg-white/[0.03] px-4 py-3 text-sm font-medium text-white/72 transition hover:border-amber-200/30 hover:bg-white/[0.06] hover:text-white"
+                          >
+                            {item.label}
+                            <span className="h-1.5 w-1.5 bg-amber-300" />
+                          </a>
+                        ),
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {navItems.slice(2).map((item) => (
             <a key={item.href} href={item.href} className="transition hover:text-white">
               {item.label}
             </a>
@@ -82,7 +168,10 @@ export function Header({ lang, products = [] }: HeaderProps) {
           type="button"
           aria-label={t.aria.menu}
           aria-expanded={isOpen}
-          onClick={() => setIsOpen((value) => !value)}
+          onClick={() => {
+            setIsOpen((value) => !value);
+            setIsProductsOpen(false);
+          }}
           className="grid h-10 w-10 place-items-center rounded-sm border border-white/15 text-white transition hover:border-white/30 md:hidden"
         >
           <span className="flex flex-col gap-1.5">
@@ -115,7 +204,75 @@ export function Header({ lang, products = [] }: HeaderProps) {
                 </a>
               ))}
             </div>
-            {navItems.map((item) => (
+            {navItems.slice(0, 2).map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                onClick={() => setIsOpen(false)}
+                className="rounded-sm px-2 py-3 transition hover:bg-white/5 hover:text-white"
+              >
+                {item.label}
+              </a>
+            ))}
+
+            <div className="border-b border-white/8">
+              <button
+                type="button"
+                aria-expanded={isProductsOpen}
+                onClick={() => setIsProductsOpen((value) => !value)}
+                className="flex w-full items-center justify-between rounded-sm px-2 py-3 transition hover:bg-white/5 hover:text-white"
+              >
+                {t.nav.products}
+                <svg
+                  className={`h-3 w-3 transition duration-200 ${isProductsOpen ? "rotate-180" : ""}`}
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={1.6}
+                  aria-hidden="true"
+                >
+                  <path d="M2 4.5L6 8.5L10 4.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+              {isProductsOpen ? (
+                <div className="space-y-5 px-2 pb-4">
+                  {productGroups.map((group) => (
+                    <div key={group.title}>
+                      <h4 className="mb-2 text-xs font-black uppercase tracking-[0.2em] text-amber-200">
+                        {group.title}
+                      </h4>
+                      <div className="space-y-2">
+                        {group.items.map((item) =>
+                          item.comingSoon ? (
+                            <div
+                              key={item.label}
+                              className="flex items-center justify-between gap-3 rounded-sm border border-white/8 bg-white/[0.03] px-4 py-3"
+                            >
+                              <span className="text-sm text-white/45">{item.label}</span>
+                              <span className="rounded-sm border border-amber-200/30 bg-amber-200/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-[0.14em] text-amber-200">
+                                {t.nav.comingSoon}
+                              </span>
+                            </div>
+                          ) : (
+                            <a
+                              key={item.label}
+                              href={item.href}
+                              onClick={() => setIsOpen(false)}
+                              className="flex items-center justify-between rounded-sm border border-white/8 bg-white/[0.03] px-4 py-3 text-sm text-white/72 transition hover:bg-white/5 hover:text-white"
+                            >
+                              {item.label}
+                              <span className="h-1.5 w-1.5 bg-amber-300" />
+                            </a>
+                          ),
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              ) : null}
+            </div>
+
+            {navItems.slice(2).map((item) => (
               <a
                 key={item.href}
                 href={item.href}
