@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { dictionary, languages, type Lang, withLang } from "@/lib/i18n";
 import { SearchBar } from "./SearchBar";
+import { FlagIcon } from "./FlagIcon";
 import type { Product } from "./ProductCard";
 
 type HeaderProps = {
@@ -145,11 +146,11 @@ export function Header({ lang, products = [] }: HeaderProps) {
               aria-label={language.label}
               className={
                 language.code === lang
-                  ? "grid h-9 w-9 place-items-center rounded-sm border border-amber-300/50 bg-white/10 text-lg"
-                  : "grid h-9 w-9 place-items-center rounded-sm border border-white/10 text-lg opacity-62 transition hover:opacity-100"
+                  ? "grid h-9 w-9 place-items-center rounded-sm border border-amber-300/50 bg-white/10"
+                  : "grid h-9 w-9 place-items-center rounded-sm border border-white/10 opacity-62 transition hover:opacity-100"
               }
             >
-              {language.flag}
+              <FlagIcon code={language.code} />
             </a>
           ))}
         </div>
@@ -190,11 +191,11 @@ export function Header({ lang, products = [] }: HeaderProps) {
                   aria-label={language.label}
                   className={
                     language.code === lang
-                      ? "grid h-10 w-10 place-items-center rounded-sm border border-amber-300/50 bg-white/10 text-lg"
-                      : "grid h-10 w-10 place-items-center rounded-sm border border-white/10 text-lg opacity-62"
+                      ? "grid h-10 w-10 place-items-center rounded-sm border border-amber-300/50 bg-white/10"
+                      : "grid h-10 w-10 place-items-center rounded-sm border border-white/10 opacity-62"
                   }
                 >
-                  {language.flag}
+                  <FlagIcon code={language.code} />
                 </a>
               ))}
             </div>
