@@ -25,10 +25,10 @@ export function Header({ lang, products = [] }: HeaderProps) {
 
   const navItems = [
     { label: t.nav.home, href: "/" },
-    { label: t.nav.about, href: "/#about" },
-    { label: t.nav.references, href: "/#references" },
-    { label: t.nav.faq, href: "/#faq" },
-    { label: t.nav.contact, href: "/#contact" },
+    { label: t.nav.about, href: "#about" },
+    { label: t.nav.references, href: "#references" },
+    { label: t.nav.faq, href: "#faq" },
+    { label: t.nav.contact, href: "#contact" },
   ];
 
   const productGroups: { title: string; items: MenuItem[] }[] = [
@@ -45,7 +45,7 @@ export function Header({ lang, products = [] }: HeaderProps) {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0d1218]/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-10">
-        <Link href="/" className="flex items-center gap-3" aria-label={t.aria.home}>
+        <Link href={withLang("/", lang)} className="flex items-center gap-3" aria-label={t.aria.home}>
           <span className="image-fill-frame h-12 w-12 overflow-hidden rounded-sm border border-white/15 bg-white shadow-[0_0_30px_rgba(255,255,255,0.08)]">
             <Image src="/logoEvrometal.jpg" alt="" fill sizes="48px" className="object-cover object-left" />
           </span>
@@ -61,7 +61,7 @@ export function Header({ lang, products = [] }: HeaderProps) {
 
         <nav className="hidden items-center gap-4 text-sm font-medium text-white/62 lg:flex xl:gap-6 whitespace-nowrap">
           {navItems.slice(0, 2).map((item) => (
-            <a key={item.href} href={item.href} className="transition hover:text-white">
+            <a key={item.href} href={withLang(item.href, lang)} className="transition hover:text-white">
               {item.label}
             </a>
           ))}
@@ -108,7 +108,7 @@ export function Header({ lang, products = [] }: HeaderProps) {
                         ) : (
                           <a
                             key={item.label}
-                            href={item.href}
+                            href={withLang(item.href ?? "", lang)}
                             className="flex items-center justify-between gap-3 rounded-sm border border-white/8 bg-white/[0.03] px-4 py-3 text-sm font-medium text-white/72 transition hover:border-amber-200/30 hover:bg-white/[0.06] hover:text-white"
                           >
                             {item.label}
@@ -124,14 +124,14 @@ export function Header({ lang, products = [] }: HeaderProps) {
           </div>
 
           {navItems.slice(2).map((item) => (
-            <a key={item.href} href={item.href} className="transition hover:text-white">
+            <a key={item.href} href={withLang(item.href, lang)} className="transition hover:text-white">
               {item.label}
             </a>
           ))}
         </nav>
 
         <a
-          href="#contact"
+          href={withLang("#contact", lang)}
           className="hidden rounded-sm border border-amber-300/40 bg-amber-300 px-4 py-2 text-sm font-semibold text-[#11100b] transition hover:bg-amber-200 lg:inline-flex lg:ml-6 lg:mr-6"
         >
           {t.nav.quote}
@@ -201,7 +201,7 @@ export function Header({ lang, products = [] }: HeaderProps) {
             {navItems.slice(0, 2).map((item) => (
               <a
                 key={item.href}
-                href={item.href}
+                href={withLang(item.href, lang)}
                 onClick={() => setIsOpen(false)}
                 className="rounded-sm px-2 py-3 transition hover:bg-white/5 hover:text-white"
               >
@@ -250,7 +250,7 @@ export function Header({ lang, products = [] }: HeaderProps) {
                           ) : (
                             <a
                               key={item.label}
-                              href={item.href}
+                              href={withLang(item.href ?? "", lang)}
                               onClick={() => setIsOpen(false)}
                               className="flex items-center justify-between rounded-sm border border-white/8 bg-white/[0.03] px-4 py-3 text-sm text-white/72 transition hover:bg-white/5 hover:text-white"
                             >
@@ -269,7 +269,7 @@ export function Header({ lang, products = [] }: HeaderProps) {
             {navItems.slice(2).map((item) => (
               <a
                 key={item.href}
-                href={item.href}
+                href={withLang(item.href, lang)}
                 onClick={() => setIsOpen(false)}
                 className="rounded-sm px-2 py-3 transition hover:bg-white/5 hover:text-white"
               >

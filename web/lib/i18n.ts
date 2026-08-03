@@ -38,8 +38,8 @@ export const dictionary = {
       aluSystems: "ALU sistemi",
       comingSoon: "Dolazi uskoro",
       pvcSystemItems: [
-        { label: "GEALAN", href: "/#gealan" },
-        { label: "Kömmerling", href: "/#koemmerling" },
+        { label: "GEALAN", href: "#gealan" },
+        { label: "Kömmerling", href: "#koemmerling" },
       ],
       aluSystemItems: [
         { label: "ALUMIL", comingSoon: true },
@@ -377,7 +377,7 @@ export const dictionary = {
     },
   },
   en: {
-    nav: { home: "Home", about: "About", products: "Products", references: "References", faq: "FAQ", contact: "Contact", quote: "Request quote", subtitle: "ALU / PVC systems", pvcSystems: "PVC systems", aluSystems: "ALU systems", comingSoon: "Coming soon", pvcSystemItems: [{ label: "GEALAN", href: "/#gealan" }, { label: "Kömmerling", href: "/#koemmerling" }], aluSystemItems: [{ label: "ALUMIL", comingSoon: true }, { label: "AKPA", comingSoon: true }] },
+    nav: { home: "Home", about: "About", products: "Products", references: "References", faq: "FAQ", contact: "Contact", quote: "Request quote", subtitle: "ALU / PVC systems", pvcSystems: "PVC systems", aluSystems: "ALU systems", comingSoon: "Coming soon", pvcSystemItems: [{ label: "GEALAN", href: "#gealan" }, { label: "Kömmerling", href: "#koemmerling" }], aluSystemItems: [{ label: "ALUMIL", comingSoon: true }, { label: "AKPA", comingSoon: true }] },
     search: {
       placeholder: "Search products...",
       seeAll: "See all results",
@@ -618,7 +618,7 @@ export const dictionary = {
     },
   },
   de: {
-    nav: { home: "Start", about: "Über uns", products: "Produkte", references: "Referenzen", faq: "FAQ", contact: "Kontakt", quote: "Angebot anfragen", subtitle: "ALU / PVC Systeme", pvcSystems: "PVC-Systeme", aluSystems: "ALU-Systeme", comingSoon: "Demnächst", pvcSystemItems: [{ label: "GEALAN", href: "/#gealan" }, { label: "Kömmerling", href: "/#koemmerling" }], aluSystemItems: [{ label: "ALUMIL", comingSoon: true }, { label: "AKPA", comingSoon: true }] },
+    nav: { home: "Start", about: "Über uns", products: "Produkte", references: "Referenzen", faq: "FAQ", contact: "Kontakt", quote: "Angebot anfragen", subtitle: "ALU / PVC Systeme", pvcSystems: "PVC-Systeme", aluSystems: "ALU-Systeme", comingSoon: "Demnächst", pvcSystemItems: [{ label: "GEALAN", href: "#gealan" }, { label: "Kömmerling", href: "#koemmerling" }], aluSystemItems: [{ label: "ALUMIL", comingSoon: true }, { label: "AKPA", comingSoon: true }] },
     search: {
       placeholder: "Produkte suchen...",
       seeAll: "Alle Ergebnisse anzeigen",
