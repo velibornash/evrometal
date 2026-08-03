@@ -45,7 +45,7 @@ export function CertificationsSection({ lang }: CertificationsSectionProps) {
             {t.items.map((certificate) => (
               <div
                 key={certificate}
-                className="grid min-h-24 min-w-0 place-items-center break-words border border-white/10 bg-white/[0.035] px-4 text-center text-sm font-bold uppercase tracking-[0.16em] text-white/72"
+                className="grid min-h-24 min-w-0 place-items-center [overflow-wrap:anywhere] border border-white/10 bg-white/[0.035] px-4 text-center text-sm font-bold uppercase tracking-[0.16em] text-white/72"
               >
                 {certificate}
               </div>

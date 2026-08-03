@@ -37,6 +37,14 @@ export const dictionary = {
       pvcSystems: "PVC sistemi",
       aluSystems: "ALU sistemi",
       comingSoon: "Dolazi uskoro",
+      pvcSystemItems: [
+        { label: "GEALAN", href: "/#gealan" },
+        { label: "Kömmerling", href: "/#koemmerling" },
+      ],
+      aluSystemItems: [
+        { label: "ALUMIL", comingSoon: true },
+        { label: "AKPA", comingSoon: true },
+      ],
     },
     search: {
       placeholder: "Pretraži proizvode...",
@@ -101,7 +109,7 @@ export const dictionary = {
           list: [],
         },
         {
-          title: "Prednosti naše proizvodnje i RAL montaže",
+          title: "Prednosti naše proizvodnje i RAL montaže:",
           paragraphs: [],
           list: [
             "Maksimalna energetska efikasnost: Kombinacija naših Low-E troslojnih staklopaketa sa argonom i RAL ugradnje drastično smanjuje troškove grejanja i hlađenja.",
@@ -149,18 +157,18 @@ export const dictionary = {
       eyebrow: "GEALAN PVC sistemi",
       title: "Nemački GEALAN profili – vrhunska termoizolacija i moderna geometrija.",
       intro:
-        "Kompanija EVROMETAL u svom proizvodnom asortimanu nudi visokokvalitetne prozorske sisteme izrađene od vodećih nemačkih PVC profila: GEALAN S 9000, GEALAN S 8000 i GEALAN Linear. U nastavku je detaljan prikaz tehničkih karakteristika, opisa i proračuna termoizolacije za gotove prozore, uzimajući u obzir standardnu ugradnju trostrukog izolacionog stakla (4+16+4+16+4 sa dva niskoemisiona sloja i argonom, Ug = 0.6 W/m²K).",
+        "Kompanija EVROMETAL u svom proizvodnom asortimanu nudi visokokvalitetne prozorske sisteme izrađene od vodećih nemačkih PVC profila: GEALAN S9000, GEALAN S8000 i GEALAN Linear. U nastavku je detaljan prikaz tehničkih karakteristika, opisa i proračuna termoizolacije za gotove prozore, uzimajući u obzir standardnu ugradnju trostrukog izolacionog stakla (4+16+4+16+4 sa dva niska emisiona sloja i argonom, Ug = 0.6 W/m²K).",
       comparisonTitle: "Uporedni pregled tehničkih karakteristika profila",
       comparisonNote:
-        "Za gotove prozore sa trostrukim staklom, prenos toplote kroz ceo prozor (Uw) izračunava se kombinacijom izolacije profila (Uf) i stakla (Ug):",
-      comparisonHeaders: ["Karakteristika", "GEALAN S 9000 (Premium)", "GEALAN Linear (Modern)", "GEALAN S 8000 (Klasik)"],
+        "Za gotove prozore sa trostrukim staklom, koeficijent prolaza toplote kroz ceo prozor Uw izračunava se kombinacijom koeficijenta prolaza toplote profila Uf i staklopaketa Ug",
+      comparisonHeaders: ["Karakteristika", "GEALAN S9000 (Premium)", "GEALAN Linear (Modern)", "GEALAN S8000 (Klasik)"],
       comparisonRows: [
         ["Ugradna dubina", "82.5 mm", "74 mm", "74 mm"],
         ["Broj komora", "6 komora", "6 komora", "5 ili 6 komora"],
         ["Broj zaptivnih guma", "3 (srednji dihtung)", "3 (srednji dihtung)", "2 (prislone gume)"],
-        ["Izolacija profila (Uf)", "~ 0.92 W/m²K", "~ 1.0 W/m²K", "~ 1.2 W/m²K"],
-        ["Izolacija prozora (Uw) uz trostruko staklo (Ug = 0.6)", "~ 0.78 – 0.80 W/m²K", "~ 0.85 – 0.89 W/m²K", "~ 0.95 – 1.05 W/m²K"],
-        ["Zvučna izolacija", "do 47 – 49 dB", "do 47 dB", "do 40 – 44 dB"],
+        ["Koeficijent prolaza toplote profila Uf", "~ 0.92 W/m²K", "~ 1.0 W/m²K", "~ 1.2 W/m²K"],
+        ["Koeficijent prolaza toplote prozora Uw sa trostrukim staklopaketom Ug = 0,6 W/m²K", "~ 0.78 - 0.80 W/m²K", "~ 0.85 - 0.89 W/m²K", "~ 0.95 - 1.05 W/m²K"],
+        ["Zvučna izolacija", "do 47 - 49 dB", "do 47 dB", "do 40 - 44 dB"],
         ["Maksimalna debljina stakla", "do 52 mm", "do 48 mm", "do 48 mm"],
       ],
       descriptionTitle: "Opis",
@@ -170,27 +178,13 @@ export const dictionary = {
       techTitle: "Tehničke karakteristike",
       products: [
         {
-          name: "GEALAN S 9000",
+          name: "GEALAN S9000",
           tagline: "Sistem za pasivne kuće i maksimalnu uštedu",
           description:
             "Vrhunski kombi-sistem koji spaja prednosti srednjeg i prislonog zaptivanja. Velika ugradna dubina i tri nivoa zaptivanja čine ga idealnim izborom za niskoenergetske i pasivne objekte. Fleksibilna srednja zaptivna guma štiti okove od vlage.",
           tripleGlass:
-            "Zahvaljujući masivnom profilu, prozor sa trostrukim staklom dostiže impresivnih Uw ≈ 0.80 W/m²K, što sprečava bilo kakav gubitak toplote.",
+            "Zahvaljujući masivnom profilu, prozor sa trostrukim staklom dostiže impresivnih Uw ≈ 0,8 W/m²K, što sprečava bilo kakav gubitak toplote.",
           image: "/images/gealan/s-9000-technik.avif",
-          specs: [
-            ["Sistem profila", "S 9000"],
-            ["Ugradna dubina", "82,5 mm"],
-            ["Izvedbe", "bela, GEALAN-acrylcolor®, dekor folije, aluminijumske prednje obloge, BALANCE"],
-            ["Visina preklopa", "Okvir: 26 mm · Krilo: 18 mm + 26 mm"],
-            ["Maksimalna debljina stakla", "do 56 mm (sa zaptivnom gumom), do 58 mm (STV®)"],
-            ["Uf vrednost", "do 0,89 W/(m²K)"],
-            ["Vrste izvedbi", "rešenja za prozore, rešenja za ulazna vrata, podizno-klizna vrata"],
-            ["Nepropusnost na kišu (DIN EN 12208)", "do klase 9A"],
-            ["Propusnost vazduha (DIN EN 12207)", "do klase 4"],
-            ["Otpor na vetar (DIN EN 12210)", "do klase C5/B5"],
-            ["Udarna čvrstoća (DIN EN 13049)", "do klase 2"],
-            ["Zvučna izolacija", "34 do 45 dB"],
-          ],
         },
         {
           name: "GEALAN Linear",
@@ -198,47 +192,76 @@ export const dictionary = {
           description:
             "Najnovija evolucija u segmentu profila od 74 mm. Karakterišu ga ravne, oštre linije i minimalistički izgled koji propušta maksimalnu količinu svetlosti u prostor. Iako uži, poseduje 6 komora i 3 zaptivne gume (centralni dihtung), što je jedinstveno za ovu klasu dubine.",
           tripleGlass:
-            "Sa ugrađenim trostrukim paketom, EVROMETAL Linear prozor ostvaruje odličnu vrednost od Uw ≈ 0.89 W/m²K, kombinujući modernu estetiku sa visokom energetskom efikasnošću.",
+            "Sa ugrađenim trostrukim paketom, EVROMETAL Linear prozor ostvaruje odličnu vrednost od Uw ≈ 0,89 W/m²K, kombinujući modernu estetiku sa visokom energetskom efikasnošću.",
           image: "/images/gealan/gealan-linear-technik.avif",
-          specs: [
-            ["Sistem profila", "GEALAN-LINEAR®"],
-            ["Dubina sistema", "74 mm"],
-            ["Izvedbe", "bela, GEALAN-acrylcolor®, dekor folije, aluminijumska obloga"],
-            ["Visina preklopa", "Okvir: 26 mm · Krilo: 18 mm"],
-            ["Maksimalna debljina stakla", "do 48 mm (sa zaptivnom gumom), do 50 mm (STV®)"],
-            ["Uf vrednost", "do 1,0 W/(m²K)"],
-            ["Vrste izvedbi", "rešenja za prozore, rešenja za ulazna vrata, klizna rešenja"],
-            ["Nepropusnost na jaku kišu (DIN EN 12208)", "do klase 9A"],
-            ["Propusnost vazduha (DIN EN 12207)", "do klase 4"],
-            ["Opterećenje vetrom (DIN EN 12210)", "do klase C5/B5"],
-            ["Otpornost na udarce", "do klase 3"],
-            ["Zvučna izolacija", "34 do 47 dB"],
-          ],
         },
         {
-          name: "GEALAN S 8000",
+          name: "GEALAN S8000",
           tagline: "Pouzdana klasika i najbolji odnos cene i kvaliteta",
           description:
             "Ekonomičan sistem sa dubinom ugradnje od 74 mm i prislonim zaptivanjem (2 dihtunga). Konstruisan je sa velikom glavnom komorom namenjenom za postavljanje robusnih čeličnih ojačanja, što mu daje izuzetnu statičku stabilnost kod izrade velikih prozorskih elemenata.",
           tripleGlass:
-            "Kod ugradnje trostrukog stakla debljine do 48 mm, gotov prozor postiže stabilnih Uw ≈ 1.0 W/m²K. Predstavlja idealan balans za standardnu stanogradnju i renoviranja gde se traži dokazan nemački kvalitet uz optimalan budžet.",
+            "Kod ugradnje trostrukog stakla debljine do 48 mm, gotov prozor postiže stabilnih Uw ≈ 1,0 W/m²K. Predstavlja idealan balans za standardnu stanogradnju i renoviranja gde se traži dokazan nemački kvalitet uz optimalan budžet.",
           image: "/images/gealan/s-8000-technik.avif",
-          specs: [
-            ["Sistem profila", "S 8000"],
-            ["Dubina sistema", "74 mm"],
-            ["Varijante", "bela, dekorativna folija, BALANCE"],
-            ["Visina preklopa", "Okvir: 18/20 mm · Krilo: 18/20 mm"],
-            ["Maksimalna debljina stakla", "do 48 mm (sa zaptivnom gumom), do 50 mm (STV®)"],
-            ["Uf vrednost", "do 1,2 W/(m²K)"],
-            ["Tipovi", "rešenja za prozore, rešenja za ulazna vrata"],
-            ["Nepropusnost na kišu (DIN EN 12208)", "do klase 9A"],
-            ["Propusnost vazduha (DIN EN 12207)", "do klase 4"],
-            ["Opterećenje vetrom (DIN EN 12210)", "do klase C5/B5"],
-            ["Otpornost na udarce", "do klase 4"],
-            ["Zvučna izolacija", "34 do 47 dB"],
-          ],
         },
       ],
+    },
+    koemmerling: {
+      eyebrow: "Kömmerling PVC sistemi",
+      title: "Nemački Kömmerling profili – vrhunska termoizolacija i savremena geometrija.",
+      intro:
+        "Kompanija EVROMETAL u svom proizvodnom asortimanu nudi i vrhunske prozorske sisteme izrađene od renomiranih nemačkih PVC profila Kömmerling. Izbor sistema obuhvata Kömmerling 88mm (Premium), Kömmerling 76mm (Standard/Svestran) i Kömmerling 70mm (Ekonomik). Svi proračuni u nastavku urađeni su uz pretpostavku ugradnje standardnog visokoefikasnog trostrukog termoizolacionog stakla Ug = 0,60 W/m²K, punjenog argonom, sa dva niskoemisiona premaza.",
+      comparisonTitle: "Uporedni pregled tehničkih karakteristika Kömmerling profila",
+      comparisonNote:
+        "Kombinacijom vrhunske toplotne izolacije rama (Uf) i trostrukog stakla dobijaju se izuzetne krajnje vrednosti toplotne izolacije celog prozora (Uw):",
+      comparisonHeaders: ["Karakteristika", "Kömmerling 88 (Premium)", "Kömmerling 76 (MD/AD)", "Kömmerling 70 (Klasik)"],
+      comparisonRows: [
+        ["Ugradna dubina", "88 mm", "76 mm", "70 mm"],
+        ["Broj komora", "7 komora", "5 ili 6 komora", "5 ili 6 komora"],
+        ["Zaptivanje", "3 dihtung gume (Srednji MD)", "3 dihtunga (MD) ili 2 (AD)", "2 prislone gume (AD)"],
+        ["Koeficijent prolaza toplote profila Uf", "0.95 W/m²K", "1.0 – 1.1 W/m²K", "~ 1.3 W/m²K"],
+        ["Koeficijent prolaza toplote prozora Uw sa trostrukim staklopaketom Ug = 0,6 W/m²K", "~ 0.72 – 0.78 W/m²K", "~ 0.82 – 0.88 W/m²K", "~ 0.98 – 1.05 W/m²K"],
+        ["Maksimalna debljina stakla", "do 56 / 58 mm", "do 48 / 50 mm", "do 40 mm"],
+        ["Zvučna izolacija", "do 47 - 49 dB", "do 47 - 48 dB", "do 42 - 44 dB"],
+      ],
+      descriptionTitle: "Opis",
+      glassTitle: "Prozor sa trostrukim staklom",
+      geometryTitle: "Konstruktivni crtež geometrije profila",
+      geometryNote: "",
+      techTitle: "Tehničke karakteristike",
+      products: [
+        {
+          name: "Kömmerling 88mm",
+          tagline: "Vrhunski sistem za pasivne kuće",
+          description:
+            "Ekskluzivni 7-komorni sistem sa ugradnom dubinom od 88 mm. Dizajniran je da ispuni najstrože evropske ekološke zahteve i standarde za pasivne kuće. Poseduje centralni (srednji) zaptivni sistem koji stvara izolacionu barijeru i štiti hardver od atmosferskih uticaja.",
+          tripleGlass:
+            "Zahvaljujući velikoj ugradnoj dubini, omogućava montažu masivnih troslojnih stakala debljine i preko 50 mm. Krajnji koeficijent prolaza toplote prozora dostiže fantastičnih Uw ≈ 0,75 W/m²K, što garantuje maksimalnu uštedu energije.",
+          image: "/images/gealan/s-9000-technik.avif",
+        },
+        {
+          name: "Kömmerling 76mm",
+          tagline: "Inovativna zlatna sredina – MD i AD varijante",
+          description:
+            "Inovativna generacija profila koja predstavlja idealne proporcije i tanak vizuelni profil za veću propustljivost svetlosti. EVROMETAL ovaj sistem izrađuje u dve varijante zaptivanja: MD (sa srednjom zaptivnom gumom, 6 komora) i AD (sa dve prislone gume, 5 komora).",
+          tripleGlass:
+            "Konstrukcija bez problema nosi savremene troslojne pakete stakla debljine do 48–50 mm. Finalni prozor ostvaruje odličnu toplotnu vrednost od Uw ≈ 0,85 W/m²K (za MD varijantu), što u potpunosti zadovoljava visoke standarde moderne niskoenergetske gradnje.",
+          image: "/images/gealan/gealan-linear-technik.avif",
+        },
+        {
+          name: "Kömmerling 70mm",
+          tagline: "Klasik – Ekonomičan i proveren sistem",
+          description:
+            "Pouzdan, klasičan 5 ili 6-komorni sistem sa dubinom ugradnje od 70 mm i sistemom od dve prislone zaptivne gume (AD). Izuzetno je popularan za renoviranja stanova i zamenu stare stolarije zbog odličnog balansa između investicije i dobijenih performansi.",
+          tripleGlass:
+            "Iako kompaktnijih dimenzija, profil je projektovan tako da uspešno prihvata troslojne pakete stakla. Sa ugrađenim trostrukim staklom, prozor dostiže toplotnu izolaciju od oko Uw ≈ 1,0 W/m²K, što drastično unapređuje energetski razred starijih objekata.",
+          image: "/images/gealan/s-8000-technik.avif",
+        },
+      ],
+      greenline: {
+        title: "Ekološki i proizvodni standardi: Greenline tehnologija",
+        text: "Važna karakteristika svih prozora koje EVROMETAL proizvodi od Kömmerling profila jeste greenline tehnologija. To znači da se u proizvodnji sirovog PVC-a ne koristi olovo, već ekološki prihvatljivi stabilizatori na bazi kalcijuma i cinka. Profili su 100% reciklabilni, pokazuju izuzetnu dugovečnost i otpornost na starenje i ekstremne vremenske uslove.",
+      },
     },
     professional: {
       eyebrow: "Za arhitekte, investitore i izvođače",
@@ -357,7 +380,7 @@ export const dictionary = {
     },
   },
   en: {
-    nav: { home: "Home", about: "About", products: "Products", references: "References", faq: "FAQ", contact: "Contact", quote: "Request quote", subtitle: "ALU / PVC systems", pvcSystems: "PVC systems", aluSystems: "ALU systems", comingSoon: "Coming soon" },
+    nav: { home: "Home", about: "About", products: "Products", references: "References", faq: "FAQ", contact: "Contact", quote: "Request quote", subtitle: "ALU / PVC systems", pvcSystems: "PVC systems", aluSystems: "ALU systems", comingSoon: "Coming soon", pvcSystemItems: [{ label: "GEALAN", href: "/#gealan" }, { label: "Kömmerling", href: "/#koemmerling" }], aluSystemItems: [{ label: "ALUMIL", comingSoon: true }, { label: "AKPA", comingSoon: true }] },
     search: {
       placeholder: "Search products...",
       seeAll: "See all results",
@@ -446,18 +469,18 @@ export const dictionary = {
       eyebrow: "GEALAN PVC systems",
       title: "German GEALAN profiles – superior thermal insulation and modern geometry.",
       intro:
-        "EVROMETAL's production range includes high-quality window systems made from leading German PVC profiles: GEALAN S 9000, GEALAN S 8000 and GEALAN Linear. Below is a detailed overview of technical characteristics, descriptions and thermal insulation calculations for finished windows, assuming standard installation of triple-glazed insulating glass (4+16+4+16+4 with two low-emissivity coatings and argon, Ug = 0.6 W/m²K).",
-      comparisonTitle: "Comparative overview of profile technical characteristics",
+        "In its product range, EVROMETAL offers high-quality window systems made from leading German PVC profiles: GEALAN S9000, GEALAN S8000 and GEALAN Linear. Below is a detailed presentation of the technical characteristics, description and calculation of thermal insulation for finished windows, taking into account the standard installation of triple insulating glass (4+16+4+16+4 with two low-emission layers and argon, Ug = 0,6 W/m²K).",
+      comparisonTitle: "Comparative overview of the technical characteristics of the profile",
       comparisonNote:
-        "For finished windows with triple glazing, heat transfer through the entire window (Uw) is calculated by combining profile insulation (Uf) and glass insulation (Ug):",
-      comparisonHeaders: ["Characteristic", "GEALAN S 9000 (Premium)", "GEALAN Linear (Modern)", "GEALAN S 8000 (Classic)"],
+        "For finished triple-glazed windows, the heat transfer through the entire window Uw is calculated by combining the profile insulation Uf and the glass Ug.",
+      comparisonHeaders: ["Characteristics", "GEALAN S9000 (Premium)", "GEALAN Linear (Modern)", "GEALAN S8000 (Classic)"],
       comparisonRows: [
         ["Installation depth", "82.5 mm", "74 mm", "74 mm"],
-        ["Number of chambers", "6 chambers", "6 chambers", "5 or 6 chambers"],
-        ["Number of gaskets", "3 (central gasket)", "3 (central gasket)", "2 (compression gaskets)"],
-        ["Profile insulation (Uf)", "~ 0.92 W/m²K", "~ 1.0 W/m²K", "~ 1.2 W/m²K"],
-        ["Window insulation (Uw) with triple glazing (Ug = 0.6)", "~ 0.78 – 0.80 W/m²K", "~ 0.85 – 0.89 W/m²K", "~ 0.95 – 1.05 W/m²K"],
-        ["Sound insulation", "up to 47 – 49 dB", "up to 47 dB", "up to 40 – 44 dB"],
+        ["Number of chambers", "6", "6", "5 or 6"],
+        ["Number of sealing gaskets", "3 (centre seal)", "3 (centre seal)", "2 (compression gaskets)"],
+        ["Profile insulation Uf", "~ 0.92 W/m²K", "~ 1.0 W/m²K", "~ 1.2 W/m²K"],
+        ["Window insulation Uw with triple glazing Ug = 0,6 W/m²K", "~ 0.78 - 0.80 W/m²K", "~ 0.85 - 0.89 W/m²K", "~ 0.95 - 1.05 W/m²K"],
+        ["Sound insulation", "up to 47 - 49 dB", "up to 47 dB", "up to 40 - 44 dB"],
         ["Maximum glass thickness", "up to 52 mm", "up to 48 mm", "up to 48 mm"],
       ],
       descriptionTitle: "Description",
@@ -467,75 +490,90 @@ export const dictionary = {
       techTitle: "Technical characteristics",
       products: [
         {
-          name: "GEALAN S 9000",
+          name: "GEALAN S9000",
           tagline: "System for passive houses and maximum savings",
           description:
-            "A premium combination system that combines the advantages of central and compression sealing. Its large installation depth and three sealing levels make it ideal for low-energy and passive buildings. The flexible central gasket protects hardware from moisture.",
+            "Superior combi-system that combines the advantages of centre and compression sealing. The large installation depth and three sealing levels make it an ideal choice for low-energy and passive buildings. The flexible centre sealing gasket protects fittings from moisture.",
           tripleGlass:
-            "Thanks to its massive profile, a window with triple glazing achieves an impressive Uw ≈ 0.80 W/m²K, preventing any heat loss.",
+            "Thanks to the robust profile, the triple-glazed window reaches an impressive Uw ≈ 0,8 W/m²K, which effectively prevents heat loss.",
           image: "/images/gealan/s-9000-technik.avif",
-          specs: [
-            ["Profile system", "S 9000"],
-            ["System depth", "82.5 mm"],
-            ["Versions", "white, GEALAN-acrylcolor®, decorative foils, aluminium cladding, BALANCE"],
-            ["Rebate height", "Frame: 26 mm · Sash: 18 mm + 26 mm"],
-            ["Maximum glass thickness", "up to 56 mm (with gasket), up to 58 mm (STV®)"],
-            ["Uf value", "up to 0.89 W/(m²K)"],
-            ["Types", "window solutions, entrance door solutions, lift-and-slide doors"],
-            ["Rain-tightness (DIN EN 12208)", "up to class 9A"],
-            ["Air permeability (DIN EN 12207)", "up to class 4"],
-            ["Wind load (DIN EN 12210)", "up to class C5/B5"],
-            ["Impact resistance (DIN EN 13049)", "up to class 2"],
-            ["Sound insulation", "34 to 45 dB"],
-          ],
         },
         {
           name: "GEALAN Linear",
           tagline: "Minimalist design and contemporary architecture",
           description:
-            "The latest evolution in the 74 mm profile segment. It is characterised by straight, sharp lines and a minimalist look that lets the maximum amount of light into the space. Although slimmer, it features 6 chambers and 3 gaskets (central gasket), which is unique for this depth class.",
+            "The latest evolution in the 74 mm profile segment. It is characterised by straight, sharp lines and a minimalist look that lets the maximum amount of light into the space. Although narrower, it has 6 chambers and 3 rubber seals (centre gasket), which is unique for this depth class.",
           tripleGlass:
-            "With the installed triple-glazing package, the EVROMETAL Linear window achieves an excellent value of Uw ≈ 0.89 W/m²K, combining modern aesthetics with high energy efficiency.",
+            "With the built-in triple glazing, the EVROMETAL Linear window achieves an excellent value of Uw ≈ 0,89 W/m²K, combining modern aesthetics with high energy efficiency.",
           image: "/images/gealan/gealan-linear-technik.avif",
-          specs: [
-            ["Profile system", "GEALAN-LINEAR®"],
-            ["System construction depth", "74 mm"],
-            ["Versions", "white, GEALAN-acrylcolor®, decorative foils, aluminium cladding"],
-            ["Rebate height", "Frame: 26 mm · Sash: 18 mm"],
-            ["Maximum glass thickness", "up to 48 mm (with gasket), up to 50 mm (STV®)"],
-            ["Uf value", "up to 1.0 W/(m²K)"],
-            ["Types", "window solutions, entrance door solutions, sliding solutions"],
-            ["Heavy rain-tightness (DIN EN 12208)", "up to class 9A"],
-            ["Air permeability (DIN EN 12207)", "up to class 4"],
-            ["Wind load (DIN EN 12210)", "up to class C5/B5"],
-            ["Impact resistance", "up to class 3"],
-            ["Sound insulation", "34 to 47 dB"],
-          ],
         },
         {
-          name: "GEALAN S 8000",
-          tagline: "Reliable classic and best value for money",
+          name: "GEALAN S8000",
+          tagline: "Reliable classic and the best price–quality ratio",
           description:
-            "An economical system with an installation depth of 74 mm and compression sealing (2 gaskets). It is built with a large main chamber designed for robust steel reinforcements, giving it exceptional static stability in the production of large window elements.",
+            "Economical system with an installation depth of 74 mm and compression sealing (2 gaskets). It is constructed with a large main chamber intended for robust steel reinforcements, which gives it exceptional static stability when producing large window elements.",
           tripleGlass:
-            "When installing triple glazing up to 48 mm thick, the finished window achieves a stable Uw ≈ 1.0 W/m²K. It represents the ideal balance for standard residential construction and renovations where proven German quality at an optimal budget is required.",
+            "With triple glazing up to 48 mm thick, the finished window achieves a stable Uw ≈ 1,0 W/m²K. It represents the ideal balance for standard housing construction and renovations where proven German quality is required with an optimal budget.",
           image: "/images/gealan/s-8000-technik.avif",
-          specs: [
-            ["Profile system", "S 8000"],
-            ["System construction depth", "74 mm"],
-            ["Variants", "white, decorative foil, BALANCE"],
-            ["Rebate height", "Frame: 18/20 mm · Sash: 18/20 mm"],
-            ["Maximum glass thickness", "up to 48 mm (with gasket), up to 50 mm (STV®)"],
-            ["Uf value", "up to 1.2 W/(m²K)"],
-            ["Types", "window solutions, entrance door solutions"],
-            ["Rain-tightness (DIN EN 12208)", "up to class 9A"],
-            ["Air permeability (DIN EN 12207)", "up to class 4"],
-            ["Wind load (DIN EN 12210)", "up to class C5/B5"],
-            ["Impact resistance", "up to class 4"],
-            ["Sound insulation", "34 to 47 dB"],
-          ],
         },
       ],
+    },
+    koemmerling: {
+      eyebrow: "Kömmerling PVC systems",
+      title: "German Kömmerling profiles – superior thermal insulation and modern geometry.",
+      intro:
+        "In its product range, EVROMETAL also offers top-quality window systems made from renowned German PVC profiles Kömmerling. The system selection includes Kömmerling 88 mm (Premium), Kömmerling 76 mm (Standard/Versatile) and Kömmerling 70 mm (Economy). All calculations below are made assuming the installation of standard high-efficiency triple insulating glass Ug = 0,6 W/m²K, filled with argon and with two low-emission coatings.",
+      comparisonTitle: "Comparative overview of the technical characteristics of Kömmerling profiles",
+      comparisonNote:
+        "For finished triple-glazed windows, the heat transfer through the entire window Uw is calculated by combining the profile insulation Uf and the glass Ug.",
+      comparisonHeaders: ["Characteristics", "Kömmerling 88 (Premium)", "Kömmerling 76 (MD/AD)", "Kömmerling 70 (Classic)"],
+      comparisonRows: [
+        ["Installation depth", "88 mm", "76 mm", "70 mm"],
+        ["Number of chambers", "7", "5 or 6", "5 or 6"],
+        ["Number of sealing gaskets", "3 (centre seal)", "3 (centre seal)", "2 (compression gaskets)"],
+        ["Profile insulation Uf", "~ 0.95 W/m²K", "~ 1.0 W/m²K", "~ 1.3 W/m²K"],
+        ["Window insulation Uw with triple glazing Ug = 0,6 W/m²K", "~ 0.73 - 0.80 W/m²K", "~ 0.82 - 0.88 W/m²K", "~ 0.98 - 1.05 W/m²K"],
+        ["Sound insulation", "up to 47 - 49 dB", "up to 47-48 dB", "up to 42 - 44 dB"],
+        ["Maximum glass thickness", "up to 58 mm", "up to 50 mm", "up to 40 mm"],
+      ],
+      descriptionTitle: "Description",
+      glassTitle: "Window with triple glazing",
+      geometryTitle: "Construction drawing of profile geometry",
+      geometryNote: "",
+      techTitle: "Technical characteristics",
+      products: [
+        {
+          name: "Kömmerling 88 mm",
+          tagline: "Top system for passive houses",
+          description:
+            "Exclusive 7-chamber system with an installation depth of 88 mm. It is designed to meet the strictest European environmental requirements and standards for passive houses. It has a central sealing system that creates an insulating barrier and protects the hardware from atmospheric influences.",
+          tripleGlass:
+            "Thanks to the large installation depth, it enables the installation of robust triple-glazed windows with a thickness of more than 50 mm. The final heat transfer coefficient of the window reaches Uw ≈ 0,75 W/m²K, which guarantees maximum energy savings.",
+          image: "/images/gealan/s-9000-technik.avif",
+        },
+        {
+          name: "Kömmerling 76 mm",
+          tagline: "Innovative golden mean – MD and AD variants",
+          description:
+            "An innovative profile generation that offers ideal proportions and a slim visual profile for increased light transmission. EVROMETAL produces this system in two sealing variants: MD (with a central sealing gasket, 6 chambers) and AD (with two adjacent gaskets, 5 chambers).",
+          tripleGlass:
+            "The structure easily supports modern triple-glazed units up to 48–50 mm thick. The finished window reaches an excellent heat transfer value of Uw ≈ 0,85 W/m²K (for the MD variant), fully meeting the high standards of modern low-energy construction.",
+          image: "/images/gealan/gealan-linear-technik.avif",
+        },
+        {
+          name: "Kömmerling 70 mm",
+          tagline: "Classic – economical and proven system",
+          description:
+            "A reliable, classic 5- or 6-chamber system with an installation depth of 70 mm and a system of two abutting sealing gaskets (AD). It is extremely popular for apartment renovations and replacing old joinery due to its excellent balance between investment and performance.",
+          tripleGlass:
+            "Although more compact, the profile is designed to successfully accommodate triple-glazed units. With installed triple glazing, the window achieves thermal insulation of about Uw ≈ 1,0 W/m²K, which drastically improves the energy class of older buildings.",
+          image: "/images/gealan/s-8000-technik.avif",
+        },
+      ],
+      greenline: {
+        title: "Ecological and production standards: greenline technology",
+        text: "An important feature of all windows that EVROMETAL manufactures from Kömmerling profiles is the greenline® technology. This means that no lead is used in the production of raw PVC, but environmentally friendly stabilisers based on calcium and zinc. The profiles are 100% recyclable and offer exceptional longevity and resistance to ageing and extreme weather conditions.",
+      },
     },
     professional: {
       eyebrow: "For architects, investors and contractors",
@@ -586,7 +624,7 @@ export const dictionary = {
     },
   },
   de: {
-    nav: { home: "Start", about: "Über uns", products: "Produkte", references: "Referenzen", faq: "FAQ", contact: "Kontakt", quote: "Angebot anfragen", subtitle: "ALU / PVC Systeme", pvcSystems: "PVC-Systeme", aluSystems: "ALU-Systeme", comingSoon: "Demnächst" },
+    nav: { home: "Start", about: "Über uns", products: "Produkte", references: "Referenzen", faq: "FAQ", contact: "Kontakt", quote: "Angebot anfragen", subtitle: "ALU / PVC Systeme", pvcSystems: "PVC-Systeme", aluSystems: "ALU-Systeme", comingSoon: "Demnächst", pvcSystemItems: [{ label: "GEALAN", href: "/#gealan" }, { label: "Kömmerling", href: "/#koemmerling" }], aluSystemItems: [{ label: "ALUMIL", comingSoon: true }, { label: "AKPA", comingSoon: true }] },
     search: {
       placeholder: "Produkte suchen...",
       seeAll: "Alle Ergebnisse anzeigen",
@@ -703,20 +741,6 @@ export const dictionary = {
           tripleGlass:
             "Dank des massiven Profils erreicht ein Fenster mit Dreifachverglasung beeindruckende Uw ≈ 0,80 W/m²K und verhindert so jeglichen Wärmeverlust.",
           image: "/images/gealan/s-9000-technik.avif",
-          specs: [
-            ["Profilsystem", "S 9000"],
-            ["Einbautiefe", "82,5 mm"],
-            ["Ausführungen", "Weiß, GEALAN-acrylcolor®, Dekorfolien, Aluminium-Vorsatzschalen, BALANCE"],
-            ["Falzhöhe", "Rahmen: 26 mm · Flügel: 18 mm + 26 mm"],
-            ["Maximale Glasstärke", "bis 56 mm (Dichtung), bis 58 mm (STV®)"],
-            ["Uf-Wert", "bis 0,89 W/(m²K)"],
-            ["Ausführungstypen", "Fensterlösungen, Haustürlösungen, Hebe-Schiebetüren"],
-            ["Schlagregendichtheit (DIN EN 12208)", "bis Klasse 9A"],
-            ["Luftdurchlässigkeit (DIN EN 12207)", "bis Klasse 4"],
-            ["Windwiderstand (DIN EN 12210)", "bis Klasse C5/B5"],
-            ["Stoßfestigkeit (DIN EN 13049)", "bis Klasse 2"],
-            ["Schalldämmung", "34 bis 45 dB"],
-          ],
         },
         {
           name: "GEALAN Linear",
@@ -726,20 +750,6 @@ export const dictionary = {
           tripleGlass:
             "Mit dem eingebauten Dreifachglas-Paket erreicht das EVROMETAL Linear Fenster einen hervorragenden Wert von Uw ≈ 0,89 W/m²K und verbindet moderne Ästhetik mit hoher Energieeffizienz.",
           image: "/images/gealan/gealan-linear-technik.avif",
-          specs: [
-            ["Profilsystem", "GEALAN-LINEAR®"],
-            ["Konstruktionstiefe des Systems", "74 mm"],
-            ["Ausführungen", "Weiß, GEALAN-acrylcolor®, Dekorfolien, Aluminium-Vorsatzschalen"],
-            ["Falzhöhe", "Rahmen: 26 mm · Flügel: 18 mm"],
-            ["Maximale Glasstärke", "bis 48 mm (Dichtung), bis 50 mm (STV®)"],
-            ["Uf-Wert", "bis 1,0 W/(m²K)"],
-            ["Typen", "Fensterlösungen, Haustürlösungen, Schiebelösungen"],
-            ["Schlagregendichtheit (DIN EN 12208)", "bis Klasse 9A"],
-            ["Luftdurchlässigkeit (DIN EN 12207)", "bis Klasse 4"],
-            ["Windlast (DIN EN 12210)", "bis Klasse C5/B5"],
-            ["Stoßfestigkeit", "bis Klasse 3"],
-            ["Schalldämmung", "34 bis 47 dB"],
-          ],
         },
         {
           name: "GEALAN S 8000",
@@ -749,22 +759,65 @@ export const dictionary = {
           tripleGlass:
             "Mit Dreifachverglasung bis 48 mm Glasstärke erreicht das fertige Fenster stabile Uw ≈ 1,0 W/m²K. Es ist der ideale Kompromiss für den standardmäßigen Wohnungsbau und Renovierungen, wo bewährte deutsche Qualität zu einem optimalen Budget gefragt ist.",
           image: "/images/gealan/s-8000-technik.avif",
-          specs: [
-            ["Profilsystem", "S 8000"],
-            ["Konstruktionstiefe des Systems", "74 mm"],
-            ["Varianten", "Weiß, Dekorfolie, BALANCE"],
-            ["Falzhöhe", "Rahmen: 18/20 mm · Flügel: 18/20 mm"],
-            ["Maximale Glasstärke", "bis 48 mm (Dichtung), bis 50 mm (STV®)"],
-            ["Uf-Wert", "bis 1,2 W/(m²K)"],
-            ["Typen", "Fensterlösungen, Haustürlösungen"],
-            ["Schlagregendichtheit (DIN EN 12208)", "bis Klasse 9A"],
-            ["Luftdurchlässigkeit (DIN EN 12207)", "bis Klasse 4"],
-            ["Windlast (DIN EN 12210)", "bis Klasse C5/B5"],
-            ["Stoßfestigkeit", "bis Klasse 4"],
-            ["Schalldämmung", "34 bis 47 dB"],
-          ],
         },
       ],
+    },
+    koemmerling: {
+      eyebrow: "Kömmerling PVC-Systeme",
+      title: "Deutsche Kömmerling-Profile – erstklassige Wärmedämmung und moderne Geometrie.",
+      intro:
+        "Das Produktionsprogramm von EVROMETAL umfasst auch erstklassige Fenstersysteme aus renommierten deutschen PVC-Profilen von Kömmerling. Die Systemauswahl umfasst Kömmerling 88 mm (Premium), Kömmerling 76 mm (Standard/Vielseitig) und Kömmerling 70 mm (Economy). Alle nachfolgenden Berechnungen basieren auf dem Einbau von standardmäßigem, hocheffizientem Dreifach-Isolierglas mit Ug = 0,6 W/m²K, gefüllt mit Argon und zwei niedrig emittierenden Beschichtungen.",
+      comparisonTitle: "Vergleichende Übersicht der technischen Eigenschaften der Kömmerling-Profile",
+      comparisonNote:
+        "Bei fertigen Fenstern mit Dreifachverglasung wird der Wärmedurchgang durch das gesamte Fenster (Uw) aus der Dämmung des Profils (Uf) und des Glases (Ug) berechnet.",
+      comparisonHeaders: ["Eigenschaft", "Kömmerling 88 (Premium)", "Kömmerling 76 (MD/AD)", "Kömmerling 70 (Klassik)"],
+      comparisonRows: [
+        ["Einbautiefe", "88 mm", "76 mm", "70 mm"],
+        ["Anzahl Kammern", "7", "5 oder 6", "5 oder 6"],
+        ["Anzahl Dichtungen", "3 (Mitteldichtung)", "3 (MD) oder 2 (AD)", "2 (Anschlagdichtungen)"],
+        ["Profildämmung (Uf)", "~ 0,95 W/m²K", "~ 1,0 – 1,1 W/m²K", "~ 1,3 W/m²K"],
+        ["Fensterdämmung (Uw) mit Dreifachglas (Ug = 0,6)", "~ 0,72 – 0,78 W/m²K", "~ 0,82 – 0,88 W/m²K", "~ 0,98 – 1,05 W/m²K"],
+        ["Maximale Glasstärke", "bis 56 / 58 mm", "bis 48 / 50 mm", "bis 40 mm"],
+        ["Schalldämmung", "bis 47 – 49 dB", "bis 47 – 48 dB", "bis 42 – 44 dB"],
+      ],
+      descriptionTitle: "Beschreibung",
+      glassTitle: "Fenster mit Dreifachverglasung",
+      geometryTitle: "Konstruktionszeichnung der Profilgeometrie",
+      geometryNote: "",
+      techTitle: "Technische Eigenschaften",
+      products: [
+        {
+          name: "Kömmerling 88 mm",
+          tagline: "Hochwertiges System für Passivhäuser",
+          description:
+            "Exklusives 7-Kammer-System mit einer Einbautiefe von 88 mm. Es ist darauf ausgelegt, die strengsten europäischen Umweltanforderungen und Standards für Passivhäuser zu erfüllen. Es verfügt über ein zentrales (mittleres) Dichtungssystem, das eine Isolierbarriere bildet und die Beschläge vor Witterungseinflüssen schützt.",
+          tripleGlass:
+            "Dank der großen Einbautiefe ermöglicht es den Einbau robuster Dreifachverglasungen mit einer Dicke von über 50 mm. Der Wärmedurchgangskoeffizient des Fensters erreicht hervorragende Uw ≈ 0,75 W/m²K, was maximale Energieeinsparungen garantiert.",
+          image: "/images/gealan/s-9000-technik.avif",
+        },
+        {
+          name: "Kömmerling 76 mm",
+          tagline: "Innovative goldene Mitte – MD- und AD-Varianten",
+          description:
+            "Eine innovative Profilgeneration mit idealen Proportionen und einem schlanken Profilbild für mehr Lichtdurchlässigkeit. EVROMETAL fertigt dieses System in zwei Dichtungsvarianten: MD (mit Mitteldichtung, 6 Kammern) und AD (mit zwei Anschlagdichtungen, 5 Kammern).",
+          tripleGlass:
+            "Die Konstruktion trägt moderne Dreifachglas-Pakete mit einer Dicke von bis zu 48–50 mm problemlos. Das fertige Fenster erreicht einen hervorragenden Wärmedämmwert von Uw ≈ 0,85 W/m²K (MD-Variante) und erfüllt damit vollständig die hohen Anforderungen des modernen Niedrigenergiebaus.",
+          image: "/images/gealan/gealan-linear-technik.avif",
+        },
+        {
+          name: "Kömmerling 70 mm",
+          tagline: "Klassiker – wirtschaftliches und bewährtes System",
+          description:
+            "Ein zuverlässiges, klassisches 5- oder 6-Kammer-System mit einer Einbautiefe von 70 mm und einem System aus zwei Anschlagdichtungen (AD). Es ist besonders beliebt für Renovierungen von Wohnungen und den Austausch alter Bauelemente dank des hervorragenden Verhältnisses zwischen Investition und erzielter Leistung.",
+          tripleGlass:
+            "Trotz kompakterer Abmessungen ist das Profil so konstruiert, dass es Dreifachglas-Pakete problemlos aufnimmt. Mit eingebautem Dreifachglas erreicht das Fenster eine Wärmedämmung von etwa Uw ≈ 1,0 W/m²K, was die Energieeffizienzklasse älterer Gebäude drastisch verbessert.",
+          image: "/images/gealan/s-8000-technik.avif",
+        },
+      ],
+      greenline: {
+        title: "Ökologische und produktionstechnische Standards: Greenline-Technologie",
+        text: "Ein wichtiges Merkmal aller Fenster, die EVROMETAL aus Kömmerling-Profilen herstellt, ist die greenline-Technologie. Das bedeutet, dass bei der Herstellung des Roh-PVC kein Blei verwendet wird, sondern umweltfreundliche Stabilisatoren auf Basis von Calcium und Zink. Die Profile sind zu 100 % recycelbar und bieten eine außergewöhnliche Langlebigkeit sowie Widerstandsfähigkeit gegen Alterung und extreme Wetterbedingungen.",
+      },
     },
     professional: {
       eyebrow: "Für Architekten, Investoren und Ausführer",

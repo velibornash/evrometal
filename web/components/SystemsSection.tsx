@@ -1,15 +1,19 @@
 import Image from "next/image";
 import { dictionary, type Lang } from "@/lib/i18n";
 
-type GealanSystemsSectionProps = {
+type SystemsSectionProps = {
   lang: Lang;
+  system: "gealan" | "koemmerling";
 };
 
-export function GealanSystemsSection({ lang }: GealanSystemsSectionProps) {
-  const t = dictionary[lang].gealan;
+export function SystemsSection({ lang, system }: SystemsSectionProps) {
+  const t = dictionary[lang][system];
 
   return (
-    <section id="gealan" className="border-y border-white/10 bg-[#111820] px-6 py-16 md:px-10 md:py-24">
+    <section
+      id={system}
+      className="border-y border-white/10 bg-[#111820] px-6 py-16 md:px-10 md:py-24"
+    >
       <div className="mx-auto max-w-7xl">
         <div className="max-w-4xl">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-200">
@@ -114,7 +118,9 @@ export function GealanSystemsSection({ lang }: GealanSystemsSectionProps) {
                 <div>
                   <h4 className="text-xs font-black uppercase tracking-[0.18em] text-white/45">
                     {t.geometryTitle}{" "}
-                    <span className="text-white/35">({t.geometryNote})</span>
+                    {t.geometryNote ? (
+                      <span className="text-white/35">({t.geometryNote})</span>
+                    ) : null}
                   </h4>
                   <div className="image-fill-frame mt-4 aspect-[600/653] max-w-md overflow-hidden border border-white/10 bg-[#17202a]">
                     <Image
@@ -127,25 +133,20 @@ export function GealanSystemsSection({ lang }: GealanSystemsSectionProps) {
                   </div>
                 </div>
               </div>
-
-              <div className="border-t border-white/10 p-6 md:p-8">
-                <h4 className="text-xs font-black uppercase tracking-[0.18em] text-white/45">
-                  {t.techTitle}
-                </h4>
-                <div className="mt-4 grid gap-px overflow-hidden border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
-                  {product.specs.map(([label, value]) => (
-                    <div key={label} className="bg-[#111820] p-5">
-                      <div className="text-[11px] font-bold uppercase tracking-[0.14em] text-amber-200/70">
-                        {label}
-                      </div>
-                      <div className="mt-2 text-sm leading-6 text-white/72">{value}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
             </article>
           ))}
         </div>
+
+        {"greenline" in t ? (
+          <div className="mt-16 border border-white/10 bg-white/[0.03] p-6 md:p-8">
+            <h3 className="text-xl font-semibold tracking-tight text-white md:text-2xl">
+              {t.greenline.title}
+            </h3>
+            <p className="mt-3 text-base leading-7 text-white/70">
+              {t.greenline.text}
+            </p>
+          </div>
+        ) : null}
       </div>
     </section>
   );

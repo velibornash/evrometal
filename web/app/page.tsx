@@ -5,8 +5,7 @@ import { ContactSection } from "@/components/ContactSection";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { FaqSection } from "@/components/FaqSection";
-import { GealanSystemsSection } from "@/components/GealanSystemsSection";
-import { ProfessionalSection } from "@/components/ProfessionalSection";
+import { SystemsSection } from "@/components/SystemsSection";import { ProfessionalSection } from "@/components/ProfessionalSection";
 import { ProjectFlowSection } from "@/components/ProjectFlowSection";
 import { ReferencesSection } from "@/components/ReferencesSection";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -55,7 +54,8 @@ export default async function Home({ searchParams }: HomeProps) {
       <ProjectFlowSection lang={lang} />
       <ProfessionalSection lang={lang} />
       <CategoryStrip lang={lang} />
-      <GealanSystemsSection lang={lang} />
+      <SystemsSection lang={lang} system="gealan" />
+      <SystemsSection lang={lang} system="koemmerling" />
       <ReferencesSection lang={lang} />
       <CertificationsSection lang={lang} />
       <FaqSection lang={lang} />

@@ -51,6 +51,9 @@ export function SiteFooter({ lang }: SiteFooterProps) {
               <a href="#gealan" className="block text-white/60 transition hover:text-white">
                 {lang === "sr" ? "Proizvodi" : lang === "en" ? "Products" : "Produkte"}
               </a>
+              <a href="#koemmerling" className="block text-white/60 transition hover:text-white">
+                Kömmerling
+              </a>
               <a href="#contact" className="block text-white/60 transition hover:text-white">
                 {lang === "sr" ? "Kontakt" : lang === "en" ? "Contact" : "Kontakt"}
               </a>

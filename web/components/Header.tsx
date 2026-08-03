@@ -34,17 +34,11 @@ export function Header({ lang, products = [] }: HeaderProps) {
   const productGroups: { title: string; items: MenuItem[] }[] = [
     {
       title: t.nav.pvcSystems,
-      items: [
-        { label: "GEALAN", href: "/#gealan" },
-        { label: "Kömmerling", comingSoon: true },
-      ],
+      items: t.nav.pvcSystemItems,
     },
     {
       title: t.nav.aluSystems,
-      items: [
-        { label: "ALUMIL", comingSoon: true },
-        { label: "AKPA", comingSoon: true },
-      ],
+      items: t.nav.aluSystemItems,
     },
   ];
 
