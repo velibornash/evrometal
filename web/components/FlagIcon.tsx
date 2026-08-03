@@ -24,7 +24,7 @@ export function FlagIcon({ code, className }: FlagIconProps) {
     );
   }
 
-  if (code === "rs") {
+  if (code === "sr") {
     return (
       <svg viewBox="0 0 30 20" className={size} aria-hidden="true">
         <rect width="30" height="6.67" fill="#C6363C" />
