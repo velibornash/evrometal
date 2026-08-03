@@ -237,7 +237,6 @@ export const dictionary = {
             "Ekskluzivni 7-komorni sistem sa ugradnom dubinom od 88 mm. Dizajniran je da ispuni najstrože evropske ekološke zahteve i standarde za pasivne kuće. Poseduje centralni (srednji) zaptivni sistem koji stvara izolacionu barijeru i štiti hardver od atmosferskih uticaja.",
           tripleGlass:
             "Zahvaljujući velikoj ugradnoj dubini, omogućava montažu masivnih troslojnih stakala debljine i preko 50 mm. Krajnji koeficijent prolaza toplote prozora dostiže fantastičnih Uw ≈ 0,75 W/m²K, što garantuje maksimalnu uštedu energije.",
-          image: "/images/gealan/s-9000-technik.avif",
         },
         {
           name: "Kömmerling 76mm",
@@ -246,7 +245,6 @@ export const dictionary = {
             "Inovativna generacija profila koja predstavlja idealne proporcije i tanak vizuelni profil za veću propustljivost svetlosti. EVROMETAL ovaj sistem izrađuje u dve varijante zaptivanja: MD (sa srednjom zaptivnom gumom, 6 komora) i AD (sa dve prislone gume, 5 komora).",
           tripleGlass:
             "Konstrukcija bez problema nosi savremene troslojne pakete stakla debljine do 48–50 mm. Finalni prozor ostvaruje odličnu toplotnu vrednost od Uw ≈ 0,85 W/m²K (za MD varijantu), što u potpunosti zadovoljava visoke standarde moderne niskoenergetske gradnje.",
-          image: "/images/gealan/gealan-linear-technik.avif",
         },
         {
           name: "Kömmerling 70mm",
@@ -255,7 +253,6 @@ export const dictionary = {
             "Pouzdan, klasičan 5 ili 6-komorni sistem sa dubinom ugradnje od 70 mm i sistemom od dve prislone zaptivne gume (AD). Izuzetno je popularan za renoviranja stanova i zamenu stare stolarije zbog odličnog balansa između investicije i dobijenih performansi.",
           tripleGlass:
             "Iako kompaktnijih dimenzija, profil je projektovan tako da uspešno prihvata troslojne pakete stakla. Sa ugrađenim trostrukim staklom, prozor dostiže toplotnu izolaciju od oko Uw ≈ 1,0 W/m²K, što drastično unapređuje energetski razred starijih objekata.",
-          image: "/images/gealan/s-8000-technik.avif",
         },
       ],
       greenline: {
@@ -549,7 +546,6 @@ export const dictionary = {
             "Exclusive 7-chamber system with an installation depth of 88 mm. It is designed to meet the strictest European environmental requirements and standards for passive houses. It has a central sealing system that creates an insulating barrier and protects the hardware from atmospheric influences.",
           tripleGlass:
             "Thanks to the large installation depth, it enables the installation of robust triple-glazed windows with a thickness of more than 50 mm. The final heat transfer coefficient of the window reaches Uw ≈ 0,75 W/m²K, which guarantees maximum energy savings.",
-          image: "/images/gealan/s-9000-technik.avif",
         },
         {
           name: "Kömmerling 76 mm",
@@ -558,7 +554,6 @@ export const dictionary = {
             "An innovative profile generation that offers ideal proportions and a slim visual profile for increased light transmission. EVROMETAL produces this system in two sealing variants: MD (with a central sealing gasket, 6 chambers) and AD (with two adjacent gaskets, 5 chambers).",
           tripleGlass:
             "The structure easily supports modern triple-glazed units up to 48–50 mm thick. The finished window reaches an excellent heat transfer value of Uw ≈ 0,85 W/m²K (for the MD variant), fully meeting the high standards of modern low-energy construction.",
-          image: "/images/gealan/gealan-linear-technik.avif",
         },
         {
           name: "Kömmerling 70 mm",
@@ -567,7 +562,6 @@ export const dictionary = {
             "A reliable, classic 5- or 6-chamber system with an installation depth of 70 mm and a system of two abutting sealing gaskets (AD). It is extremely popular for apartment renovations and replacing old joinery due to its excellent balance between investment and performance.",
           tripleGlass:
             "Although more compact, the profile is designed to successfully accommodate triple-glazed units. With installed triple glazing, the window achieves thermal insulation of about Uw ≈ 1,0 W/m²K, which drastically improves the energy class of older buildings.",
-          image: "/images/gealan/s-8000-technik.avif",
         },
       ],
       greenline: {
@@ -793,7 +787,6 @@ export const dictionary = {
             "Exklusives 7-Kammer-System mit einer Einbautiefe von 88 mm. Es ist darauf ausgelegt, die strengsten europäischen Umweltanforderungen und Standards für Passivhäuser zu erfüllen. Es verfügt über ein zentrales (mittleres) Dichtungssystem, das eine Isolierbarriere bildet und die Beschläge vor Witterungseinflüssen schützt.",
           tripleGlass:
             "Dank der großen Einbautiefe ermöglicht es den Einbau robuster Dreifachverglasungen mit einer Dicke von über 50 mm. Der Wärmedurchgangskoeffizient des Fensters erreicht hervorragende Uw ≈ 0,75 W/m²K, was maximale Energieeinsparungen garantiert.",
-          image: "/images/gealan/s-9000-technik.avif",
         },
         {
           name: "Kömmerling 76 mm",
@@ -802,7 +795,6 @@ export const dictionary = {
             "Eine innovative Profilgeneration mit idealen Proportionen und einem schlanken Profilbild für mehr Lichtdurchlässigkeit. EVROMETAL fertigt dieses System in zwei Dichtungsvarianten: MD (mit Mitteldichtung, 6 Kammern) und AD (mit zwei Anschlagdichtungen, 5 Kammern).",
           tripleGlass:
             "Die Konstruktion trägt moderne Dreifachglas-Pakete mit einer Dicke von bis zu 48–50 mm problemlos. Das fertige Fenster erreicht einen hervorragenden Wärmedämmwert von Uw ≈ 0,85 W/m²K (MD-Variante) und erfüllt damit vollständig die hohen Anforderungen des modernen Niedrigenergiebaus.",
-          image: "/images/gealan/gealan-linear-technik.avif",
         },
         {
           name: "Kömmerling 70 mm",
@@ -811,7 +803,6 @@ export const dictionary = {
             "Ein zuverlässiges, klassisches 5- oder 6-Kammer-System mit einer Einbautiefe von 70 mm und einem System aus zwei Anschlagdichtungen (AD). Es ist besonders beliebt für Renovierungen von Wohnungen und den Austausch alter Bauelemente dank des hervorragenden Verhältnisses zwischen Investition und erzielter Leistung.",
           tripleGlass:
             "Trotz kompakterer Abmessungen ist das Profil so konstruiert, dass es Dreifachglas-Pakete problemlos aufnimmt. Mit eingebautem Dreifachglas erreicht das Fenster eine Wärmedämmung von etwa Uw ≈ 1,0 W/m²K, was die Energieeffizienzklasse älterer Gebäude drastisch verbessert.",
-          image: "/images/gealan/s-8000-technik.avif",
         },
       ],
       greenline: {

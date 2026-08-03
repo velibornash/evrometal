@@ -95,7 +95,9 @@ export function SystemsSection({ lang, system }: SystemsSectionProps) {
                 </div>
               </header>
 
-              <div className="grid gap-10 p-6 md:p-8 lg:grid-cols-2">
+              <div
+                className={`grid gap-10 p-6 md:p-8 ${"image" in product ? "lg:grid-cols-2" : ""}`}
+              >
                 <div className="space-y-7">
                   <div>
                     <h4 className="text-xs font-black uppercase tracking-[0.18em] text-white/45">
@@ -115,23 +117,25 @@ export function SystemsSection({ lang, system }: SystemsSectionProps) {
                   </div>
                 </div>
 
-                <div>
-                  <h4 className="text-xs font-black uppercase tracking-[0.18em] text-white/45">
-                    {t.geometryTitle}{" "}
-                    {t.geometryNote ? (
-                      <span className="text-white/35">({t.geometryNote})</span>
-                    ) : null}
-                  </h4>
-                  <div className="image-fill-frame mt-4 aspect-[600/653] max-w-md overflow-hidden border border-white/10 bg-[#17202a]">
-                    <Image
-                      src={product.image}
-                      alt={product.name}
-                      fill
-                      sizes="(min-width: 1024px) 40vw, 100vw"
-                      className="object-cover"
-                    />
+                {"image" in product ? (
+                  <div>
+                    <h4 className="text-xs font-black uppercase tracking-[0.18em] text-white/45">
+                      {t.geometryTitle}{" "}
+                      {t.geometryNote ? (
+                        <span className="text-white/35">({t.geometryNote})</span>
+                      ) : null}
+                    </h4>
+                    <div className="image-fill-frame mt-4 aspect-[600/653] max-w-md overflow-hidden border border-white/10 bg-[#17202a]">
+                      <Image
+                        src={product.image}
+                        alt={product.name}
+                        fill
+                        sizes="(min-width: 1024px) 40vw, 100vw"
+                        className="object-cover"
+                      />
+                    </div>
                   </div>
-                </div>
+                ) : null}
               </div>
             </article>
           ))}
