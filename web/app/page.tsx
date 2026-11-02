@@ -5,7 +5,9 @@ import { ContactSection } from "@/components/ContactSection";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { FaqSection } from "@/components/FaqSection";
-import { SystemsSection } from "@/components/SystemsSection";import { ProfessionalSection } from "@/components/ProfessionalSection";
+import { SystemsSection } from "@/components/SystemsSection";
+import { AluSystemsSection } from "@/components/AluSystemsSection";
+import { ProfessionalSection } from "@/components/ProfessionalSection";
 import { ProjectFlowSection } from "@/components/ProjectFlowSection";
 import { ReferencesSection } from "@/components/ReferencesSection";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -46,7 +48,7 @@ export default async function Home({ searchParams }: HomeProps) {
   const products = await getProducts();
 
   return (
-    <main className="min-h-screen bg-[#111820] text-white">
+    <main className="min-h-screen bg-[#0d1218] text-white">
       <StructuredData lang={lang} />
       <Header lang={lang} products={products} />
       <Hero lang={lang} />
@@ -56,6 +58,8 @@ export default async function Home({ searchParams }: HomeProps) {
       <CategoryStrip lang={lang} />
       <SystemsSection lang={lang} system="gealan" />
       <SystemsSection lang={lang} system="koemmerling" />
+      <AluSystemsSection lang={lang} system="aluminco" />
+      <AluSystemsSection lang={lang} system="akpa" />
       <ReferencesSection lang={lang} />
       <CertificationsSection lang={lang} />
       <FaqSection lang={lang} />

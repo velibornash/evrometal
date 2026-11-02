@@ -66,7 +66,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   })).filter((spec) => spec.label || spec.value);
 
   return (
-    <main className="min-h-screen bg-[#111820] text-white">
+    <main className="min-h-screen bg-[#0d1218] text-white">
       <Header lang={lang} products={staticProducts} />
       <section className="border-b border-white/10 bg-[#0d1218] px-6 py-12 md:px-10 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">

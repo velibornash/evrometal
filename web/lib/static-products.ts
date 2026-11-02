@@ -26,7 +26,7 @@ export const staticProducts: Product[] = [
     nameEn: "Aluminium doors",
     nameDe: "Aluminiumtüren",
     description:
-      "Vrata od modernih višekomornih ALUMIL profila sa dobrom zvučnom i toplotnom izolacijom, otpornosti na vremenske uslove i visokim nivoom protivprovalne zaštite.",
+      "Vrata od modernih višekomornih Aluminco profila sa dobrom zvučnom i toplotnom izolacijom, otpornosti na vremenske uslove i visokim nivoom protivprovalne zaštite.",
     descriptionEn:
       "Doors made from modern multi-chamber ALUMIL profiles, with sound and thermal insulation, weather resistance and a high level of burglary protection.",
     descriptionDe:

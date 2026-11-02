@@ -47,8 +47,8 @@ export function Header({ lang, products = [] }: HeaderProps) {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0d1218]/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-10">
         <Link href={withLang("/", lang)} className="flex items-center gap-3" aria-label={t.aria.home}>
-          <span className="image-fill-frame h-12 w-12 overflow-hidden rounded-sm border border-white/15 bg-white shadow-[0_0_30px_rgba(255,255,255,0.08)]">
-            <Image src="/logoEvrometal.jpg" alt="" fill sizes="48px" className="object-cover object-left" />
+          <span className="image-fill-frame h-12 w-36 overflow-hidden rounded-sm border border-white/15 bg-white shadow-[0_0_30px_rgba(255,255,255,0.08)]">
+            <Image src="/logoEvrometal.png" alt="" fill sizes="144px" className="object-contain" />
           </span>
           <span className="leading-none">
             <span className="block text-sm font-bold tracking-[0.22em] text-white">

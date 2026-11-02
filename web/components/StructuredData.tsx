@@ -12,7 +12,7 @@ export function StructuredData({ lang }: StructuredDataProps) {
     "@type": "Organization",
     name: "Evrometal",
     url: "https://evrometal.rs",
-    logo: "https://evrometal.rs/logoEvrometal.jpg",
+    logo: "https://evrometal.rs/logoEvrometal.png",
     email: "office@evrometal.rs",
     telephone: "+38112327682",
     address: {

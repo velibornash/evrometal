@@ -42,8 +42,8 @@ export const dictionary = {
         { label: "Kömmerling", href: "#koemmerling" },
       ],
       aluSystemItems: [
-        { label: "ALUMIL", comingSoon: true },
-        { label: "AKPA", comingSoon: true },
+        { label: "Aluminco", href: "#aluminco" },
+        { label: "AKPA", href: "#akpa" },
       ],
     },
     search: {
@@ -62,7 +62,7 @@ export const dictionary = {
       productsCta: "Pogledaj proizvode",
       contactCta: "Razgovaraj sa timom",
       trust: [
-        ["ALUMIL / WEISS", "direktan uvoz profila"],
+        ["Aluminco / WEISS", "direktan uvoz profila"],
         ["IMS atesti", "proizvodi po standardu"],
         ["Transport + montaža", "isporuka na terenu"],
       ],
@@ -124,7 +124,7 @@ export const dictionary = {
             "Preko 40 godina tradicije: Decenije zadovoljnih klijenata su naša najbolja preporuka.",
             "Sinergija sa brendom LJUBENKOVIĆ: Kompletna rešenja za stolariju i roletne na jednom mestu.",
             "Zaokružen proces proizvodnje: Sve proizvode i staklopakete izrađujemo unutar kompanije, što garantuje brži rok isporuke i strogu kontrolu.",
-            "Najbolji svetski i domaći brendovi: Stolarija izrađena od sistema vodećih proizvođača (GEALAN, Kömmerling, ALUMIL, AKPA, ALURIS).",
+            "Najbolji svetski i domaći brendovi: Stolarija izrađena od sistema vodećih proizvođača (GEALAN, Kömmerling, Aluminco, AKPA, ALURIS).",
             "Evropski sertifikati: Proizvodi spremni za izvoz u EU koji zadovoljavaju najviše standarde građevinske industrije.",
             "Stručan tim: Naši monteri su licencirani za najzahtevnije projekte i energetski efikasnu ugradnju.",
           ],
@@ -260,6 +260,186 @@ export const dictionary = {
         text: "Važna karakteristika svih prozora koje EVROMETAL proizvodi od Kömmerling profila jeste greenline tehnologija. To znači da se u proizvodnji sirovog PVC-a ne koristi olovo, već ekološki prihvatljivi stabilizatori na bazi kalcijuma i cinka. Profili su 100% reciklabilni, pokazuju izuzetnu dugovečnost i otpornost na starenje i ekstremne vremenske uslove.",
       },
     },
+    aluminco: {
+      eyebrow: "Aluminco ALU sistemi",
+      title: "Grčki Aluminco profili – aluminijumska stolarija za stambene i komercijalne objekte.",
+      intro:
+        "Kompanija EVROMETAL u svom proizvodnom asortimanu nudi visokokvalitetne aluminijumske prozorske i klizne sisteme izrađene od profila grčkog proizvođača Aluminco. U nastavku je detaljan pregled tehničkih karakteristika, opisa i performansi vodećih sistema, namenjen arhitektama, projektantima i izvođačima radova.",
+      descriptionTitle: "Opis",
+      specsTitle: "Tehničke karakteristike",
+      schematicTitle: "Šematski prikaz",
+      systems: [
+        {
+          name: "Aluminco W450",
+          tagline: "Sistem visokih performansi sa termičkim prekidom",
+          description:
+            "Aluminco W450 je napredan, univerzalan sistem sa termičkim prekidom, razvijen kako bi ispunio savremene evropske standarde energetske efikasnosti i zvučne izolacije. Idealan je za stambene kuće, stanove, kao i za komercijalne prostore sa frekventnom upotrebom. Karakteriše ga izuzetna strukturna stabilnost uz zadržavanje minimalističkog dizajna i maksimalnog ulaska svetlosti. Sistem poseduje tri nivoa zaptivanja sa centralnom EPDM zaptivkom visokog kvaliteta.",
+          specs: [
+            ["Ugradna dubina rama", "67 mm"],
+            ["Ugradna dubina krila", "75 mm"],
+            ["Širina poliamida", "24 mm (ojačan staklenim vlaknima)"],
+            ["Toplotna izolacija (Uf)", "2.2 - 2.6 W/m²K"],
+            ["Zvučna izolacija (Rw)", "Do 43 dB"],
+            ["Maksimalna debljina stakla", "20 mm - 40 mm (troslojno pakovanje)"],
+            ["Klasa vazduhopropusnosti", "Klasa 4"],
+            ["Klasa vodonepropusnosti", "Klasa E900"],
+          ],
+          image: "/images/aluminco/w450.png",
+        },
+        {
+          name: "Aluminco W4750",
+          tagline: "Visoko-izolacioni premium sistem",
+          description:
+            "W4750 je vrhunski profil dizajniran specijalno za projekte koji zahtevaju ekstremno niske toplotne gubitke. Sa ugrađenim poliamidima širine 39 mm, ovaj sistem pruža superiornu termičku zaštitu i dramatično smanjuje troškove grejanja i hlađenja. Profil je dodatno ojačan i prilagođen za ugradnju teških troslojnih staklo paketa sa argonskim punjenjem i niskoemisionim premazima.",
+          specs: [
+            ["Ugradna dubina rama", "76 mm"],
+            ["Ugradna dubina krila", "84 mm"],
+            ["Širina poliamida", "39 mm (izolovana komora)"],
+            ["Toplotna izolacija (Uf)", "≥ 1.2 W/m²K"],
+            ["Toplotna izolacija celog prozora (Uw)", "Do 0.85 W/m²K (sa vrhunskim staklom)"],
+            ["Zastakljivanje", "Do 52 mm debljine stakla"],
+            ["Okov", "Napredni perimetrijski sistem (Euro-Groove ili Alu 16)"],
+          ],
+          image: "/images/aluminco/w4750.png",
+        },
+        {
+          name: "Aluminco W4900",
+          tagline: "Sistem za pasivne kuće",
+          description:
+            "Sistem W4900 predstavlja apsolutni tehnološki vrh ponude kompanije Aluminco. Razvijen je ekskluzivno za objekte koji se grade po rigoroznim standardima pasivnih i energetski nezavisnih kuća. Sa impresivnim Uw koeficijentom koji ide ispod 0.78 W/m²K, ovaj sistem potpuno eliminiše termičke mostove i nudi vrhunsku zvučnu izolaciju koja pruža maksimalan komfor u urbanim zonama pod visokim nivoom buke.",
+          specs: [
+            ["Koeficijent toplotnog prolaza (Uw)", "≤ 0.78 W/m²K"],
+            ["Namena", "Sertifikovane pasivne i eko-kuće"],
+            ["Zaptivanje", "Ekstrudirane sunđeraste zaptivke visoke gustine"],
+            ["Mehanička stabilnost", "Klasa izuzetne otpornosti na udare vetra (Klasa C5)"],
+          ],
+          image: "/images/aluminco/w4900.png",
+        },
+        {
+          name: "Aluminco SL2450",
+          tagline: "Premium klizni i podizno-klizni sistemi",
+          description:
+            "Klizni sistemi iz serije SL (kao i srodni AL200, AL220, AL250) rešavaju zahteve modernih arhitekata za kreiranje ogromnih staklenih zidova gde se spoljašnji i unutrašnji prostor spajaju bez vizuelnih prepreka. Podizno-klizni mehanizam omogućava da se masivna krila, težine do 400 kg, pokreću glatko i bez napora, jednim prstom. Poseban fokus je na tankom centralnom stubu (kuki) koji minimizira prekid vizure.",
+          specs: [
+            ["Maksimalna težina krila", "Do 400 kg (podizno-klizni mehanizam)"],
+            ["Vidljiva širina srednjeg profila", "Svega 30 mm - 35 mm (Slim dizajn)"],
+            ["Termička izolacija", "Poliamidne trake od 30 mm sa EPDM barijerama"],
+            ["Maksimalne dimenzije krila", "Širina do 3000 mm, Visina do 3200 mm"],
+            ["Šine za kretanje", "Inoks (nerđajući čelik) za dugotrajan ravnomeran hod"],
+          ],
+          image: "/images/aluminco/sl2450.png",
+        },
+      ],
+      note:
+        "Napomena: Tehnički podaci i vrednosti su informativnog karaktera i preuzeti su iz zvaničnih kataloga kompanije Aluminco. Prilikom izrade glavnih građevinskih projekata potrebno je konsultovati zvanične CAD/BIM baze proizvođača radi verifikacije statičkih proračuna.",
+    },
+    akpa: {
+      eyebrow: "AKPA ALU sistemi",
+      title: "Turski AKPA aluminijumski sistemi – termo i hladni sistemi, klizna i podizno-klizna rešenja.",
+      intro:
+        "Kompanija EVROMETAL u svom proizvodnom asortimanu nudi aluminijumske sisteme turskog proizvođača AKPA Aluminium. Dokumentacija je namenjena arhitektama, projektantima i izvođačima radova za potrebe specifikacije materijala i izrade radioničkih crteža.",
+      descriptionTitle: "Opis",
+      specsTitle: "Tehničke karakteristike",
+      schematicTitle: "Šematski prikaz",
+      materialSpecs: {
+        title: "Opšte tehničke specifikacije materijala",
+        items: [
+          ["Legura i hemijski sastav", "EN AW 6060 / EN AW 6063 (EN 573-3)"],
+          ["Termička obrada", "T5 i T6 (veštačko starenje)"],
+          ["Sistem zaptivanja", "EPDM zaptivke, tri nivoa zaptivanja (spoljašnja, centralna, unutrašnja)"],
+          ["Završna obrada", "Plastifikacija RAL (min. 60 µm, Qualicoat), eloksaža (Qualanod, 15-25 µm), Woodgrain premazi"],
+        ],
+      },
+      comparisonTitle: "Sistemi sa prekinutim termičkim mostom (Termo sistemi)",
+      comparisonNote:
+        "Sistemi sa prekinutim termičkim mostom koriste poliamidne trake širine od 14 mm do 34 mm koje razdvajaju spoljašnju i unutrašnju zonu aluminijumskog profila, sprečavajući provođenje toplote i pojavu kondenzacije.",
+      comparisonHeaders: ["Naziv sistema", "Dubina rama / krila", "Debljina stakla", "Glavne karakteristike i primena"],
+      comparisonRows: [
+        ["WD 55 Thermo", "55 mm / 65 mm", "Do 30 mm", "Ekonomičan sistem za stambene i poslovne objekte sa umerenim zahtevima izolacije. Poliamidna traka 14.8 mm."],
+        ["WD 64 Thermo", "64 mm / 74 mm", "Do 44 mm", "Optimalan balans cene i performansi. Poliamidna traka 24 mm. Podržava dvoslojno i troslojno staklo."],
+        ["WD 70 Thermo", "70 mm / 80 mm", "Do 50 mm", "Napredni termo sistem za energetski efikasne objekte. Visoke statičke performanse za veće otvore."],
+        ["AKPA 80 Thermo", "80 mm / 90 mm", "Do 60 mm", "Premium sistem sa maksimalnim koeficijentom izolacije. Namenjen za pasivne kuće i ekstremne klimatske uslove."],
+      ],
+      systems: [
+        {
+          name: "HS 55 Thermo",
+          tagline: "Podizno-klizni sistem",
+          description:
+            "Koristi napredni 'lift-and-slide' mehanizam gde se okretanjem ručice krilo podiže sa zaptivki i glatko klizi po inoks šinama. Pri zatvaranju, krilo se spušta i sopstvenom težinom vrši pritisak na zaptivke, čime se ostvaruju hermetičke performanse zaptivanja koje su neuporedivo bolje u odnosu na klasične klizne sisteme. Dubina rama iznosi 122 mm do 140 mm u zavisnosti od broja šina.",
+          specs: [
+            ["Dubina rama", "122 mm - 140 mm"],
+            ["Maksimalna težina krila", "Do 400 kg"],
+            ["Mehanizam", "Lift-and-slide (podizno-klizni)"],
+            ["Vođice", "Inoks (nerđajući čelik)"],
+          ],
+        },
+        {
+          name: "S 35 Novaline / CS 35 Thermo",
+          tagline: "Standardni klizni sistem",
+          description:
+            "Standardni klizni sistem sa prekinutim termičkim mostom. Kompaktne dimenzije i uski vidni profil idealni su za balkonska vrata gde se traži moderan, minimalistički dizajn.",
+          specs: [
+            ["Dubina rama", "35 mm (kompaktni profil)"],
+            ["Termo prekid", "Da (poliamidne trake)"],
+            ["Primena", "Balkonska vrata, minimalistički dizajn"],
+          ],
+        },
+        {
+          name: "S 32 Sliding System",
+          tagline: "Hladni klizni sistem",
+          description:
+            "Ekonomičan sistem bez termo prekida. Koristi se za unutrašnje pregrade ili zatvaranje lođa i terasa koje ne komuniciraju direktno sa grejanim stambenim prostorom.",
+          specs: [
+            ["Dubina rama", "32 mm"],
+            ["Termo prekid", "Ne (hladni sistem)"],
+            ["Primena", "Unutrašnje pregrade, lođe, terase"],
+          ],
+        },
+        {
+          name: "Aldoks serija",
+          tagline: "Hladni sistemi za enterijer (bez termo prekida)",
+          description:
+            "Istorijski najpoznatiji i najrasprostranjeniji aluminijumski sistem na tržištu. Dubina rama iznosi 45 mm. Odlikuje se izuzetno jednostavnom i brzom obradom na matricama. Prvenstveno se koristi za izradu unutrašnjih pregrada, vrata za kancelarije, magacine, vetrobranske prostore i industrijske objekte.",
+          specs: [
+            ["Dubina rama", "45 mm (Aldoks)"],
+            ["Termo prekid", "Ne"],
+            ["Primena", "Unutrašnje pregrade, kancelarijska vrata, magacini, industrijski objekti"],
+          ],
+        },
+        {
+          name: "WD 45 / WD 37",
+          tagline: "Moderni hladni sistemi",
+          description:
+            "Moderniji hladni sistemi sa čistijim i ravnijim linijama u poređenju sa Aldoksom. Omogućavaju ugradnju skrivene šarke i integraciju u savremene enterijerske fiksne zidove.",
+          specs: [
+            ["Dubina rama", "45 mm / 37 mm"],
+            ["Termo prekid", "Ne"],
+            ["Primena", "Savremeni enterijeri, skrivene šarke"],
+          ],
+        },
+      ],
+      certifications: {
+        title: "Tehničke karakteristike i atesti",
+        items: [
+          "Vazdušna propusnost (EN 12207): Klasa 4 (maksimalna zaptivenost pri udarima vetra).",
+          "Vodonepropusnost (EN 12208): Klasa 9A do E750 (zadržavanje prodora vode pri visokim pritiscima).",
+          "Otpornost na vetar (EN 12210): Klasa C3 / B3 (minimalni ugib profilskog sklopa pod cikličnim opterećenjem).",
+          "Toplotna izolativnost (EN ISO 10077-2): Uf od 1.6 W/m²K (AKPA 80) do 2.8 W/m²K (WD 55).",
+        ],
+      },
+      asciiSchematics: [
+        {
+          title: "Šematski poprečni presek profilskog sklopa (WD 70 Thermo)",
+          text: "      SPOLJAŠNJA STRANA                          UNUTRAŠNJA STRANA\n   +-----------------------+                +-----------------------+\n   |    Aluminijumski      |                |    Aluminijumski      |\n   |    spoljni profil     |==[POLIAMID]==  |    unutrašnji profil  |\n   |                       |==[  TRAKA  ]== |                       |\n   +----------+------------+                +------------+----------+\n              |     |                                    |     |\n              |     |======= Centralna zaptivka ========>|     |\n              +------------------------------------------+-----+\n              [================== STAKLO ==================]",
+        },
+        {
+          title: "Šematski prikaz dvokanalne šine kliznog sistema (HS 55)",
+          text: "       [ŠINA 1 - FIKSNO KRILO]            [ŠINA 2 - KLIZNO KRILO]\n      +-----------------------+          +-----------------------+\n      |  +-----------------+  |          |  +-----------------+  |\n      |  |     STAKLO      |  |          |  |     STAKLO      |  |\n      |  +-----------------+  |          |  |     STAKLO      |  |\n      +-----------+-----------+          +-----------+-----------+\n==================|==================================|==================\n   +--------------V--------------+    +--------------V--------------+\n   |  [Inoks vođica / Šina 1]   |    |  [Inoks vođica / Šina 2]   |\n   +-----------------------------+    +-----------------------------+\n   |_____________________ ZAJEDNIČKI RAM (122 mm) ___________________|",
+        },
+      ],
+      note:
+        "Napomena: Radioničke crteže, statičke proračune i drenažne otvore uvek prilagoditi konkretnoj mikrolokaciji i spratnosti objekta u skladu sa tehničkim uputstvima AKPA Aluminium.",
+    },
     professional: {
       eyebrow: "Za arhitekte, investitore i izvođače",
       title: "Brži put do pravog sistema, tačne ponude i pouzdane ugradnje.",
@@ -377,7 +557,7 @@ export const dictionary = {
     },
   },
   en: {
-    nav: { home: "Home", about: "About", products: "Products", references: "References", faq: "FAQ", contact: "Contact", quote: "Request quote", subtitle: "ALU / PVC systems", pvcSystems: "PVC systems", aluSystems: "ALU systems", comingSoon: "Coming soon", pvcSystemItems: [{ label: "GEALAN", href: "#gealan" }, { label: "Kömmerling", href: "#koemmerling" }], aluSystemItems: [{ label: "ALUMIL", comingSoon: true }, { label: "AKPA", comingSoon: true }] },
+    nav: { home: "Home", about: "About", products: "Products", references: "References", faq: "FAQ", contact: "Contact", quote: "Request quote", subtitle: "ALU / PVC systems", pvcSystems: "PVC systems", aluSystems: "ALU systems", comingSoon: "Coming soon", pvcSystemItems: [{ label: "GEALAN", href: "#gealan" }, { label: "Kömmerling", href: "#koemmerling" }], aluSystemItems: [{ label: "Aluminco", href: "#aluminco" }, { label: "AKPA", href: "#akpa" }] },
     search: {
       placeholder: "Search products...",
       seeAll: "See all results",
@@ -392,7 +572,7 @@ export const dictionary = {
       text: "For almost five decades Evrometal has developed aluminium and PVC joinery, insulated glass, hardware and systems for manufacturers. We import profiles directly, supply materials and finished products, and organise transport and on-site installation.",
       productsCta: "View products",
       contactCta: "Talk to the team",
-      trust: [["ALUMIL / WEISS", "direct profile import"], ["IMS testing", "standard-compliant products"], ["Transport + installation", "on-site delivery"]],
+      trust: [["Aluminco / WEISS", "direct profile import"], ["IMS testing", "standard-compliant products"], ["Transport + installation", "on-site delivery"]],
       program: "B2B programme",
       programText: "Materials, finished products or complete installation.",
       stats: [["45+", "years of experience"], ["ALU / PVC", "systems and profiles"], ["IMS / ISO", "testing and standards"]],
@@ -447,7 +627,7 @@ export const dictionary = {
             "Over 40 years of tradition: Decades of satisfied clients are our best recommendation.",
             "Synergy with the LJUBENKOVIĆ brand: Complete joinery and roller shutter solutions in one place.",
             "Complete production process: We manufacture all products and glass units in-house, guaranteeing faster delivery times and strict control.",
-            "Best global and domestic brands: Joinery made from systems of leading manufacturers (GEALAN, Kömmerling, ALUMIL, AKPA, ALURIS).",
+            "Best global and domestic brands: Joinery made from systems of leading manufacturers (GEALAN, Kömmerling, Aluminco, AKPA, ALURIS).",
             "European certificates: Products ready for EU export meeting the highest construction industry standards.",
             "Expert team: Our installers are licensed for the most demanding projects and energy-efficient installation.",
           ],
@@ -569,6 +749,186 @@ export const dictionary = {
         text: "An important feature of all windows that EVROMETAL manufactures from Kömmerling profiles is the greenline® technology. This means that no lead is used in the production of raw PVC, but environmentally friendly stabilisers based on calcium and zinc. The profiles are 100% recyclable and offer exceptional longevity and resistance to ageing and extreme weather conditions.",
       },
     },
+    aluminco: {
+      eyebrow: "Aluminco ALU systems",
+      title: "Greek Aluminco profiles – aluminium joinery for residential and commercial buildings.",
+      intro:
+        "EVROMETAL's production range includes high-quality aluminium window and sliding systems made from profiles of the Greek manufacturer Aluminco. Below is a detailed overview of the technical characteristics, descriptions and performance of the leading systems, intended for architects, designers and contractors.",
+      descriptionTitle: "Description",
+      specsTitle: "Technical characteristics",
+      schematicTitle: "Schematic diagram",
+      systems: [
+        {
+          name: "Aluminco W450",
+          tagline: "High-performance system with thermal break",
+          description:
+            "Aluminco W450 is an advanced, universal system with a thermal break, developed to meet modern European standards of energy efficiency and sound insulation. It is ideal for residential houses, apartments as well as commercial spaces with frequent use. It is characterised by exceptional structural stability while retaining a minimalist design and maximum light intake. The system features three sealing levels with a high-quality central EPDM gasket.",
+          specs: [
+            ["Frame installation depth", "67 mm"],
+            ["Sash installation depth", "75 mm"],
+            ["Polyamide width", "24 mm (glass-fibre reinforced)"],
+            ["Thermal insulation (Uf)", "2.2 - 2.6 W/m²K"],
+            ["Sound insulation (Rw)", "Up to 43 dB"],
+            ["Maximum glass thickness", "20 mm - 40 mm (triple glazing)"],
+            ["Air permeability class", "Class 4"],
+            ["Water tightness class", "Class E900"],
+          ],
+          image: "/images/aluminco/w450.png",
+        },
+        {
+          name: "Aluminco W4750",
+          tagline: "High-insulation premium system",
+          description:
+            "W4750 is a top-tier profile designed specifically for projects requiring extremely low heat losses. With built-in polyamides 39 mm wide, this system provides superior thermal protection and dramatically reduces heating and cooling costs. The profile is additionally reinforced and adapted for the installation of heavy triple-glazed units with argon filling and low-emission coatings.",
+          specs: [
+            ["Frame installation depth", "76 mm"],
+            ["Sash installation depth", "84 mm"],
+            ["Polyamide width", "39 mm (insulated chamber)"],
+            ["Thermal insulation (Uf)", "≥ 1.2 W/m²K"],
+            ["Whole-window thermal insulation (Uw)", "Up to 0.85 W/m²K (with premium glass)"],
+            ["Glazing", "Up to 52 mm glass thickness"],
+            ["Hardware", "Advanced perimeter system (Euro-Groove or Alu 16)"],
+          ],
+          image: "/images/aluminco/w4750.png",
+        },
+        {
+          name: "Aluminco W4900",
+          tagline: "System for passive houses",
+          description:
+            "The W4900 system represents the absolute technological peak of the Aluminco range. It was developed exclusively for buildings constructed to rigorous standards of passive and energy-independent houses. With an impressive Uw coefficient below 0.78 W/m²K, this system completely eliminates thermal bridges and offers supreme sound insulation providing maximum comfort in urban zones with high noise levels.",
+          specs: [
+            ["Heat transfer coefficient (Uw)", "≤ 0.78 W/m²K"],
+            ["Purpose", "Certified passive and eco houses"],
+            ["Sealing", "Extruded high-density sponge gaskets"],
+            ["Mechanical stability", "Exceptional wind-load resistance class (Class C5)"],
+          ],
+          image: "/images/aluminco/w4900.png",
+        },
+        {
+          name: "Aluminco SL2450",
+          tagline: "Premium sliding and lift-and-slide systems",
+          description:
+            "Sliding systems from the SL series (and related AL200, AL220, AL250) solve the demands of modern architects for creating huge glass walls where exterior and interior space merge without visual barriers. The lift-and-slide mechanism allows massive sashes weighing up to 400 kg to move smoothly and effortlessly with one finger. Special focus is on the thin central mullion (hook) that minimises the visual interruption.",
+          specs: [
+            ["Maximum sash weight", "Up to 400 kg (lift-and-slide mechanism)"],
+            ["Visible width of middle profile", "Only 30 mm - 35 mm (Slim design)"],
+            ["Thermal insulation", "30 mm polyamide strips with EPDM barriers"],
+            ["Maximum sash dimensions", "Width up to 3000 mm, Height up to 3200 mm"],
+            ["Running rails", "Stainless steel (inox) for long-lasting even travel"],
+          ],
+          image: "/images/aluminco/sl2450.png",
+        },
+      ],
+      note:
+        "Note: Technical data and values are for informational purposes and taken from the official Aluminco catalogues. When preparing main construction projects, always consult the manufacturer's official CAD/BIM databases to verify static calculations.",
+    },
+    akpa: {
+      eyebrow: "AKPA ALU systems",
+      title: "Turkish AKPA aluminium systems – thermal-break and cold systems, sliding and lift-and-slide solutions.",
+      intro:
+        "EVROMETAL's production range includes aluminium systems by the Turkish manufacturer AKPA Aluminium. The documentation is intended for architects, designers and contractors for material specification and workshop drawing preparation.",
+      descriptionTitle: "Description",
+      specsTitle: "Technical characteristics",
+      schematicTitle: "Schematic diagram",
+      materialSpecs: {
+        title: "General material technical specifications",
+        items: [
+          ["Alloy and chemical composition", "EN AW 6060 / EN AW 6063 (EN 573-3)"],
+          ["Thermal treatment", "T5 and T6 (artificial ageing)"],
+          ["Sealing system", "EPDM gaskets, three sealing levels (outer, central, inner)"],
+          ["Surface finish", "Powder coating RAL (min. 60 µm, Qualicoat), anodising (Qualanod, 15-25 µm), Woodgrain coatings"],
+        ],
+      },
+      comparisonTitle: "Thermal-break systems (Thermo systems)",
+      comparisonNote:
+        "Thermal-break systems use polyamide strips 14 mm to 34 mm wide that separate the outer and inner zones of the aluminium profile, preventing heat conduction and condensation.",
+      comparisonHeaders: ["System name", "Frame / sash depth", "Glass thickness", "Main characteristics and application"],
+      comparisonRows: [
+        ["WD 55 Thermo", "55 mm / 65 mm", "Up to 30 mm", "Economical system for residential and commercial buildings with moderate insulation requirements. Polyamide strip 14.8 mm."],
+        ["WD 64 Thermo", "64 mm / 74 mm", "Up to 44 mm", "Optimal balance of price and performance. Polyamide strip 24 mm. Supports double and triple glazing."],
+        ["WD 70 Thermo", "70 mm / 80 mm", "Up to 50 mm", "Advanced thermo system for energy-efficient buildings. High static performance for larger openings."],
+        ["AKPA 80 Thermo", "80 mm / 90 mm", "Up to 60 mm", "Premium system with maximum insulation coefficient. Intended for passive houses and extreme climate conditions."],
+      ],
+      systems: [
+        {
+          name: "HS 55 Thermo",
+          tagline: "Lift-and-slide system",
+          description:
+            "Uses an advanced 'lift-and-slide' mechanism where turning the handle lifts the sash off the gaskets and it glides smoothly along stainless-steel rails. When closing, the sash drops and its own weight presses on the gaskets, achieving hermetic sealing performance far superior to classic sliding systems. Frame depth ranges from 122 mm to 140 mm depending on the number of rails.",
+          specs: [
+            ["Frame depth", "122 mm - 140 mm"],
+            ["Maximum sash weight", "Up to 400 kg"],
+            ["Mechanism", "Lift-and-slide"],
+            ["Rails", "Stainless steel (inox)"],
+          ],
+        },
+        {
+          name: "S 35 Novaline / CS 35 Thermo",
+          tagline: "Standard sliding system",
+          description:
+            "Standard sliding system with thermal break. Compact dimensions and a narrow visible profile are ideal for balcony doors where a modern, minimalist design is required.",
+          specs: [
+            ["Frame depth", "35 mm (compact profile)"],
+            ["Thermal break", "Yes (polyamide strips)"],
+            ["Application", "Balcony doors, minimalist design"],
+          ],
+        },
+        {
+          name: "S 32 Sliding System",
+          tagline: "Cold sliding system",
+          description:
+            "Economical system without thermal break. Used for interior partitions or enclosing loggias and terraces that do not communicate directly with heated living spaces.",
+          specs: [
+            ["Frame depth", "32 mm"],
+            ["Thermal break", "No (cold system)"],
+            ["Application", "Interior partitions, loggias, terraces"],
+          ],
+        },
+        {
+          name: "Aldoks series",
+          tagline: "Cold interior systems (no thermal break)",
+          description:
+            "The historically best-known and most widespread aluminium system on the market. Frame depth is 45 mm. It is characterised by extremely simple and fast machining on dies. Primarily used for making interior partitions, office doors, warehouses, windbreak spaces and industrial buildings.",
+          specs: [
+            ["Frame depth", "45 mm (Aldoks)"],
+            ["Thermal break", "No"],
+            ["Application", "Interior partitions, office doors, warehouses, industrial buildings"],
+          ],
+        },
+        {
+          name: "WD 45 / WD 37",
+          tagline: "Modern cold systems",
+          description:
+            "More modern cold systems with cleaner and flatter lines compared to Aldoks. They allow the installation of concealed hinges and integration into modern interior fixed walls.",
+          specs: [
+            ["Frame depth", "45 mm / 37 mm"],
+            ["Thermal break", "No"],
+            ["Application", "Modern interiors, concealed hinges"],
+          ],
+        },
+      ],
+      certifications: {
+        title: "Technical characteristics and certifications",
+        items: [
+          "Air permeability (EN 12207): Class 4 (maximum tightness under wind impact).",
+          "Water tightness (EN 12208): Class 9A to E750 (retention of water penetration under high pressure).",
+          "Wind resistance (EN 12210): Class C3 / B3 (minimum deflection of the profile assembly under cyclic load).",
+          "Thermal insulation (EN ISO 10077-2): Uf from 1.6 W/m²K (AKPA 80) to 2.8 W/m²K (WD 55).",
+        ],
+      },
+      asciiSchematics: [
+        {
+          title: "Schematic cross-section of the profile assembly (WD 70 Thermo)",
+          text: "      EXTERIOR SIDE                          INTERIOR SIDE\n   +-----------------------+                +-----------------------+\n   |    Aluminium          |                |    Aluminium          |\n   |    outer profile      |==[POLYAMIDE]== |    inner profile      |\n   |                       |==[  STRIP  ]== |                       |\n   +----------+------------+                +------------+----------+\n              |     |                                    |     |\n              |     |======= Central gasket ============>|     |\n              +------------------------------------------+-----+\n              [================== GLASS ==================]",
+        },
+        {
+          title: "Schematic view of the two-channel rail of the sliding system (HS 55)",
+          text: "       [RAIL 1 - FIXED SASH]            [RAIL 2 - SLIDING SASH]\n      +-----------------------+          +-----------------------+\n      |  +-----------------+  |          |  +-----------------+  |\n      |  |     GLASS       |  |          |  |     GLASS       |  |\n      |  +-----------------+  |          |  |     GLASS       |  |\n      +-----------+-----------+          +-----------+-----------+\n==================|==================================|==================\n   +--------------V--------------+    +--------------V--------------+\n   |  [Stainless guide / Rail 1] |    |  [Stainless guide / Rail 2] |\n   +-----------------------------+    +-----------------------------+\n   |_____________________ COMMON FRAME (122 mm) _____________________|",
+        },
+      ],
+      note:
+        "Note: Workshop drawings, static calculations and drainage openings must always be adapted to the specific micro-location and building height in accordance with the AKPA Aluminium technical instructions.",
+    },
     professional: {
       eyebrow: "For architects, investors and contractors",
       title: "A faster route to specification, quotation and installation.",
@@ -618,7 +978,7 @@ export const dictionary = {
     },
   },
   de: {
-    nav: { home: "Start", about: "Über uns", products: "Produkte", references: "Referenzen", faq: "FAQ", contact: "Kontakt", quote: "Angebot anfragen", subtitle: "ALU / PVC Systeme", pvcSystems: "PVC-Systeme", aluSystems: "ALU-Systeme", comingSoon: "Demnächst", pvcSystemItems: [{ label: "GEALAN", href: "#gealan" }, { label: "Kömmerling", href: "#koemmerling" }], aluSystemItems: [{ label: "ALUMIL", comingSoon: true }, { label: "AKPA", comingSoon: true }] },
+    nav: { home: "Start", about: "Über uns", products: "Produkte", references: "Referenzen", faq: "FAQ", contact: "Kontakt", quote: "Angebot anfragen", subtitle: "ALU / PVC Systeme", pvcSystems: "PVC-Systeme", aluSystems: "ALU-Systeme", comingSoon: "Demnächst", pvcSystemItems: [{ label: "GEALAN", href: "#gealan" }, { label: "Kömmerling", href: "#koemmerling" }], aluSystemItems: [{ label: "Aluminco", href: "#aluminco" }, { label: "AKPA", href: "#akpa" }] },
     search: {
       placeholder: "Produkte suchen...",
       seeAll: "Alle Ergebnisse anzeigen",
@@ -633,7 +993,7 @@ export const dictionary = {
       text: "Seit fast fünf Jahrzehnten entwickelt Evrometal Aluminium- und PVC-Bauelemente, Isolierglas, Beschläge und Systeme für Hersteller. Wir importieren Profile direkt, liefern Material und fertige Elemente und organisieren Transport sowie Montage vor Ort.",
       productsCta: "Produkte ansehen",
       contactCta: "Team kontaktieren",
-      trust: [["ALUMIL / WEISS", "direkter Profilimport"], ["IMS Prüfungen", "Produkte nach Standard"], ["Transport + Montage", "Lieferung vor Ort"]],
+      trust: [["Aluminco / WEISS", "direkter Profilimport"], ["IMS Prüfungen", "Produkte nach Standard"], ["Transport + Montage", "Lieferung vor Ort"]],
       program: "B2B Programm",
       programText: "Material, fertiges Produkt oder komplette Montage.",
       stats: [["45+", "Jahre Erfahrung"], ["ALU / PVC", "Systeme und Profile"], ["IMS / ISO", "Prüfung und Standards"]],
@@ -688,7 +1048,7 @@ export const dictionary = {
             "Über 40 Jahre Tradition: Jahrzehnte zufriedener Kunden sind unsere beste Empfehlung.",
             "Synergie mit der Marke LJUBENKOVIĆ: Komplette Lösungen für Bauelemente und Rollläden an einem Ort.",
             "Geschlossener Produktionsprozess: Alle Produkte und Isoliergläser fertigen wir im eigenen Haus – für schnellere Lieferzeiten und strenge Kontrolle.",
-            "Beste internationale und heimische Marken: Bauelemente aus Systemen führender Hersteller (GEALAN, Kömmerling, ALUMIL, AKPA, ALURIS).",
+            "Beste internationale und heimische Marken: Bauelemente aus Systemen führender Hersteller (GEALAN, Kömmerling, Aluminco, AKPA, ALURIS).",
             "Europäische Zertifikate: Produkte bereit für den EU-Export, die höchste Standards der Baubranche erfüllen.",
             "Fachkundiges Team: Unsere Monteure sind lizenziert für anspruchsvollste Projekte und energieeffizienten Einbau.",
           ],
@@ -809,6 +1169,186 @@ export const dictionary = {
         title: "Ökologische und produktionstechnische Standards: Greenline-Technologie",
         text: "Ein wichtiges Merkmal aller Fenster, die EVROMETAL aus Kömmerling-Profilen herstellt, ist die greenline-Technologie. Das bedeutet, dass bei der Herstellung des Roh-PVC kein Blei verwendet wird, sondern umweltfreundliche Stabilisatoren auf Basis von Calcium und Zink. Die Profile sind zu 100 % recycelbar und bieten eine außergewöhnliche Langlebigkeit sowie Widerstandsfähigkeit gegen Alterung und extreme Wetterbedingungen.",
       },
+    },
+    aluminco: {
+      eyebrow: "Aluminco ALU-Systeme",
+      title: "Griechische Aluminco-Profile – Aluminiumbauelemente für Wohn- und Gewerbeobjekte.",
+      intro:
+        "Das Produktionsprogramm von EVROMETAL umfasst hochwertige Aluminium-Fenster- und Schiebesysteme aus Profilen des griechischen Herstellers Aluminco. Nachfolgend finden Sie eine detaillierte Übersicht der technischen Eigenschaften, Beschreibungen und Leistungsdaten der führenden Systeme, bestimmt für Architekten, Planer und Ausführende.",
+      descriptionTitle: "Beschreibung",
+      specsTitle: "Technische Eigenschaften",
+      schematicTitle: "Schematische Darstellung",
+      systems: [
+        {
+          name: "Aluminco W450",
+          tagline: "Hochleistungssystem mit thermischer Trennung",
+          description:
+            "Aluminco W450 ist ein fortschrittliches, universelles System mit thermischer Trennung, entwickelt zur Erfüllung moderner europäischer Standards für Energieeffizienz und Schalldämmung. Es eignet sich ideal für Einfamilienhäuser, Wohnungen sowie Gewerberäume mit intensiver Nutzung. Es zeichnet sich durch außergewöhnliche strukturelle Stabilität bei gleichzeitig minimalistischem Design und maximalem Lichteinfall aus. Das System verfügt über drei Dichtungsebenen mit einer hochwertigen zentralen EPDM-Dichtung.",
+          specs: [
+            ["Einbautiefe des Rahmens", "67 mm"],
+            ["Einbautiefe des Flügels", "75 mm"],
+            ["Polyamid-Breite", "24 mm (glasfaserverstärkt)"],
+            ["Wärmedämmung (Uf)", "2,2 - 2,6 W/m²K"],
+            ["Schalldämmung (Rw)", "Bis 43 dB"],
+            ["Maximale Glasstärke", "20 mm - 40 mm (Dreifachverglasung)"],
+            ["Luftdurchlässigkeit", "Klasse 4"],
+            ["Wasserdichtheit", "Klasse E900"],
+          ],
+          image: "/images/aluminco/w450.png",
+        },
+        {
+          name: "Aluminco W4750",
+          tagline: "Hochdämmendes Premiumsystem",
+          description:
+            "W4750 ist ein erstklassiges Profil, speziell entwickelt für Projekte mit extrem niedrigen Wärmeverlusten. Mit eingebauten Polyamiden von 39 mm Breite bietet dieses System überlegene Wärmedämmung und reduziert Heiz- und Kühlkosten drastisch. Das Profil ist zusätzlich verstärkt und für den Einbau schwerer Dreifachglas-Pakete mit Argonfüllung und niedrig emittierenden Beschichtungen angepasst.",
+          specs: [
+            ["Einbautiefe des Rahmens", "76 mm"],
+            ["Einbautiefe des Flügels", "84 mm"],
+            ["Polyamid-Breite", "39 mm (isolierte Kammer)"],
+            ["Wärmedämmung (Uf)", "≥ 1,2 W/m²K"],
+            ["Wärmedämmung des Fensters (Uw)", "Bis 0,85 W/m²K (mit Premiumglas)"],
+            ["Verglasung", "Bis 52 mm Glasstärke"],
+            ["Beschlag", "Fortschrittliches Perimetersystem (Euro-Groove oder Alu 16)"],
+          ],
+          image: "/images/aluminco/w4750.png",
+        },
+        {
+          name: "Aluminco W4900",
+          tagline: "System für Passivhäuser",
+          description:
+            "Das System W4900 stellt den absoluten technologischen Höchststand des Aluminco-Sortiments dar. Es wurde exklusiv für Gebäude entwickelt, die nach strengen Standards für Passiv- und energieautarke Häuser errichtet werden. Mit einem beeindruckenden Uw-Koeffizienten unter 0,78 W/m²K eliminiert dieses System thermische Brücken vollständig und bietet erstklassige Schalldämmung für maximalen Komfort in städtischen Zonen mit hohem Lärmpegel.",
+          specs: [
+            ["Wärmedurchgangskoeffizient (Uw)", "≤ 0,78 W/m²K"],
+            ["Verwendung", "Zertifizierte Passiv- und Ökohäuser"],
+            ["Dichtung", "Extrudierte hochdichte Schwammdichtungen"],
+            ["Mechanische Stabilität", "Außergewöhnliche Windlastwiderstandsklasse (Klasse C5)"],
+          ],
+          image: "/images/aluminco/w4900.png",
+        },
+        {
+          name: "Aluminco SL2450",
+          tagline: "Premium-Schiebe- und Hebe-Schiebesysteme",
+          description:
+            "Schiebesysteme der Serie SL (sowie verwandte AL200, AL220, AL250) lösen die Anforderungen moderner Architekten an die Schaffung riesiger Glaswände, bei denen Außen- und Innenraum ohne visuelle Barrieren verschmelzen. Der Hebe-Schiebemechanismus ermöglicht es, massive Flügel mit bis zu 400 kg Gewicht mühelos mit einem Finger zu bewegen. Besonderes Augenmerk liegt auf dem dünnen Mittelsteg (Haken), der den Sichtunterbruch minimiert.",
+          specs: [
+            ["Maximales Flügelgewicht", "Bis 400 kg (Hebe-Schiebemechanismus)"],
+            ["Sichtbare Breite des Mittelprofils", "Nur 30 mm - 35 mm (Slim-Design)"],
+            ["Wärmedämmung", "30 mm Polyamidstreifen mit EPDM-Barrieren"],
+            ["Maximale Flügelabmessungen", "Breite bis 3000 mm, Höhe bis 3200 mm"],
+            ["Laufschienen", "Edelstahl (Inox) für langlebigen gleichmäßigen Lauf"],
+          ],
+          image: "/images/aluminco/sl2450.png",
+        },
+      ],
+      note:
+        "Hinweis: Technische Daten und Werte sind informativ und aus den offiziellen Aluminco-Katalogen entnommen. Bei der Erstellung von Hauptbauprojekten sind stets die offiziellen CAD/BIM-Datenbanken des Herstellers zur Verifikation der statischen Berechnungen zu konsultieren.",
+    },
+    akpa: {
+      eyebrow: "AKPA ALU-Systeme",
+      title: "Türkische AKPA-Aluminiumsysteme – Thermische und kalte Systeme, Schiebe- und Hebe-Schiebelösungen.",
+      intro:
+        "Das Produktionsprogramm von EVROMETAL umfasst Aluminiumsysteme des türkischen Herstellers AKPA Aluminium. Die Dokumentation ist für Architekten, Planer und Ausführende zur Materialspezifikation und Erstellung von Werkstattzeichnungen bestimmt.",
+      descriptionTitle: "Beschreibung",
+      specsTitle: "Technische Eigenschaften",
+      schematicTitle: "Schematische Darstellung",
+      materialSpecs: {
+        title: "Allgemeine technische Materialeigenschaften",
+        items: [
+          ["Legierung und chemische Zusammensetzung", "EN AW 6060 / EN AW 6063 (EN 573-3)"],
+          ["Wärmebehandlung", "T5 und T6 (künstliche Alterung)"],
+          ["Dichtungssystem", "EPDM-Dichtungen, drei Dichtungsebenen (außen, mittig, innen)"],
+          ["Oberflächenbehandlung", "Pulverbeschichtung RAL (min. 60 µm, Qualicoat), Eloxal (Qualanod, 15-25 µm), Woodgrain-Beschichtungen"],
+        ],
+      },
+      comparisonTitle: "Systeme mit thermischer Trennung (Thermo-Systeme)",
+      comparisonNote:
+        "Systeme mit thermischer Trennung verwenden Polyamidstreifen von 14 mm bis 34 mm Breite, die den äußeren und inneren Bereich des Aluminiumprofils trennen und Wärmeleitung sowie Kondensation verhindern.",
+      comparisonHeaders: ["Systemname", "Rahmen- / Flügeltiefe", "Glasstärke", "Hauptmerkmale und Anwendung"],
+      comparisonRows: [
+        ["WD 55 Thermo", "55 mm / 65 mm", "Bis 30 mm", "Wirtschaftliches System für Wohn- und Gewerbeobjekte mit moderaten Dämmungsanforderungen. Polyamidstreifen 14,8 mm."],
+        ["WD 64 Thermo", "64 mm / 74 mm", "Bis 44 mm", "Optimaler Preis-Leistungs-Balance. Polyamidstreifen 24 mm. Unterstützt Zwei- und Dreifachverglasung."],
+        ["WD 70 Thermo", "70 mm / 80 mm", "Bis 50 mm", "Fortschrittliches Thermo-System für energieeffiziente Gebäude. Hohe statische Leistung für größere Öffnungen."],
+        ["AKPA 80 Thermo", "80 mm / 90 mm", "Bis 60 mm", "Premium-System mit maximalem Isolationskoeffizienten. Für Passivhäuser und extreme Klimabedingungen."],
+      ],
+      systems: [
+        {
+          name: "HS 55 Thermo",
+          tagline: "Hebe-Schiebesystem",
+          description:
+            "Verwendet einen fortschrittlichen 'Lift-and-Slide'-Mechanismus, bei dem durch Drehen des Griffes der Flügel von den Dichtungen angehoben wird und mühelos auf Edelstahlschienen gleitet. Beim Schließen senkt sich der Flügel und übt durch sein eigenes Gewicht Druck auf die Dichtungen aus, wodurch hermetische Dichtleistungen erreicht werden, die klassischen Schiebesystemen weit überlegen sind. Die Rahmentiefe beträgt je nach Anzahl der Schienen 122 mm bis 140 mm.",
+          specs: [
+            ["Rahmentiefe", "122 mm - 140 mm"],
+            ["Maximales Flügelgewicht", "Bis 400 kg"],
+            ["Mechanismus", "Lift-and-Slide (Hebe-Schiebe)"],
+            ["Führungen", "Edelstahl (Inox)"],
+          ],
+        },
+        {
+          name: "S 35 Novaline / CS 35 Thermo",
+          tagline: "Standard-Schiebesystem",
+          description:
+            "Standard-Schiebesystem mit thermischer Trennung. Kompakte Abmessungen und schmales Sichtprofil sind ideal für Balkontüren, bei denen ein modernes, minimalistisches Design gefordert ist.",
+          specs: [
+            ["Rahmentiefe", "35 mm (kompaktes Profil)"],
+            ["Thermische Trennung", "Ja (Polyamidstreifen)"],
+            ["Anwendung", "Balkontüren, minimalistisches Design"],
+          ],
+        },
+        {
+          name: "S 32 Sliding System",
+          tagline: "Kaltes Schiebesystem",
+          description:
+            "Wirtschaftliches System ohne thermische Trennung. Verwendet für Innenraumtrennwände oder den Verschluss von Loggien und Terrassen, die nicht direkt mit beheizten Wohnräumen kommunizieren.",
+          specs: [
+            ["Rahmentiefe", "32 mm"],
+            ["Thermische Trennung", "Nein (kaltes System)"],
+            ["Anwendung", "Innenraumtrennwände, Loggien, Terrassen"],
+          ],
+        },
+        {
+          name: "Aldoks-Serie",
+          tagline: "Kalte Innenraumsysteme (ohne thermische Trennung)",
+          description:
+            "Das historisch bekannteste und am weitesten verbreitete Aluminiumsystem auf dem Markt. Die Rahmentiefe beträgt 45 mm. Es zeichnet sich durch äußerst einfache und schnelle Bearbeitung auf Matrizen aus. Primär verwendet für die Herstellung von Innenraumtrennwänden, Bürotüren, Lagerräumen, Windfängen und Industrieobjekten.",
+          specs: [
+            ["Rahmentiefe", "45 mm (Aldoks)"],
+            ["Thermische Trennung", "Nein"],
+            ["Anwendung", "Innenraumtrennwände, Bürotüren, Lager, Industrieobjekte"],
+          ],
+        },
+        {
+          name: "WD 45 / WD 37",
+          tagline: "Moderne kalte Systeme",
+          description:
+            "Modernere kalte Systeme mit saubereren und flacheren Linien im Vergleich zu Aldoks. Sie ermöglichen den Einbau verdeckter Bänder und die Integration in moderne innenarchitektonische Festwände.",
+          specs: [
+            ["Rahmentiefe", "45 mm / 37 mm"],
+            ["Thermische Trennung", "Nein"],
+            ["Anwendung", "Moderne Innenräume, verdeckte Bänder"],
+          ],
+        },
+      ],
+      certifications: {
+        title: "Technische Eigenschaften und Zertifizierungen",
+        items: [
+          "Luftdurchlässigkeit (EN 12207): Klasse 4 (maximale Dichtigkeit bei Windstößen).",
+          "Wasserdichtheit (EN 12208): Klasse 9A bis E750 (Rückhalt von Wassereintritt bei hohen Drücken).",
+          "Windwiderstand (EN 12210): Klasse C3 / B3 (minimaler Durchbiegung der Profilbaugruppe unter zyklischer Belastung).",
+          "Wärmedämmung (EN ISO 10077-2): Uf von 1,6 W/m²K (AKPA 80) bis 2,8 W/m²K (WD 55).",
+        ],
+      },
+      asciiSchematics: [
+        {
+          title: "Schematischer Querschnitt der Profilbaugruppe (WD 70 Thermo)",
+          text: "      AUßENSEITE                          INNENSEITE\n   +-----------------------+                +-----------------------+\n   |    Aluminium          |                |    Aluminium          |\n   |    Außenprofil        |==[POLYAMID]==  |    Innenprofil        |\n   |                       |==[  STREIFEN]== |                       |\n   +----------+------------+                +------------+----------+\n              |     |                                    |     |\n              |     |======= Zentrale Dichtung =========>|     |\n              +------------------------------------------+-----+\n              [================== GLAS ==================]",
+        },
+        {
+          title: "Schematische Ansicht der Zweikanal-Schiene des Schiebesystems (HS 55)",
+          text: "       [SCHIENE 1 - FESTFLÜGEL]            [SCHIENE 2 - SCHIEBEFLÜGEL]\n      +-----------------------+          +-----------------------+\n      |  +-----------------+  |          |  +-----------------+  |\n      |  |     GLAS        |  |          |  |     GLAS        |  |\n      |  +-----------------+  |          |  |     GLAS        |  |\n      +-----------+-----------+          +-----------+-----------+\n==================|==================================|==================\n   +--------------V--------------+    +--------------V--------------+\n   |  [Edelstahlführung/Schiene1]|    |  [Edelstahlführung/Schiene2]|\n   +-----------------------------+    +-----------------------------+\n   |_____________________ GEMEINSAMER RAHMEN (122 mm) ___________________|",
+        },
+      ],
+      note:
+        "Hinweis: Werkstattzeichnungen, statische Berechnungen und Entwässerungsöffnungen sind stets an den konkreten Mikrostandort und die Gebäudehöhe gemäß den technischen Anweisungen von AKPA Aluminium anzupassen.",
     },
     professional: {
       eyebrow: "Für Architekten, Investoren und Ausführer",

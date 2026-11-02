@@ -8,7 +8,7 @@ export function ReferencesSection({ lang }: ReferencesSectionProps) {
   const t = dictionary[lang].references;
 
   return (
-    <section id="references" className="bg-[#111820] px-6 py-16 md:px-10 md:py-24">
+    <section id="references" className="bg-[#0d1218] px-6 py-16 md:px-10 md:py-24">
       <div className="mx-auto max-w-7xl">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-200">
           {t.eyebrow}

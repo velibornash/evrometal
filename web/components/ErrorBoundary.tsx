@@ -38,7 +38,7 @@ export class ErrorBoundary extends Component<Props, State> {
     if (this.state.hasError) {
       const t = dictionary[this.currentLang].error;
       return (
-        <div className="min-h-screen bg-[#111820] text-white flex items-center justify-center">
+        <div className="min-h-screen bg-[#0d1218] text-white flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-white mb-4">{t.title}</h1>
             <p className="text-white/60 mb-8">{t.message}</p>
