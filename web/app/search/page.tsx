@@ -74,7 +74,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
   const t = dictionary[lang];
 
   return (
-    <main className="min-h-screen bg-[#0d1218] text-white">
+    <main className="min-h-screen bg-[#0a192f] text-white">
       <Header lang={lang} products={products} />
       
       <section className="px-6 py-16 md:px-10 md:py-24">

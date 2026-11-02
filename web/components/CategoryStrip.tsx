@@ -8,7 +8,7 @@ export function CategoryStrip({ lang }: CategoryStripProps) {
   const t = dictionary[lang].categories;
 
   return (
-    <section id="systems" className="border-b border-white/10 bg-[#0d1218] px-6 py-14 md:px-10">
+    <section id="systems" className="border-b border-white/10 bg-[#0a192f] px-6 py-14 md:px-10">
       <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.58fr_1.42fr] lg:items-end">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-200">

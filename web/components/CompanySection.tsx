@@ -9,7 +9,7 @@ export function CompanySection({ lang }: CompanySectionProps) {
   const t = dictionary[lang].company;
 
   return (
-    <section id="about" className="border-b border-white/10 bg-[#0d1218] px-6 py-16 md:px-10 md:py-24">
+    <section id="about" className="border-b border-white/10 bg-[#0a192f] px-6 py-16 md:px-10 md:py-24">
       <div className="mx-auto max-w-5xl">
         <p className="text-center text-xs font-semibold uppercase tracking-[0.22em] text-amber-200">
           {t.eyebrow}

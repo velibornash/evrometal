@@ -9,7 +9,7 @@ export function CertificationsSection({ lang }: CertificationsSectionProps) {
   const t = dictionary[lang].certs;
 
   return (
-    <section id="certificates" className="border-y border-white/10 bg-[#0d1218] px-6 py-16 md:px-10">
+    <section id="certificates" className="border-y border-white/10 bg-[#0a192f] px-6 py-16 md:px-10">
       <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[1fr_auto] md:items-center">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-200">

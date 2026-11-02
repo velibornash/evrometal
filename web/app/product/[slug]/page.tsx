@@ -66,9 +66,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   })).filter((spec) => spec.label || spec.value);
 
   return (
-    <main className="min-h-screen bg-[#0d1218] text-white">
+    <main className="min-h-screen bg-[#0a192f] text-white">
       <Header lang={lang} products={staticProducts} />
-      <section className="border-b border-white/10 bg-[#0d1218] px-6 py-12 md:px-10 md:py-20">
+      <section className="border-b border-white/10 bg-[#0a192f] px-6 py-12 md:px-10 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div>
             <Link href={withLang("#gealan", lang)} className="text-sm font-semibold text-amber-200 transition hover:text-amber-100">
@@ -133,7 +133,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               </h2>
               <div className="grid gap-4 overflow-hidden rounded-sm border border-white/10 bg-white/[0.035] sm:grid-cols-2 lg:grid-cols-3">
                 {specs.map((spec, index) => (
-                  <div key={`${spec.label}-${spec.value}-${index}`} className="border-b border-white/5 bg-[#111820]/50 p-6 transition last:border-b-0 hover:bg-[#111820]">
+                  <div key={`${spec.label}-${spec.value}-${index}`} className="border-b border-white/5 bg-[#0a192f]/50 p-6 transition last:border-b-0 hover:bg-[#0a192f]">
                     <div className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-200/60">
                       {spec.label}
                     </div>

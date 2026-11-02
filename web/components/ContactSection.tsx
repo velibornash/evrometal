@@ -15,7 +15,7 @@ export function ContactSection({ lang }: ContactSectionProps) {
   ];
 
   return (
-    <section id="contact" className="bg-[#0d1218] px-6 py-16 md:px-10">
+    <section id="contact" className="bg-[#0a192f] px-6 py-16 md:px-10">
       <div className="mx-auto max-w-7xl">
         <div className="mb-12">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-200">
@@ -42,7 +42,7 @@ export function ContactSection({ lang }: ContactSectionProps) {
                   <a
                     key={label}
                     href={href}
-                    className="border border-white/10 bg-[#0d1218]/72 p-4 transition hover:border-amber-200/36 hover:bg-[#111820]"
+                    className="border border-white/10 bg-[#0a192f]/72 p-4 transition hover:border-amber-200/36 hover:bg-[#0a192f]"
                   >
                     <span className="block text-xs font-semibold uppercase tracking-[0.18em] text-white/42">
                       {label}

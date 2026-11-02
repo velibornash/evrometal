@@ -8,7 +8,7 @@ export function SiteFooter({ lang }: SiteFooterProps) {
   const t = dictionary[lang].footer;
 
   return (
-    <footer className="border-t border-white/10 bg-[#0d1218] px-6 py-12 md:px-10">
+    <footer className="border-t border-white/10 bg-[#0a192f] px-6 py-12 md:px-10">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-8 md:grid-cols-3">
           <div>

@@ -51,7 +51,7 @@ export function AluSystemsSection({ lang, system }: AluSystemsSectionProps) {
   const t = dictionary[lang][system] as unknown as AluSectionData;
 
   return (
-    <section id={system} className="border-y border-white/10 bg-[#0d1218] px-6 py-16 md:px-10 md:py-24">
+    <section id={system} className="border-y border-white/10 bg-[#0a192f] px-6 py-16 md:px-10 md:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="max-w-4xl">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-200">
@@ -72,7 +72,7 @@ export function AluSystemsSection({ lang, system }: AluSystemsSectionProps) {
             </h3>
             <div className="mt-6 grid gap-px overflow-hidden border border-white/10 bg-white/10 sm:grid-cols-2">
               {t.materialSpecs.items.map(([label, value]) => (
-                <div key={label} className="bg-[#111820] p-5">
+                <div key={label} className="bg-[#0a192f] p-5">
                   <div className="text-[11px] font-bold uppercase tracking-[0.14em] text-amber-200/70">
                     {label}
                   </div>
@@ -169,7 +169,7 @@ export function AluSystemsSection({ lang, system }: AluSystemsSectionProps) {
                       </h4>
                       <div className="mt-4 grid gap-px overflow-hidden border border-white/10 bg-white/10 sm:grid-cols-2">
                         {systemItem.specs.map(([label, value]) => (
-                          <div key={label} className="bg-[#111820] p-4">
+                          <div key={label} className="bg-[#0a192f] p-4">
                             <div className="text-[11px] font-bold uppercase tracking-[0.14em] text-amber-200/70">
                               {label}
                             </div>

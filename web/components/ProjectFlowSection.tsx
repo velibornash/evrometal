@@ -8,7 +8,7 @@ export function ProjectFlowSection({ lang }: ProjectFlowSectionProps) {
   const t = dictionary[lang].flow;
 
   return (
-    <section className="border-y border-white/10 bg-[#0d1218] px-6 py-16 md:px-10 md:py-24">
+    <section className="border-y border-white/10 bg-[#0a192f] px-6 py-16 md:px-10 md:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
@@ -26,7 +26,7 @@ export function ProjectFlowSection({ lang }: ProjectFlowSectionProps) {
 
         <div className="grid gap-px overflow-hidden border border-white/10 bg-white/10 md:grid-cols-5">
           {t.steps.map(([title, text], index) => (
-            <article key={title} className="bg-[#111820] p-5 md:min-h-72 md:p-6">
+            <article key={title} className="bg-[#0a192f] p-5 md:min-h-72 md:p-6">
               <div className="mb-8 flex items-center justify-between">
                 <span className="text-sm font-semibold text-amber-200">
                   {String(index + 1).padStart(2, "0")}

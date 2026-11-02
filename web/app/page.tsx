@@ -48,7 +48,7 @@ export default async function Home({ searchParams }: HomeProps) {
   const products = await getProducts();
 
   return (
-    <main className="min-h-screen bg-[#0d1218] text-white">
+    <main className="min-h-screen bg-[#0a192f] text-white">
       <StructuredData lang={lang} />
       <Header lang={lang} products={products} />
       <Hero lang={lang} />

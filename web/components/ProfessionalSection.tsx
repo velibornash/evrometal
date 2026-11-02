@@ -8,7 +8,7 @@ export function ProfessionalSection({ lang }: ProfessionalSectionProps) {
   const t = dictionary[lang].professional;
 
   return (
-    <section className="border-y border-white/10 bg-[#0d1218] px-6 py-16 md:px-10 md:py-24">
+    <section className="border-y border-white/10 bg-[#0a192f] px-6 py-16 md:px-10 md:py-24">
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.82fr_1.18fr]">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-200">

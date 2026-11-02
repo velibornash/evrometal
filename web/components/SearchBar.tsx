@@ -106,7 +106,7 @@ export function SearchBar({ products, lang }: SearchBarProps) {
       </form>
 
       {isOpen && filteredProducts.length > 0 && (
-        <div className="absolute top-full z-50 mt-2 w-full overflow-hidden rounded-sm border border-white/10 bg-[#0d1218]/95 backdrop-blur-xl shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
+        <div className="absolute top-full z-50 mt-2 w-full overflow-hidden rounded-sm border border-white/10 bg-[#0a192f]/95 backdrop-blur-xl shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
           <div className="max-h-80 overflow-y-auto">
             {filteredProducts.map((product) => (
               <button
