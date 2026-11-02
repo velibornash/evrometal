@@ -90,7 +90,7 @@ export function Header({ lang, products = [] }: HeaderProps) {
             <div className="invisible absolute left-1/2 top-full z-50 w-[560px] -translate-x-1/2 pt-3 opacity-0 transition duration-150 group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
               <div className="grid grid-cols-2 gap-px overflow-hidden rounded-sm border border-white/10 bg-white/10 shadow-[0_40px_90px_rgba(0,0,0,0.55)]">
                 {productGroups.map((group) => (
-                  <div key={group.title} className="bg-[#0f151c] p-6">
+                  <div key={group.title} className="bg-[#0a192f] p-6">
                     <h3 className="mb-4 text-xs font-black uppercase tracking-[0.2em] text-amber-200">
                       {group.title}
                     </h3>

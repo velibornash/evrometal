@@ -53,7 +53,7 @@ export function SystemsSection({ lang, system }: SystemsSectionProps) {
                 {t.comparisonRows.map((row, rowIndex) => (
                   <tr
                     key={row[0]}
-                    className={`border-t border-white/8 ${rowIndex % 2 === 0 ? "bg-[#0f151c]" : "bg-[#121a24]"}`}
+                    className={`border-t border-white/8 ${rowIndex % 2 === 0 ? "bg-[#0a192f]" : "bg-[#121a24]"}`}
                   >
                     <td className="px-5 py-4 text-sm font-semibold text-white/72">
                       {row[0]}
