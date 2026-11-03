@@ -20,7 +20,7 @@ export function CompanySection({ lang }: CompanySectionProps) {
 
         <div className="image-fill-frame mt-10 aspect-[16/9] overflow-hidden border border-white/10 bg-[#17202a]">
           <Image
-            src="/images/production-line.jpg"
+            src="/images/evrometalUlaz.jpg"
             alt={t.imageAlt}
             fill
             sizes="(min-width: 1024px) 64rem, 100vw"

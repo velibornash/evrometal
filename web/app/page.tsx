@@ -1,6 +1,7 @@
 import { CategoryStrip } from "@/components/CategoryStrip";
 import { CertificationsSection } from "@/components/CertificationsSection";
 import { CompanySection } from "@/components/CompanySection";
+import { GallerySection } from "@/components/GallerySection";
 import { ContactSection } from "@/components/ContactSection";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
@@ -53,6 +54,7 @@ export default async function Home({ searchParams }: HomeProps) {
       <Header lang={lang} products={products} />
       <Hero lang={lang} />
       <CompanySection lang={lang} />
+      <GallerySection lang={lang} />
       <ProjectFlowSection lang={lang} />
       <ProfessionalSection lang={lang} />
       <CategoryStrip lang={lang} />

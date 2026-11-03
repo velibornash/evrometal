@@ -494,6 +494,7 @@ export const dictionary = {
         "Porodična kuća Dubočka",
       ],
     },
+    gallery: { eyebrow: "Galerija", title: "Proizvodnja i proizvodi", production: "Proizvodnja", products: "Proizvodi" },
     certs: {
       eyebrow: "Sertifikati i garancije",
       title: "Standardizovan kvalitet, atestirani proizvodi i višegodišnje garancije.",
@@ -942,6 +943,7 @@ export const dictionary = {
     },
     products: { eyebrow: "Product catalogue", title: "Choose a system for windows, doors, glass or accessories.", text: "The catalogue presents systems and products from our programme. For details, technical characteristics, availability and quotations, contact our sales team directly.", count: "items in catalogue", filters: ["All", "ALU", "PVC"], empty: "There are currently no published products.", fallback: "System available for orders, technical review and B2B enquiries.", details: "View details", badge: "System" },
     references: { eyebrow: "References", title: "Projects in public, commercial and residential buildings.", imageAlt: "Reference public building with Evrometal joinery", items: ["Hospital in Smederevo", "Kostolac Mine Administration Building", "Agricultural School Požarevac", "Police Department Požarevac", "TV DUGA Požarevac", "Stig Shopping Centre in Petrovac na Mlavi", "Hospital in Sombor", "Hospital in Užice", "TV SAT Požarevac", "NELT in Dobanovci", "Primary School Malo Crniće", "Municipality of Žagubica", "Family house Dubočka"] },
+    gallery: { eyebrow: "Gallery", title: "Production and products", production: "Production", products: "Products" },
     certs: { eyebrow: "Certificates and warranties", title: "Standardised quality, tested products and multi-year warranties.", text: "Evrometal holds certificates confirming compliance with ISO 9001 quality standards. Products are tested by the Serbian Institute of Measures - IMS Belgrade and meet domestic and international standard requirements.", imageAlt: "Evrometal ISO certificate", items: ["ISO 9001", "IMS tests", "EU standards", "Installation warranty"], pdfLabel: "Download Evrocert PDF" },
     contact: { eyebrow: "Contact and quotes", title: "Send a request for a quote, specification or B2B cooperation.", text: "Evrometal d.o.o, Industrial zone bb, 12300 Petrovac na Mlavi. Sales, production, warehouse and installation operate as one workflow, giving buyers clear technical and logistical support.", phoneLabels: ["Main office", "Sales", "Production", "Warehouse"] },
     footer: { rights: "All rights reserved." },
@@ -1363,6 +1365,7 @@ export const dictionary = {
     },
     products: { eyebrow: "Produktkatalog", title: "Wählen Sie ein System für Fenster, Türen, Glas oder Zubehör.", text: "Der Katalog zeigt Systeme und Produkte aus unserem Programm. Für Details, technische Eigenschaften, Verfügbarkeit und Angebote kontaktieren Sie direkt den Vertrieb.", count: "Artikel im Katalog", filters: ["Alle", "ALU", "PVC"], empty: "Derzeit sind keine Produkte veröffentlicht.", fallback: "System verfügbar für Bestellungen, technische Prüfung und B2B-Anfragen.", details: "Details ansehen", badge: "System" },
     references: { eyebrow: "Referenzen", title: "Projekte in öffentlichen, gewerblichen und Wohngebäuden.", imageAlt: "Referenzobjekt mit Evrometal-Bauelementen", items: ["Krankenhaus Smederevo", "Verwaltungsgebäude der Gruben in Kostolac", "Landwirtschaftsschule Požarevac", "Polizeiverwaltung Požarevac", "TV DUGA Požarevac", "Einkaufszentrum Stig in Petrovac na Mlavi", "Krankenhaus Sombor", "Krankenhaus Užice", "TV SAT Požarevac", "NELT in Dobanovci", "Grundschule Malo Crniće", "Gemeinde Žagubica", "Familienhaus Dubočka"] },
+    gallery: { eyebrow: "Galerie", title: "Produktion und Produkte", production: "Produktion", products: "Produkte" },
     certs: { eyebrow: "Zertifikate und Garantien", title: "Standardisierte Qualität, geprüfte Produkte und mehrjährige Garantien.", text: "Evrometal besitzt Zertifikate zur Erfüllung des Qualitätsstandards ISO 9001. Produkte werden vom Institut für Maße Serbiens - IMS Belgrad geprüft und erfüllen inländische und internationale Standards.", imageAlt: "Evrometal ISO-Zertifikat", items: ["ISO 9001", "IMS Prüfungen", "EU-Standards", "Montagegarantie"], pdfLabel: "Evrocert PDF herunterladen" },
     contact: { eyebrow: "Kontakt und Angebote", title: "Senden Sie eine Anfrage für Angebot, Spezifikation oder B2B-Zusammenarbeit.", text: "Evrometal d.o.o, Industriezone bb, 12300 Petrovac na Mlavi. Vertrieb, Produktion, Lager und Montage arbeiten als ein Prozess und geben Käufern klare technische und logistische Unterstützung.", phoneLabels: ["Zentrale", "Vertrieb", "Produktion", "Lager"] },
     footer: { rights: "Alle Rechte vorbehalten." },
