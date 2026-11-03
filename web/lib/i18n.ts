@@ -427,16 +427,6 @@ export const dictionary = {
           "Toplotna izolativnost (EN ISO 10077-2): Uf od 1.6 W/m²K (AKPA 80) do 2.8 W/m²K (WD 55).",
         ],
       },
-      asciiSchematics: [
-        {
-          title: "Šematski poprečni presek profilskog sklopa (WD 70 Thermo)",
-          text: "      SPOLJAŠNJA STRANA                          UNUTRAŠNJA STRANA\n   +-----------------------+                +-----------------------+\n   |    Aluminijumski      |                |    Aluminijumski      |\n   |    spoljni profil     |==[POLIAMID]==  |    unutrašnji profil  |\n   |                       |==[  TRAKA  ]== |                       |\n   +----------+------------+                +------------+----------+\n              |     |                                    |     |\n              |     |======= Centralna zaptivka ========>|     |\n              +------------------------------------------+-----+\n              [================== STAKLO ==================]",
-        },
-        {
-          title: "Šematski prikaz dvokanalne šine kliznog sistema (HS 55)",
-          text: "       [ŠINA 1 - FIKSNO KRILO]            [ŠINA 2 - KLIZNO KRILO]\n      +-----------------------+          +-----------------------+\n      |  +-----------------+  |          |  +-----------------+  |\n      |  |     STAKLO      |  |          |  |     STAKLO      |  |\n      |  +-----------------+  |          |  |     STAKLO      |  |\n      +-----------+-----------+          +-----------+-----------+\n==================|==================================|==================\n   +--------------V--------------+    +--------------V--------------+\n   |  [Inoks vođica / Šina 1]   |    |  [Inoks vođica / Šina 2]   |\n   +-----------------------------+    +-----------------------------+\n   |_____________________ ZAJEDNIČKI RAM (122 mm) ___________________|",
-        },
-      ],
       note:
         "Napomena: Radioničke crteže, statičke proračune i drenažne otvore uvek prilagoditi konkretnoj mikrolokaciji i spratnosti objekta u skladu sa tehničkim uputstvima AKPA Aluminium.",
     },
@@ -917,16 +907,6 @@ export const dictionary = {
           "Thermal insulation (EN ISO 10077-2): Uf from 1.6 W/m²K (AKPA 80) to 2.8 W/m²K (WD 55).",
         ],
       },
-      asciiSchematics: [
-        {
-          title: "Schematic cross-section of the profile assembly (WD 70 Thermo)",
-          text: "      EXTERIOR SIDE                          INTERIOR SIDE\n   +-----------------------+                +-----------------------+\n   |    Aluminium          |                |    Aluminium          |\n   |    outer profile      |==[POLYAMIDE]== |    inner profile      |\n   |                       |==[  STRIP  ]== |                       |\n   +----------+------------+                +------------+----------+\n              |     |                                    |     |\n              |     |======= Central gasket ============>|     |\n              +------------------------------------------+-----+\n              [================== GLASS ==================]",
-        },
-        {
-          title: "Schematic view of the two-channel rail of the sliding system (HS 55)",
-          text: "       [RAIL 1 - FIXED SASH]            [RAIL 2 - SLIDING SASH]\n      +-----------------------+          +-----------------------+\n      |  +-----------------+  |          |  +-----------------+  |\n      |  |     GLASS       |  |          |  |     GLASS       |  |\n      |  +-----------------+  |          |  |     GLASS       |  |\n      +-----------+-----------+          +-----------+-----------+\n==================|==================================|==================\n   +--------------V--------------+    +--------------V--------------+\n   |  [Stainless guide / Rail 1] |    |  [Stainless guide / Rail 2] |\n   +-----------------------------+    +-----------------------------+\n   |_____________________ COMMON FRAME (122 mm) _____________________|",
-        },
-      ],
       note:
         "Note: Workshop drawings, static calculations and drainage openings must always be adapted to the specific micro-location and building height in accordance with the AKPA Aluminium technical instructions.",
     },
@@ -1339,16 +1319,6 @@ export const dictionary = {
           "Wärmedämmung (EN ISO 10077-2): Uf von 1,6 W/m²K (AKPA 80) bis 2,8 W/m²K (WD 55).",
         ],
       },
-      asciiSchematics: [
-        {
-          title: "Schematischer Querschnitt der Profilbaugruppe (WD 70 Thermo)",
-          text: "      AUßENSEITE                          INNENSEITE\n   +-----------------------+                +-----------------------+\n   |    Aluminium          |                |    Aluminium          |\n   |    Außenprofil        |==[POLYAMID]==  |    Innenprofil        |\n   |                       |==[  STREIFEN]== |                       |\n   +----------+------------+                +------------+----------+\n              |     |                                    |     |\n              |     |======= Zentrale Dichtung =========>|     |\n              +------------------------------------------+-----+\n              [================== GLAS ==================]",
-        },
-        {
-          title: "Schematische Ansicht der Zweikanal-Schiene des Schiebesystems (HS 55)",
-          text: "       [SCHIENE 1 - FESTFLÜGEL]            [SCHIENE 2 - SCHIEBEFLÜGEL]\n      +-----------------------+          +-----------------------+\n      |  +-----------------+  |          |  +-----------------+  |\n      |  |     GLAS        |  |          |  |     GLAS        |  |\n      |  +-----------------+  |          |  |     GLAS        |  |\n      +-----------+-----------+          +-----------+-----------+\n==================|==================================|==================\n   +--------------V--------------+    +--------------V--------------+\n   |  [Edelstahlführung/Schiene1]|    |  [Edelstahlführung/Schiene2]|\n   +-----------------------------+    +-----------------------------+\n   |_____________________ GEMEINSAMER RAHMEN (122 mm) ___________________|",
-        },
-      ],
       note:
         "Hinweis: Werkstattzeichnungen, statische Berechnungen und Entwässerungsöffnungen sind stets an den konkreten Mikrostandort und die Gebäudehöhe gemäß den technischen Anweisungen von AKPA Aluminium anzupassen.",
     },
